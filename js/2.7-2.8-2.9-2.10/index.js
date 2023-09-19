@@ -19,24 +19,24 @@
 // dog2.bark()
 
 
-function getArea() {
-    return this.width * this.height;
-}
+// function getArea() {
+//     return this.width * this.height;
+// }
 
 
-function getPerimeter() {
-    return this.width * 2 + this.height * 2;
-}
+// function getPerimeter() {
+//     return this.width * 2 + this.height * 2;
+// }
 
-const square1 = {
-    width: 4,
-    height: 5,
-    getArea: getArea,
-    getPerimeter: getPerimeter,
-};
+// const square1 = {
+//     width: 4,
+//     height: 5,
+//     getArea: getArea,
+//     getPerimeter: getPerimeter,
+// };
 
-console.log(square1.getArea());
-console.log(square1.getPerimeter());
+// console.log(square1.getArea());
+// console.log(square1.getPerimeter());
 
 
 // const square2 = {
@@ -94,19 +94,26 @@ console.log(square1.getPerimeter());
 //   } in the sentence`
 // );
 
-// const products = [
-//     'Яйцо столовое',
-//     'молоко молочник',
-//     'кровка молоко',
-//     'виноград изабела'
-// ];
+const products = [
+    'Яйцо столовое',
+    'молоко молочник',
+    'кровка молоко',
+    'виноград изабела'
+];
 
+// console.log(products.slice(-3));
 
 // let search = 'молоко';
 // products.forEach((products) => {
 //     if (products.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
 //         console.log(products);
 //     }
+// });
+// let search = 'молоко';
+// products.forEach((products, index, arr) => {
+//    console.log(`
+//     ${products}  ----    ${index}   ----    ${arr}`);
+   
 // });
 
 
@@ -137,7 +144,7 @@ console.log(square1.getPerimeter());
 
 // let userName = 'Alexei';
 // let str = `My name is ${userName}`;
-// console.log(str.split(' '));
+// console.log(str.split(''));
 
 
 // let userName = 'Alexei';
@@ -147,6 +154,7 @@ console.log(square1.getPerimeter());
 // let userName = 'Alexei';
 // let str = `                                                        My name is ${userName}`;
 // console.log(str.trim());
+// console.log('Jurabek krasavchik'.replace('krasavchik', 'yellownigga'));
 
 
 // let email1 = "toto@gmail.com"
