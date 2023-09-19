@@ -7,17 +7,17 @@
 // let c = 0.999;
 // let d = 2_555_777;
 
-// // typeof a;
+// typeof a;
 
 
 // console.log(a + "hello")
-// console.log(a - "hello")
 // console.log(typeof (a))
 // console.log(typeof (a + "hello"))
 
 // console.log(1 / 0 )
 
-// console.log(NaN + 1)
+// console.log('text' - 1123)
+// console.log('text' + 1123)
 
 // console.log('JS' * 10);
 
@@ -32,45 +32,35 @@
 
 // let str = "это я";
 // let str1 = 'это я';
-// console.log(str, str1);
+// console.log(str === str1);
 
-// str1 = "I'm here"; 
+// let str1 = "I'm here"; 
 // console.log(str1)
 
 // let age = 25
 
+// // const obj = {
+// //     name: 'Jasur',
+// //     surname: "Hamrakulov",
+// //     age: 16
+// // }
 
-// const n = 10
-// n = 20
-// console.log(n);
+// // obj.name = 'Said'
 
-// const obj = {
-//     name: 'Jasur',
-//     surname: "Hamrakulov",
-//     age: 16
-// }
+// // console.log(obj);
 
-// console.log(obj);
-// obj.name = 'Said'
+// ""
+// ''
+// ``
 
-// console.log(obj);
+// let age = 25
 
-console.log(`hello 
-    azizjon`);
-console.log('hello \n azizjon');
+// let str1 = 
+// ` Мне ${age} лет `;
 
-let str1 = 
-` Мне ${age} лет `;
-console.log(str1);
+// console.log(str1);
 
-console.log(typeof str1); 
-
-let myName = 'hunter'
-let age = 27
-
-console.log(`My name is ${myName}    
-I'm  ${age} years old    
-`);
+// console.log(typeof str1); 
 
 // let str1 = 'это называется""строка"';
 // console.log(str1);
@@ -108,23 +98,28 @@ I'm  ${age} years old
 // const person2 = ["Хамракулов", 33]; 
 // console.log(typeof person2);
 
-// console.log(Array.isArray(person));
-// console.log(Array.isArray(person2));
+// console.log(Array.isArray([]));
+
+// console.log(Array.isArray({}));
 
 
-// function sum(a) {
-//     return a + 1;
+// function sum(a, b) {
+//     return a + b;
 // }
 
-// console.log(typeof sum);
+// console.log(sum(10, 20));
 
+
+
+
+// console.log(typeof sum);
 // const error = new Error("Ошибочка вышла-с");
-// console.log(typeof error); 
+// console.log(typeof error);
 // let age = 25
 // console.log(typeof(age) === 'string');
 
-// console.log(typeof error === "object"); 
-// console.log(typeof(typeof error)); 
+// console.log(typeof error === "object");
+// console.log(typeof(typeof error));
 
 // let a = 5;
 // a = true;
@@ -153,17 +148,14 @@ I'm  ${age} years old
 
 // negatives => 0, false, '', NaN, undefined, null
 
-// if(5 > 2) {
-//     // let b = 2;
-//     // let c = 3;
-//     // console.log(b);
-//     // console.log(c);
+// if (undefined) {
 //     console.log('positive');
-
-// }else{
+// } else {
 //     console.log('negative');
-
 // }
+
+// 10 > 5 ? console.log('positive') : console.log('negative');
+
 
 
 // function example() {
@@ -226,7 +218,7 @@ I'm  ${age} years old
 
 // let userName = "Sasha";
 // let test = 123;
-// let myName   
+// let myName
 // let value
 
 // <------ 1,3 урок ------>
@@ -290,7 +282,7 @@ I'm  ${age} years old
 // console.log(6 / "2");
 // console.log(6 * "2");
 // console.log(parseInt("4px") - 2);
-// console.log(2 + 3 * 4); 
+// console.log(2 + 3 * 4);
 
 // Инкремент ++
 // Декремент --

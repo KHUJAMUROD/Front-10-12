@@ -18,10 +18,12 @@
 //         apartment: 12,
 //     },
 // };
-// // console.log(student.address.city);
-// console.log(student['address']['city']);
 
-// console.log(typeof(Object.keys(student)[0]));
+// console.log(student.skills[2]);
+
+// console.log(student.address.city);
+// console.log(student.address.street);
+
 
 
 // const student = {
@@ -41,7 +43,6 @@
 // };
 //     delete student.isMarried;
 // console.log(student);
-
 
 
 // const student = {
@@ -144,15 +145,15 @@
 //         city: "Краснодар",
 //         street: "красная",
 //         house: 22,
-//         "building/letter":null,
+//         "building/letter": null,
 //         apartment: 12,
 //     },
 // };
 
 // function renderStudentInfo() {
-// const renderStudentInfoDiv = document.getElementById("student-info");
+//     const renderStudentInfoDiv = document.getElementById("student-info");
 
-// renderStudentInfoDiv.innerHTML = `
+//     renderStudentInfoDiv.innerHTML = `
 // <h2>${student.name} ${student.surname}</h2>
 // <p>Курс: ${student.course}</p>
 // <p>возраст: ${student.age}</p>
@@ -164,9 +165,9 @@
 // <p>Дом: ${student.address.house}</p>
 
 // <p>Корпус/Литера: ${student.address["building / letter"] === null
-//     ? "Не указано"
-//     : student.address["building / letter"]
-// }</p>
+//             ? "Не указано"
+//             : student.address["building / letter"]
+//         }</p>
 
 // <p>Квартира: ${student.address.apartment}</p>
 // `
@@ -263,16 +264,15 @@
 // }
 
 
-// const capitalofCountries = {
-//      Рим: "Италии",
-//      Париж: "Франция",
-//      Анкара: "Турция",
-//      Берлин: "Германия",
-// };
+const capitalofCountries = {
+    Рим: "Италии",
+    Париж: "Франция",
+    Анкара: "Турция",
+    Берлин: "Германия",
+};
 
 // for (let capital in capitalofCountries ){
 //     console.log(`${capital}, является столицей ${capitalofCountries[capital]}`);
-
 // }
 
 
@@ -288,27 +288,25 @@
 
 // function printMonth() {
 
-const months = ["январь", "Февраль", "Март", "Апрель", "Май", "Июнь"];
+//     const months = ["январь", "Февраль", "Март", "Апрель", "Май", "Июнь"];
 
-for ( let month of months) {
-    if(month === 'Март') {
-        console.log("пропускаем март");
-        continue;
-    }
+//     for (let month of months) {
+//         if (month === 'Март') {
+//             console.log("пропускаем март");
+//             continue;
+//         }
 
-    if (month === 'Май') {
-        console.log("достигли май прерываем цикл");
-        console.log("цикл завершен");
-        return;
-    }
+//         if (month === 'Май') {
+//             console.log("достигли май прерываем цикл");
+//             console.log("цикл завершен");
+//             return;
+//         }
 
-    console.log(month);
-    
+//         console.log(month);
 
-    
-    
-}  
-printMonth();
+//     }
+// }
+// printMonth();
 
 
 
@@ -338,7 +336,6 @@ printMonth();
 
 // arrNums.forEach((el) => {
 //     console.log(el);
-
 // })
 
 

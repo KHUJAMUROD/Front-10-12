@@ -15,15 +15,15 @@
 
 // const htmlContent = items.map((item) => `<li>${item}</li>`).join("");
 
-
-
-
 // listItems.innerHTML = htmlContent;
 
-// listItems.querySelectorAll("li").forEach((item) => item.classList.add("pointed-items"));
+// listItems
+//  .querySelectorAll("li")
+//  .forEach((item) => item.classList.add("pointed-items"));
 
 
 // const listItems = document.getElementById("list");
+
 // const items = ["пункт 1", "пункт 2", "пункт 3", "пункт 4", "пункт 5",];
 
 // const htmlContent = items.map((item) => `<li>${item}</li>`).join("");
@@ -58,7 +58,7 @@
 //         i++;
 //         continue;
 //     }
-    
+
 //     liElement.classList.add('items');
 //     i++;
 // };
@@ -72,8 +72,12 @@
 
 // listItems.innerHTML = htmlContent;
 
-// const liElements = Array.from(listItems.getElementsByTagName("li"));
 
+
+// const liElements = Array.from(listItems.getElementsByTagName("li"));
+// console.log(liElements);
+// const liElements2 = listItems.getElementsByTagName("li");
+// console.log(liElements2);
 
 // liElements.forEach((element, index) => {
 //     if(index % 2 === 0) {
@@ -81,7 +85,6 @@
 //     }else {
 //         element.classList.add("items")
 //     }
-
 // });
 
 
@@ -93,6 +96,25 @@
 
 // listItems.innerHTML = htmlContent;
 // listItems.style.cursor = 'pointer'
+
+
+// const liElements = Array.from(listItems.getElementsByTagName("li"));
+// console.log(liElements);
+
+
+// liElements.forEach((element) => {
+//     element.addEventListener('click', () => {
+//         element.style.cursor = 'pointer'
+//         element.classList.toggle("items")
+//     });
+// });
+
+
+// liElements.addEventListener('click', () => {
+//     liElements.style.cursor = 'pointer'
+//     liElements.classList.toggle("items")
+// });
+
 
 // listItems.addEventListener("click", () => {
 //     listItems.classList.toggle("items")
@@ -108,27 +130,10 @@
 
 // listItems.innerHTML = htmlContent;
 
-
 // listItems.style.display = "flex";
 // listItems.style.flexDirection = "column";
-// listItems.style.marginTop = "200px";
+// listItems.style.marginTop = "100px";
 // listItems.style.backgroundColor = "green";
-
-
-
-
-
-
-
-
-
-
-//-----------------------------------------------------------------------------------
-
-
-
-
-
 
 
 // const listItems = document.getElementById("list");
@@ -154,18 +159,21 @@
 // console.log(element);
 
 
-// const elByNumberId = document.querySelectorAll('[id^="1"]');
+// const elByNumberId = document.querySelectorAll('[id^="11"]');
 
 // console.log(elByNumberId);
 
-// const elementWithLink = document.querySelectorAll('[href$="html"]');
-
-// elementWithLink.forEach((el) => {
-//     el.removeAttribute("href");
+// const elementWithLink1 = Array.from(document.querySelectorAll('[href$="1.html"]'));
+// const elementWithLink2 = document.querySelectorAll('[href$=".html"]');
+// // 
+// elementWithLink2.forEach((el) => {
+//     el.removeAttribute('href');
 // });
-// console.log(elementWithLink);
+
+// console.log(elementWithLink2);
 
 // const elementWithLink = document.querySelectorAll('[class*="active"]');
+// const elementWithLink = document.querySelectorAll('.active');
 
 // elementWithLink.forEach((el) => {
 //     el.setAttribute("class", "inactive");
@@ -184,7 +192,7 @@
 // const elementWithLink = document.querySelectorAll('[class*="active"]');
 
 // elementWithLink.forEach((el) => {
-//    if(el.classList.contains ("active-error")) {
+//    if(el.classList.contains("active-error")) {
 //     el.classList.add
 //     ("pointed-text")
 //    }
@@ -196,10 +204,11 @@
 // const elementWithLink = document.querySelectorAll('[class*="active"]');
 
 // elementWithLink.forEach((el) => {
-//    if(el.classList.contains ("active-error") && user) {
+//    if(el.classList.contains("active-error") && user) {
 //     el.style.display = "none";
 //    }
 // });
+
 // console.log(elementWithLink);
 
 /// 5.7 ///
@@ -275,11 +284,7 @@
 // console.dir(element);
 
 
-// const listElement = document.getElementById("list");
 
-// const element = listElement.querySelectorAll(".active-error")
-
-// console.dir(element);
 
 // const listElement = document.getElementById("list");
 
@@ -318,12 +323,14 @@
 // }
 
 
-// const checkbox = document.getElementById("myCheckbox");
+// const checkbox1 = document.getElementById("myCheckbox1");
+// const checkbox2 = document.getElementById("myCheckbox2");
 
 // const toggleButton = document.getElementById("toggleButton");
 
 // toggleButton.addEventListener("click", () => {
-//     checkbox.toggleAttribute("checked");
+//     checkbox1.toggleAttribute("checked");
+//     checkbox2.toggleAttribute("checked");
 // });
 
 
@@ -333,8 +340,7 @@
 // document.querySelector("button").addEventListener("click", handleClick);
 
 // function handleClick() {
-    // const newPurchase = this.previousElementSibling.value.trim();
-
+// const newPurchase = this.previousElementSibling.value.trim();
 //     console.log(newPurchase);
 // }
 
@@ -348,10 +354,10 @@
 
 // function handleClick() {
 //     const newPurchase = this.previousElementSibling.value.trim();
-//     if(newPurchase) {
-//          this.previousElementSibling.value = "";
+//     if (newPurchase) {
+//         this.previousElementSibling.value = "";
 //         createToBuy(newPurchase)
-//     }else {
+//     } else {
 //         alert("добавьте покупку")
 //     }
 // }
@@ -360,8 +366,8 @@
 //     const liEl = document.createElement("li");
 //     liEl.textContent = text;
 //     liEl.classList.add("item")
-//     // listToBuy.append(liEl);
-//     listToBuy.prepend(liEl);
+//     listToBuy.append(liEl);
+//     // listToBuy.prepend(liEl);
 //     const liBtn = document.createElement("button");
 //     liBtn.textContent = "удалить";
 //     liBtn.classList.add("btn");
@@ -371,7 +377,7 @@
 
 // function addDeleteListener(button, item) {
 //     button.addEventListener("click", () => {
-//         liEl.remove()
+//         item.remove()
 //     })
 // }
 

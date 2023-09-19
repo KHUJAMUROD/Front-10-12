@@ -105,7 +105,7 @@ p {
 	/* transform: rotate(-180deg); */
 	/* transform: rotateX(45deg);	 */
 	/* transform: rotateY(45deg);	 */
-	transform: rotateY(180deg);	
+	/* transform: rotateY(180deg);	 */
 	/* backface-visibility: hidden; */
 	
 }
@@ -219,7 +219,7 @@ p {
 }
 
 .content__rotate3d:hover {
-	transform: rotate3d(0, 1, 0, 45deg);
+	transform: rotate3d(1, 1, 1, 45deg);
 }
 
 /* matrix3d */
@@ -241,9 +241,9 @@ p {
 .content__transform-style-wrapper {
 	width: 150px;
 	height: 150px;
-	background-color: rgba(255, 255, 255, 0.466);
+	background-color: rgba(252, 252, 252, 0.48);
 	perspective: 200px;
-	transform-style: preserve-3d;	
+	transform-style: preserve-3d;
 }
 
 .content__transform-style {

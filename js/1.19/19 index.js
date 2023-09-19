@@ -44,7 +44,7 @@
 // let str = "\"это строка с двойными кавычками \"" ;
 // console.log(str);
 
-// let str = 'I\'m here\\';
+// let str = "I\n'm here\\";
 // console.log(str);
 
 // let str = 'It is  \nsome text'
@@ -79,10 +79,11 @@
 
 
 
+
 // const host  = "gismeteo.ru/weather-";
 // const query = "stockholm-417";
 // // const url = "https://" + host + query + "/";
-// const url = `https://${host}${query} /"`;
+// const url = `https://yandex.uz/pogoda/ru/samarkand?lat=39.654406&lon=66.975827/"`;
 
 // const linkText = `<a href=${url}>погода в этом городе</a>` ;
 
