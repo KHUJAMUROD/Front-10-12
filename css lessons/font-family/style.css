@@ -1,0 +1,57 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kablammo&family=Londrina+Sketch&display=swap'); */
+
+@font-face {
+    src: url(/font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+    font-family: 'Dancing Script';
+}
+@font-face {
+    src: url(/font/Kablammo/Kablammo-Regular-VariableFont_MORF.ttf);
+    font-family: 'Kablammo';
+}
+@font-face {
+    src: url(/font/Londrina_Sketch/LondrinaSketch-Regular.ttf);
+    font-family: 'Londrina Sketch';
+}
+
+* {
+    font-size: 40px
+}
+
+
+.p1 {
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.p2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 200%;
+}
+
+.p3 {
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 0;
+}
+
+div {
+    font-size: 30px;
+}
+
+.block1 p {
+    /* font-variant: small-caps; */
+    /* text-transform: uppercase; */
+    font-size: 2em;
+}
+
+.block2 p {
+    /* font-variant: small-caps; */
+    font-size: 2rem;
+}
