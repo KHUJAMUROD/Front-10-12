@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+</head>
+
+<body>
+
+    <div class="block1">
+        <span>Lorem ipsum dolor sit amet consectetur</span> adipisicing elit. Eligendi eveniet eaque, officia maiores,
+        nulla dolores quasi unde soluta provident mollitia id praesentium quos impedit ducimus voluptatibus sapiente!
+        Minima, hic tempore!
+    </div>
+    <div class="block2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet eaque, officia maiores, nulla dolores
+        quasi unde soluta provident mollitia id praesentium quos impedit ducimus voluptatibus sapiente! Minima, hic
+        tempore!
+    </div>
+
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        transition: 1s;
+    }
+
+    .block1 {
+        background-color: black;
+        color: snow;
+        padding: 50px;
+        margin: 25px;
+    }
+
+    .block2 {
+        background-color: black;
+        color: snow;
+        padding: 50px;
+        margin: 25px;
+    }
+
+    .block1:hover span {
+        display: inline-block;
+        border-radius: 20px;
+        padding: 20px;
+        background: url(/img/1.jpg) center / cover fixed no-repeat;
+        color: yellow;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 35px;
+    }
+
+    .block1:hover {
+        background: url(/img/4.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.476);
+        color: magenta;
+    }
+
+    .block2:hover {
+        background: url(/img/4.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.476);
+        color: aqua;
+        word-spacing: 35px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+</style>
+
+</html>

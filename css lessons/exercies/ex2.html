@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Ex 2</title>
+</head>
+
+<body>
+
+    <h1 style="background-color: #444;">
+        <span style="color: red;">H</span>
+        <sub style="color: green;">e</sub>
+        <sup style="color: dodgerblue;">m</sup>
+        <span style="color: magenta;">e</span>
+    </h1>
+
+    <div class="block">
+        <hr>
+        <hr>
+        <hr>
+        <table>
+            <tr>
+                <td class="td1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempore laboriosam incidunt sed natus porro voluptate
+                        maxime eius! Provident beatae corporis, unde esse magni
+                        totam nostrum perspiciatis, autem quod incidunt vero.
+                    </p>
+                </td>
+                <td class="td2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempore laboriosam incidunt sed natus porro voluptate
+                        maxime eius! Provident beatae corporis, unde esse magni
+                        totam nostrum perspiciatis, autem quod incidunt vero.
+                    </p>
+                </td>
+                <td class="td3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempore laboriosam incidunt sed natus porro voluptate
+                        maxime eius! Provident beatae corporis, unde esse magni
+                        totam nostrum perspiciatis, autem quod incidunt vero.
+                    </p>
+                </td>
+                <td class="td4">
+                    <table border="2" bordercolor="red">
+                        <tr>
+                            <th>text text</th>
+                            <th>text text</th>
+                            <th>text text</th>
+                        </tr>
+                        <tr>
+                            <th>text text</th>
+                            <th colspan="2"><img src="/img/2.jpg" alt="" width="150px" height="150px"></th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">
+                                <ol type="I">
+                                    <li>text text</li>
+                                    <li>text text</li>
+                                    <li>text text</li>
+                                    <ul>
+                                        <li>text text</li>
+                                        <li>text text</li>
+                                    </ul>
+                                </ol>
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <hr>
+        <hr>
+    </div>
+
+</body>
+
+<style>
+    .block {
+        background-color: gray;
+    }
+
+    .td1 {
+        background: url(/img/4.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.437);
+        color: red;
+        text-decoration: underline dotted 3px yellow;
+        line-height: 25px;
+        text-transform: lowercase;
+    }
+
+    .td2 {
+        background: url(/img/2.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.437);
+        color: blue;
+        text-decoration: underline dashed 3px green;
+        line-height: 25px;
+        text-transform: uppercase;
+    }
+
+    .td3 {
+        background: url(/img/1.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.437);
+        color: magenta;
+        text-decoration: underline double 3px dodgerblue;
+        line-height: 25px;
+        text-transform: capitalize;
+    }
+
+    .td4 {
+        background: url(/img/5.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.437);
+        color: yellow;
+        text-decoration: underline wavy 3px red;
+    }
+</style>
+
+</html>

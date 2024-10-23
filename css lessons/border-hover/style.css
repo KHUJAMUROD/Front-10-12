@@ -1,0 +1,49 @@
+* {
+    transition: 0.5s;
+}
+
+body {
+    background-color: #000;
+    color: snow;
+}
+
+a:hover {
+    color: red;
+    font-size: 30px;
+}
+
+main {
+    width: 400px;
+    height: 400px;
+    font-size: 30px;
+    background-color: #777;
+    /* border: 5px solid green; */
+    /* outline: 5px solid red; */
+    /* border: 20px double red; */
+    /* border: 20px dashed red; */
+    /* border: 20px dotted red; */
+    /* border-top: 20px solid red; */
+    /* border-right:  20px dotted green; */
+    /* border-left: 20px dashed blue; */
+    /* border-bottom: 20px double yellow; */
+    /* border: 30px outset green; */
+    /* border: 30px inset green; */
+    /* border: 30px groove dodgerblue; */
+    /* border: 30px ridge dodgerblue; */
+    /* border-radius: 20px; */
+    /* border-radius: 20px 40px; */
+    /* border-radius: 20px 40px 60px ;  */
+    /* border-radius: 20px 40px 60px 80px;  */
+    /* border-radius: 50%; */
+}
+
+span{
+    /* border: 10px solid green; */
+    outline: 10px solid green;
+}
+
+div{
+    border: 10px solid blue;
+    outline: 10px solid green;
+
+}

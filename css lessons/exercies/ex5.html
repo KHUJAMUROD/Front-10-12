@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Ex</title>
+</head>
+
+<body>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            placeat aliquid necessitatibus omnis similique dolorum totam
+            inventore enim explicabo animi quod, recusandae quas vitae
+            repellat soluta. Animi nemo veritatis possimus, velit incidunt
+            excepturi hic cupiditate aliquam veniam libero, esse harum
+            facere, sunt perferendis ab optio labore maxime iste pariatur natus.
+        </p>
+        <div>
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            <img src="/img/3.jpg" alt="" width="100px" height="100px">
+        </div>
+    </main>
+
+</body>
+
+<style>
+
+    *{
+        transition: 1s;
+    }
+
+    main {
+        width: 500px;
+        margin: 20px auto;
+        text-align: center;
+        background-color: #111;
+        padding: 25px;
+        color: snow;
+        border-radius: 20px;
+    }
+
+    main:hover{
+        padding: 50px;
+        color: magenta;
+        word-spacing: 20px;
+        background: url(/img/5.jpg) center / cover no-repeat ;
+        background-blend-mode: darken;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    img:hover{
+        width: 135px;
+        height: 135px;
+        border: 10px double red;
+        border-radius: 50%;
+    }
+
+    main div:hover{
+        padding: 15px;
+        background: url(/img/2.jpg) center / cover no-repeat ;
+        background-blend-mode: darken;
+        background-color: rgba(0,100,0,0.5);
+    }
+</style>
+
+</html>

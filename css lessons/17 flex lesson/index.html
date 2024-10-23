@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="flex__container">
+        <div class="flex__items item-1">
+            <div class="flex__content content-1">1</div>
+        </div>
+        <div class="flex__items item-2">
+            <div class="flex__content content-2">2</div>
+        </div>
+        <div class="flex__items item-3">
+            <div class="flex__content content-3">3</div>
+        </div>
+        <div class="flex__items item-1">
+            <div class="flex__content content-1">4</div>
+        </div>
+        <div class="flex__items item-2">
+            <div class="flex__content content-2">5</div>
+        </div>
+        <div class="flex__items item-3">
+            <div class="flex__content content-3">6</div>
+        </div>
+        <div class="flex__items item-1">
+            <div class="flex__content content-1">7</div>
+        </div>
+        <div class="flex__items item-2">
+            <div class="flex__content content-2">8</div>
+        </div>
+        <div class="flex__items item-3">
+            <div class="flex__content content-3">9</div>
+        </div>
+        <div class="flex__items item-1">
+            <div class="flex__content content-1">10</div>
+        </div>
+        <div class="flex__items item-2">
+            <div class="flex__content content-2">11</div>
+        </div>
+        <div class="flex__items item-3">
+            <div class="flex__content content-3">12</div>
+        </div>
+        <div class="flex__items item-1">
+            <div class="flex__content content-1">13</div>
+        </div>
+        <div class="flex__items item-2">
+            <div class="flex__content content-2">14</div>
+        </div>
+        <div class="flex__items item-3">
+            <div class="flex__content content-3">15</div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    *,
+    ::before,
+    ::after {
+        padding: 0;
+        margin: 0;
+        transition: 0.5s;
+        box-sizing: border-box;
+        /* text-align: center; */
+    }
+
+
+    body {
+        background-color: #222;
+        color: snow;
+        padding: 20px;
+    }
+
+    .flex__container {
+        /* height: 50vh; */
+        /* border: 3px solid white; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* display: inline-flex; */
+        /* flex-direction: column; */
+        /* justify-content: start; */
+        /* justify-content: end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        /* display: inline-flex; */
+        /* align-items: stretch; */
+        /* align-items: start; */
+        /* align-items: end; */
+        /* align-items: center; */
+        /* align-items: baseline; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+    }
+
+    .flex__items {
+        /* width: 100%; */
+        /* flex-basis: auto; */
+        /* flex-basis: 250px; */
+        /* flex-basis: 33.333%; */
+        border: 3px solid green;
+    }
+
+    .flex__content {
+        background-color: rgb(51, 44, 112);
+        padding: 20px;
+    }
+
+    .item-1 {
+        /* align-self: start; */
+        /* align-self: end; */
+        order: 1;
+    }
+
+    .item-3 {
+        /* align-self: end; */
+        order: 3;
+    }
+
+    .item-2 {
+        /* align-self: center; */
+        /* flex-basis: 400px; */
+        order: 2;
+        /* flex-grow: 0; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 0; */
+        /* flex-shrink: 1; */
+        /* flex: 1 1 33.33%; */
+    }
+
+    .content-2 {
+        /* padding: 50px; */
+        /* font-size: 50px; */
+    }
+
+    .content-3,
+    .content-1 {
+        /* padding: 20px;
+        font-size: 35px; */
+    }
+</style>
+
+
+</html>

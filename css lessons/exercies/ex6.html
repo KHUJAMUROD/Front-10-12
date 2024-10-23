@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="td1">
+                <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            </td>
+            <td class="td2">
+                <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            </td>
+        </tr>
+        <tr>
+            <td class="td3">
+                <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            </td>
+            <td class="td4">
+                <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        transition: 1s;
+    }
+
+    body {
+        padding: 5px;
+    }
+
+    table {
+        width: 100%;
+        height: 98vh;
+    }
+
+    table td {
+        background-color: gray;
+    }
+
+    table:hover {
+        background-color: #000;
+    }
+
+    table:hover td {
+        background-color: #000;
+    }
+
+
+    .td1 img {
+        margin: 30% 0 0 83%;
+    }
+
+    .td2 img {
+        margin: 30% 0 0 1%;
+    }
+
+    .td3 img {
+        margin: 0 0 30% 83%;
+    }
+
+    .td4 img {
+        margin: 0 0 30% 1%;
+    }
+
+    table:hover .td1 img{
+        margin: 0 83% 30% 0;
+    }
+    table:hover .td2 img{
+        margin: 0 0 30% 83%;
+    }
+    table:hover .td3 img{
+        margin: 30% 83% 0 0;
+    }
+    table:hover .td4 img{
+        margin: 30% 0 0 83%;
+    }
+</style>
+
+</html>

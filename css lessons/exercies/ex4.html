@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th class="th1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit possimus nihil rem itaque
+                veniam distinctio ab! Nulla consectetur beatae reprehenderit cum eos harum, assumenda cumque sed dolore
+                molestiae distinctio.
+            </th>
+            <th class="th2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit possimus nihil rem itaque
+                veniam distinctio ab! Nulla consectetur beatae reprehenderit cum eos harum, assumenda cumque sed dolore
+                molestiae distinctio.
+            </th>
+        </tr>
+        <tr>
+            <th class="th3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit possimus nihil rem itaque
+                veniam distinctio ab! Nulla consectetur beatae reprehenderit cum eos harum, assumenda cumque sed dolore
+                molestiae distinctio.
+            </th>
+            <th class="th4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit possimus nihil rem itaque
+                veniam distinctio ab! Nulla consectetur beatae reprehenderit cum eos harum, assumenda cumque sed dolore
+                molestiae distinctio.
+            </th>
+        </tr>
+    </table>
+
+</body>
+
+<style>
+    * {
+        transition: 1s;
+    }
+
+    body {
+        background: url(/img/1.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.476);
+        background-attachment: fixed;
+        color: snow;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table:hover .th1 {
+        background: url(/img/2.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.408);
+        border-left: 5px solid red;
+        border-right: 5px dotted green;
+        border-top: 5px double yellow;
+        border-bottom: 5px dashed blue;
+        border-radius: 30px;
+    }
+
+    table:hover .th2 {
+        background: url(/img/3.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(100, 0, 0, 0.408);
+        border-right: 5px solid red;
+        border-left: 5px dotted green;
+        border-top: 5px double yellow;
+        border-bottom: 5px dashed blue;
+        border-radius: 30px;
+    }
+
+    table:hover .th3 {
+        background: url(/img/4.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 100, 0, 0.408);
+        border-bottom: 5px solid red;
+        border-left: 5px dotted green;
+        border-right: 5px double yellow;
+        border-top: 5px dashed blue;
+        border-radius: 30px;
+    }
+
+    table:hover .th4 {
+        background: url(/img/5.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 100, 0.408);
+        border-right: 5px solid red;
+        border-top: 5px dotted green;
+        border-bottom: 5px double yellow;
+        border-top: 5px dashed blue;
+        border-radius: 30px;
+    }
+</style>
+
+</html>
