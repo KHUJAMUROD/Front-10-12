@@ -73,8 +73,8 @@ ctrl + x = cut => вырезать
 alt + z = off or on horizontal scrollbar => отключение или включение горизонтальной прокрутки
 ctrl + v = paste => вставить
 ctrl + a = select all => выбрать все
-ctrl + c = copy => копировать
-ctrl + alt + up or down =  select line / выделит линию
+ctrl + c = copy => копировать   
+ctrl + alt + up or down =  select line / выделит линию 
 shift + alt + up or down = quick copy / скопировать линию
 alt + left mouse = select area => выбрать область 
 shift + up__ down__left__right = select => выделить
@@ -85,6 +85,9 @@ alt + tab = change window  => смена окна
 (f2 => quick rename / быстрое переименования) 
 (fn + f2 => quick rename / быстрое переименования) для ноутбуков
 ctrl + up or down =>  вертикально скролить
+home = back to start = Вернуться к началу
+end = go to end = иди к концу
+
 
 атрибуты всегда устанавливаются внутри открывающей части тега => <img src=""> / <p class=""></p>
 
