@@ -1,0 +1,35 @@
+/* body{
+    background-color: #000;
+    color: red;
+} */
+* {
+    background-color: #000;
+    color: red;
+}
+/* 
+div h1{
+    color: red;
+} */
+
+
+/* main > p {
+    color: blue;
+} */
+
+
+main ~ h1 {
+    color: green;
+}
+
+main + h1 {
+    color: gold;
+}
+
+/* .testclass {
+    color: magenta;
+} */
+
+
+/* #testid {
+    color: greenyellow;
+} */
