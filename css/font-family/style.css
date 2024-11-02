@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Danfo&family=Tiny5&display=swap'); */
-
+/* 
 .p1 {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -19,4 +19,22 @@
     font-style: normal;
     font-variation-settings:
         "ELSH" 0;
+} */
+
+
+@font-face {
+    font-family: "font 1";
+    src: url(/font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'font 2';
+    src: url(/font/Updock/Updock-Regular.ttf);
+}
+
+.p1{
+    font-family: "font 1";
+}
+.p2{
+    font-family: "font 2";
 }
