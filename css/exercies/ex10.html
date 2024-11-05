@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 10</title>
+</head>
+
+<body>
+
+    <main>
+        <img src="/img/4.jpg" alt="" width="100%" height="0">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            reprehenderit iste provident eum distinctio mollitia quos quibusdam praesentium sapiente
+            libero. Autem, dolore modi vero provident vel quis praesentium ipsum quas.
+        </p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque praesentium qui accusantium eius, expedita
+                officia iste, quia ratione, sequi numquam non nesciunt
+                aliquid facilis ullam sit ipsa ab. Assumenda, numquam.
+            </p>
+        </div>
+    </main>
+
+</body>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    body{
+        background-color: black;
+        color: snow;
+    }
+
+    main{
+        border: 3px solid red;
+        width: 50%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+
+    main p{
+        margin: 20px 0;
+    }
+
+    main:hover img{
+        height: 200px;
+        box-shadow: 0 0 10px 10px aquamarine;
+    }
+
+    main:hover{
+        box-shadow: 0 0 10px 10px red, 0 0 10px 15px blue;
+        height: 400px;
+    }
+
+    main:hover div{
+        background: url(/img/1.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 150px;
+        box-shadow: 0 0 15px 10px red, 0 0 15px 20px blue, 0 0 15px 30px yellow;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+</style>
+</html>
