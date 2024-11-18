@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-Child</title>
+</head>
+
+<body>
+
+
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+
+
+
+</body>
+
+<style>
+
+    
+    * {
+        transition: 0.5s;
+    }
+
+
+    ul {
+        list-style-type: none;
+        list-style-type: disc;
+        list-style-type: upper-roman;
+        list-style-type: circle;
+        list-style-type: square;
+        list-style-type: decimal;
+        list-style-type: hiragana;
+        list-style-type: kannada;
+        list-style-type: cambodian;
+        list-style-type: lao;
+        list-style-type: korean-hangul-formal;
+        list-style-type: armenian;
+        list-style-type: lower-alpha;
+        list-style-type: upper-alpha;
+        list-style-type: katakana;
+    }
+
+    /* ul li:first-child{
+        color: red;
+    }
+    ul li:last-child{
+        color: red;
+    } */
+
+
+    /* ul li:nth-child(7){
+        color: red;
+        font-size: 30px;
+    } */
+
+    /* ul li:nth-child(odd) {
+        color: red;
+    } */
+
+    
+    /* ul li:nth-child(even){
+        color: red;
+    } */
+
+    /* ul li:nth-child(3n){
+        color: red;
+    } */
+    
+    /* ul li:nth-child(3n - 1){
+        color: red;
+    } */
+
+    /* ul li:nth-last-of-type(even) {
+        color: red;
+    } */
+
+    /* ul li:not(:first-child){
+        color: red;
+    } */
+    /* ul li:not(:nth-child(even)){
+        color: red;
+    } */
+
+    ul li:hover:not(:nth-child(odd)){
+        background-color: gray;
+    }
+</style>
+
+
+</html>
