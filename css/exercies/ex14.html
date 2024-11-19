@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 14</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+
+                </ol>
+            </td>
+            <td>
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                </ol>
+            </td>
+            <td>
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                </ol>
+            </td>
+            <td>
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Fifth</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+
+<style>
+    * {
+        transition: 1s;
+    }
+
+
+    table {
+        margin: 0 auto;
+    }
+
+
+    body {
+        background-color: #222;
+    }
+
+    ol {
+        list-style-type: armenian;
+    }
+
+    ul {
+        list-style-type: korean-hangul-formal;
+    }
+
+
+
+    ol li:nth-child(even),
+    ul li:nth-child(even) {
+        padding: 4px 8px;
+        background-color: gray;
+        color: aquamarine;
+    }
+
+    ol li:nth-child(odd),
+    ul li:nth-child(odd) {
+        padding: 4px 8px;
+        background-color: black;
+        color: magenta;
+    }
+
+    ol li:first-child,
+    ul li:first-child,
+    ul li:last-child,
+    ol li:last-child {
+        padding: 4px 8px;
+        background-color: red;
+        color: snow;
+    }
+
+
+    ol li:nth-child(even):hover,
+    ul li:nth-child(even):hover {
+        background: url(/img/logo/Intagram\ Logo.png) center / cover no-repeat ;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    ol li:nth-child(odd):hover,
+    ul li:nth-child(odd):hover {
+        background: url(/img/pepsi-logo.png) center / cover no-repeat ; 
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+</style>
+
+</html>
