@@ -7,25 +7,25 @@ body {
     color: snow;
 }
 
-a:hover {
+/* a:hover {
     color: red;
     font-size: 30px;
-}
+} */
 
-main {
-    width: 400px;
-    height: 400px;
-    font-size: 30px;
+div {
+    width: 200px;
+    height: 200px;
     background-color: #777;
-    /* border: 5px solid green; */
-    /* outline: 5px solid red; */
+    /* border: 5px solid red; */
+    /* outline: 5px solid green; */
+    outline: 5px solid red;
     /* border: 20px double red; */
     /* border: 20px dashed red; */
     /* border: 20px dotted red; */
-    /* border-top: 20px solid red; */
-    /* border-right:  20px dotted green; */
-    /* border-left: 20px dashed blue; */
-    /* border-bottom: 20px double yellow; */
+    /* border-top: 5px solid red; */
+    /* border-right:  5px dotted green; */
+    /* border-left: 5px dashed blue; */
+    /* border-bottom: 5px double yellow; */
     /* border: 30px outset green; */
     /* border: 30px inset green; */
     /* border: 30px groove dodgerblue; */
@@ -37,13 +37,28 @@ main {
     /* border-radius: 50%; */
 }
 
+
+div:hover{
+    width: 250px;
+    height: 250px;
+    background-color: darkblue;
+    border-radius: 50px;
+    text-align: center;
+}
+div:hover p{
+    color: red;
+    border-radius: inherit;
+    border: 5px solid green;
+}
+
 span{
-    /* border: 10px solid green; */
-    outline: 10px solid green;
+    background-color: #777;
+    /* border: 5px solid green; */
+    outline: 5px solid green;
 }
 
 div{
-    border: 10px solid blue;
-    outline: 10px solid green;
+    /* border: 10px solid blue; */
+    /* outline: 10px solid green; */
 
 }
