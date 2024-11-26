@@ -4,55 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Border Lesson</title>
 </head>
 
 <body>
 
-    <!-- <main class="m1">
-        <span>
-            Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet.
-        </span>
-    </main> -->
-    <!-- <main class="m2">
-
-    </main> -->
-
-    <div>
-        Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Delectus enim nulla
-        quos fugit reiciendis aliquam voluptates
-        tenetur dolores. Repellat at laudantium
-        praesentium iste. Commodi dignissimos at
-        unde quibusdam amet? Itaque.
+    <div class="block">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aperiam blanditiis optio animi reiciendis, at obcaecati quidem qui officia autem fuga in, error minus ut earum porro fugiat corporis ad!
     </div>
     <br>
     <br>
     <br>
-    <br>
     <span>
-        Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Delectus enim nulla
-        quos fugit reiciendis aliquam voluptates
-        tenetur dolores. Repellat at laudantium
-        praesentium iste. Commodi dignissimos at
-        unde quibusdam amet? Itaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum quidem minus eligendi est recusandae beatae maxime iste eos ex, nisi, dolor optio deserunt sapiente provident iure architecto alias hic?
     </span>
-   
 
-    <!-- <a href="#">Lorem ipsum dolor sit amet.</a> -->
-
-    <br>
-    <br>
-    <button>button</button>
-    <button>button</button>
 </body>
+<style>
+
+    *{
+        transition: 1s;
+    }
+
+    .block{
+        /* border: 5px solid black; */
+        /* border-left: 5px solid red; */
+        /* border-right: 5px  dotted green; */
+        /* border-top: 5px dashed blue; */
+        /* border-bottom: 5px double yellow; */
+        margin: 50px auto;
+        background-color: #333;
+        width: 200px;
+        height: 200px;
+        outline: 10px solid green;
+        /* outline: 10px dotted green; */
+        /* outline: 10px dashed green; */
+        /* outline: 10px double green; */
+        /* outline: 20px outset green; */
+        /* outline: 20px inset green; */
+        /* outline: 20px groove green; */
+        /* outline: 20px ridge green;  */
+        color: snow;
+        border-radius: 10px;
+        /* border-radius: 10px 20px; */
+        /* border-radius: 10px 20px 40px; */
+        /* border-radius: 10px 20px 40px 60px; */
+        /* border-radius: 50%; */
+    }
+
+
+    .block:hover{
+        width: 300px;
+        background: url(/img/1.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(255, 0, 0, 0.512);
+    }
+
+
+    span{
+        /* border: 2px solid black; */
+        outline: 2px solid black;
+    }
+
+
+    span:hover{
+        color: green;
+        background-color: gray;
+    }
+
+</style>
 
 </html>
