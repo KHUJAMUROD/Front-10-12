@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 15</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ratione!</p>
+    </header>
+    <nav>
+        <a style="float: left;" href="#">Link</a>
+        <a style="float: left;" href="#">Link</a>
+        <a style="float: right;" href="#">Link</a>
+        <a style="float: right;" href="#">Link</a>
+        <a style="float: right;" href="#">Link</a>
+    </nav>
+
+    <main>
+        <div class="left">
+            <div class="content">
+                <h1>Title heading</h1>
+                <p>option <b>Title descr, Dec 2 2024</b></p>
+                <div class="img">
+                    <b>Image</b>
+                </div>
+                <p>Some text ...</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse impedit nihil dolores! Porro ullam ipsam libero!
+                    Iure cupiditate quas esse laudantium dicta vero!
+                    Praesentium, quaerat maiores non incidunt atque doloribus.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Title heading</h1>
+                <p>option <b>Title descr, Dec 2 2024</b></p>
+                <div class="img">
+                    <b>Image</b>
+                </div>
+                <p>Some text ...</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse impedit nihil dolores! Porro ullam ipsam libero!
+                    Iure cupiditate quas esse laudantium dicta vero!
+                    Praesentium, quaerat maiores non incidunt atque doloribus.
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <h2>About Me</h2>
+                <div class="image">Image</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae sequi recusandae reiciendis fugit quos beatae,
+                    culpa deleniti hic. Recusandae repellat sit repudiandae
+                    quos fuga? Porro praesentium perferendis nemo nobis aliquid.
+                </p>
+            </div>
+            <div class="middle">
+                <h2>Popular Post</h2>
+                <div class="image">Image</div>
+                <div class="image">Image</div>
+                <div class="image">Image</div>
+            </div>
+            <div class="bottom">
+                <h2>Follow Me</h2>
+                <p>Some text ...</p>
+            </div>
+        </div>
+        <footer>
+            Footer
+        </footer>
+    </main>
+</body>
+
+<style>
+    * {
+        font-family: cursive;
+        transition: 0.5s;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        text-align: center;
+        padding: 50px;
+        font-size: 30px;
+    }
+
+    nav {
+        background-color: #333;
+        overflow: auto;
+    }
+
+
+    a {
+        padding: 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: snow;
+    }
+
+    a:hover {
+        background-color: red;
+    }
+
+
+    main {
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .left {
+        width: 70%;
+        float: left;
+    }
+
+    .left .content {
+        background-color: lightgray;
+
+        padding: 20px;
+    }
+
+    .left * {
+        margin: 10px;
+    }
+
+    .left .img {
+        background-color: gray;
+        height: 200px;
+        padding: 50px;
+        font-size: 20px;
+    }
+
+
+    .right {
+        float: left;
+        width: 28%;
+    }
+
+    .right .image {
+        height: 100px;
+        padding: 30px;
+        background-color: gray;
+        margin: 10px;
+    }
+
+    .right .top,
+    .right .middle {
+        background-color: lightgray;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+
+    .right .bottom {
+        padding: 30px;
+        background-color: lightgray;
+        height: 140px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 50px;
+        float: left;
+        width: 100%;
+        background-color: lightgray;
+        padding: 50px;
+    }
+</style>
+
+</html>
