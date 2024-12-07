@@ -92,6 +92,8 @@ lorem или loremru создаёт текст можно указать кол�
 [ ctrl + end = go to the very end = идти к самому концу]
 [ ctrl + enter = open new line]
 [ shift + mouserscroll = horizontal scrolling = горизонтальный скролл]
+[ ctrl + shift + l = select all similars = выбрать одинаковых]
+[ ctrl + shif + l = select ]
 
 атрибуты всегда устанавливаются внутри открывающей части тега => <img src=""> / <p class=""></p>
 
