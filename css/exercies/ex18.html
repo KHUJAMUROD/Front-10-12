@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 18</title>
+</head>
+
+<body>
+
+    <main>
+        <p>
+            Lorem, ipsum dolor <span>sit amet</span> consectetur adipisicing elit. A, magnam porro, id ea non
+            dignissimos itaque modi
+            adipisci obcaecati nulla eaque architecto? Voluptatibus at illum totam rem. Harum error dignissimos ducimus
+            totam non delectus <span>magni nulla</span> hic dolore explicabo, officia in molestiae ab aspernatur commodi
+            veniam quo
+            ullam quas vitae.
+        </p>
+        <div class="content">
+            <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            <img src="/img/2.jpg" alt="" width="100px" height="100px"><br>
+            <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            <img src="/img/2.jpg" alt="" width="100px" height="100px"><br>
+            <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            <img src="/img/2.jpg" alt="" width="100px" height="100px">
+            <img src="/img/2.jpg" alt="" width="100px" height="100px"><br>
+        </div>
+    </main>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    body{
+        background-color: #000;
+        color: snow;
+    }
+
+    main {
+        min-height: 450px;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 20px;
+        width: 80%;
+        text-align: center;
+        background-color: #333;
+    }
+
+    p{
+        padding: 0 20px;
+    }
+
+    main div {
+        margin: 20px 0 0 0 ;
+    }
+
+    main div img:nth-child(5),
+    main div img:nth-child(6),
+    main div img:nth-child(7),
+    main div img:nth-child(10){
+        visibility: hidden;
+    }
+
+
+    main:hover{
+        font-size: 20px;
+        padding: 70px 20px;
+        background: url(/img/3.jpg) center / cover no-repeat; 
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.543);
+    }
+
+    img:hover{
+        border: 10px double green;
+        opacity: 0.5;
+    }
+
+    main:hover span{
+        display: inline-block;
+        border: 3px solid greenyellow;
+    }
+
+    span:hover{
+        background: url(/img/1.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.543);
+        display: inline-block;
+        padding: 20px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: magenta;
+    }  
+</style>
+
+</html>

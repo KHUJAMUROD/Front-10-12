@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 17 </title>
+</head>
+<body>
+    <marquee behavior="alternate" scrollamount="">
+        <a href="https://www.youtube.com">Youtube</a>
+    </marquee>
+    
+    <main>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore <span>ipsa alias</span> optio impedit mollitia blanditiis dolores eum molestiae ad distinctio molestias incidunt id ut quae tempore <span>et accusantium</span> suscipit, veniam itaque. Amet, voluptates? Voluptatem, molestias. Unde nisi atque 
+        </p>
+        <button>Link 1</button>
+        <button>Link 2</button>
+    </main>
+
+    
+</body>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+
+    body{
+        background-color: black;
+        color: snow;
+    }
+
+    main{
+        height: 150px;
+        text-align: center;
+        border: 3px solid red;
+    }
+
+
+    main p {
+        width: 30%;
+        margin: 20px auto;
+    }
+
+    button{
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 20px 20px 20px;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        color: yellow;
+        background-color: rgba(0,0,0,0);
+    }
+
+
+    main:hover{
+        background: url(/img/2.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 255, 0.526);
+        font-size: 25px;
+        line-height: 50px;
+        text-transform: capitalize;
+        word-spacing: 20px;
+        height: 75vh;
+    }
+
+
+    main:hover button{
+        display: inline-block;
+        padding: 80px;
+        margin: 50px;
+        font-size: 25px;
+    }
+    
+
+    main:hover span{
+        display: inline-block;
+        padding: 2px 5px;
+        border: 3px solid greenyellow;
+    }
+
+    button:hover{
+        border-radius: 20px;
+        border-bottom: 3px solid snow;
+        color: red;
+        background-color: rgba(0, 128, 0, 0.468);
+    }
+
+    span:hover{
+        background-color: green;
+        color: red;
+        border-radius: 20px;
+    }    
+
+</style>
+
+</html>
