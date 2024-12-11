@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 19</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="block1">
+            <img src="/img/1.jpg" alt="" width="100px" height="100px">
+            <img src="/img/1.jpg" alt="" width="100px" height="100px">
+            <img src="/img/1.jpg" alt="" width="100px" height="100px">
+        </div>
+        <div class="block2">
+            <img src="/img/1.jpg" alt="" width="100px" height="100px">
+            <img src="/img/1.jpg" alt="" width="100px" height="100px">
+            <img src="/img/1.jpg" alt="" width="100px" height="100px">
+        </div>
+    </main>
+
+</body>
+<style>
+
+    *{
+        transition: 0.5s;
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background-color: black;
+        color: snow;
+    }
+
+    main{
+        width: 600px;
+        margin: 20px auto;
+        background: url(/img/3.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: #0000007a;
+        border-radius: 20px;
+    }
+
+    .block1{
+        text-align: center ;
+    }
+
+    .block2 img{
+        display: block;
+        margin: 5px 0;
+    }
+
+    main .block1 img:nth-child(3),
+    main .block2 img:nth-child(3){
+        border-radius: 50%;
+        opacity: 0.5;
+        box-shadow: 0px 0px 20px 10px green;
+    }
+
+    main .block1 img:nth-child(2),
+    main .block2 img:nth-child(2){
+        visibility: hidden;
+    }
+
+    main:hover .block1 img:nth-child(2),
+    main:hover .block2 img:nth-child(2){
+        visibility: visible;
+    }
+    .block1 img:nth-child(2):hover,
+    .block2 img:nth-child(2):hover{
+        width: 150px;
+        height: 150px;
+        border: 5px double red;
+        border-radius: 50%;
+    }
+    
+</style>
+
+</html>

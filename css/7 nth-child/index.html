@@ -21,27 +21,45 @@
         <li>text</li>
         <li>text</li>
         <li>text</li>
+        <li>text</li>
+        <li>text</li>
     </ul>
 
 
+    <!-- <div class="block">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
 
 </body>
 
 <style>
 
+    /* :root{
+        font-size: 30px;
+    } */
+
     
     * {
         transition: 0.5s;
+        font-size: 15px;
+    }
+
+    .block{
+        font-size: 20px;
     }
 
 
+    .block p {
+        font-size: 2rem;
+    }
+
     ul {
+        list-style-type: decimal;
         /* list-style-type: none; */
         /* list-style-type: disc; */
         /* list-style-type: upper-roman; */
         /* list-style-type: circle; */
         /* list-style-type: square; */
-        list-style-type: decimal;
         /* list-style-type: hiragana; */
         /* list-style-type: kannada; */
         /* list-style-type: cambodian; */
@@ -50,6 +68,7 @@
         /* list-style-type: lower-alpha; */
         /* list-style-type: upper-alpha; */
         /* list-style-type: katakana; */
+        /* list-style-type: georgian; */
         /* list-style-type: korean-hangul-formal; */
     }
 
@@ -62,10 +81,16 @@
     } */
 
 
-    /* ul li:nth-child(7){
-        color: red;
-        font-size: 30px;
-    } */
+   ul li {
+    font-size: 20px;
+   }     
+    
+    ul li:nth-child(7){
+        /* color: red; */
+        /* font-size: 30px; */
+        /* font-size: 2rem; */
+        /* font-size: 2em; */
+    }
 
     /* ul li:nth-child(odd) {
         color: red;
@@ -88,7 +113,17 @@
         color: red;
     } */
 
-    /* ul li:not(:first-child){
+
+    /* ul li:nth-last-of-type(even) {
+        color: red;
+    } */
+
+
+    /* ul li:nth-last-of-type(odd) {
+        color: red;
+    } */
+/* 
+    ul li:not(:first-child){
         color: red;
     } */
 

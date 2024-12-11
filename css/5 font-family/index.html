@@ -5,36 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font-Family</title>
-    <link rel="stylesheet" href="style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Danfo&family=Tiny5&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Sofia&display=swap"
         rel="stylesheet"> -->
 </head>
 
 <body>
 
     <p class="p1">
-        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet. 1
     </p>
     <p class="p2">
-        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet. 2
     </p>
     <p class="p3">
-        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet. 3
     </p>
 
-<!-- 
-    <div class="block1">
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-
-
-    <div class="block2">
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div> -->
 
 </body>
+
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Sofia&display=swap'); */
+
+    .p1 {
+        /* font-family: 'Times New Roman', Times, serif; */
+        /* font-family: monospace; */
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        /* font-family: cursive; */
+        /* font-family: Arial, Helvetica, sans-serif; */
+        /* font-family: "Sofia", sans-serif; */
+        /* font-weight: 400; */
+        /* font-style: italic; */
+        /* font-style: inherit; */
+        /* font-style: normal; */
+    }
+
+    .p2 {
+        /* font-family: "Playwrite HR Lijeva", cursive; */
+        /* font-size: 13px; */
+        /* font-style: normal; */
+    }
+
+    @font-face {
+        src: url(/font/Playwrite_HR_Lijeva/PlaywriteHRLijeva-VariableFont_wght.ttf);
+        font-family: 'PlaywriteHRLijeva';
+    }
+
+    @font-face {
+        src: url(/font/Sofia/Sofia-Regular.ttf);
+        font-family: 'Sofia';
+    }
+    @font-face {
+        src: url(/font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+        font-family: 'Dancing_Script';
+    }
+
+    .p1{
+        font-family: 'PlaywriteHRLijeva';
+    }
+    .p2{
+        font-family: 'Sofia';
+    }
+    .p3{
+        font-family: 'Dancing_Script';
+    }
+</style>
 
 </html>
