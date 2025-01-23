@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img-Link</title>
+</head>
+
+<body>
+    <img>
+
+
+    <a href="1 introduction.html">introduction.html</a>
+    <br>
+    <a href="2 img-link.html">img-link.html</a>
+    <br>
+    <a href="3 global-attr.html">global-attr.html</a>
+    <br>
+    <a href="4 table.html">table.html</a>
+    <br>
+    <a href="5 list.html">list.html</a>
+    <br>
+
+    <img src="/img/3.jpg" alt="" width="200px" height="200px">
+
+
+     <img src="3.jpg" alt="error" width="200px" height="200px">
+
+    <div style="width: 200px; height: 200px;">
+        <img src="/img/5.jpg" alt="" width="50%" height="50%">
+    </div>
+
+    <a href="https://www.youtube.com" target="_self">
+        youtube self
+    </a>
+    <br>
+    <a href="https://www.facebook.com" target="_blank">
+        facebook blank
+    </a>
+    <br>
+    <a href="https://www.bugatti.com/" target="_self">
+        bugatti self
+    </a>
+    <br>
+    <a href="https://web.telegram.org" target="_blank">
+        telegramm blank
+    </a>
+    <br>
+    <a href="mailto:test@gmail.com">
+        mailto for test@gmail.com
+    </a> 
+
+
+
+
+
+    <main></main>
+
+</body>
+<style>
+    :root {
+        /* --font-size: 30px; */
+    }
+
+    * {
+        transition: 1s;
+    }
+
+    html {
+        /* font-size: 22px; */
+    }
+
+
+    ul {
+        /* font-size: 33px; */
+    }
+
+    ul li {
+
+        /* font-size: 15px; */
+        /* font-size: 15pt; */
+        /* font-size: 180%; */
+        /* font-size: 2em; */
+        /* font-size: 2rem; */
+        /* font-size: var(--font-size); */
+    }
+
+
+    p {
+        /* font-size: var(--font-size); */
+    }
+
+
+    main {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg, red, green, blue);
+        background: linear-gradient(-45deg, red, green, blue);
+        /* border-radius: 50%; */
+        /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    }
+
+    main:hover {
+        /* transform: rotate3d(); */
+        transform: rotate3d(1, 1, 1, -180deg);
+    }
+</style>
+
+</html>
