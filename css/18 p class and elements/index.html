@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Class P Elements</title>
+</head>
+
+<body>
+
+
+    <a href="https://www.twitter.com">Twitter</a>
+    <br>
+    <a href="#t1">Link 1</a>
+    <br>
+    <a href="#t2">Link 2</a>
+    <br>
+    <br>
+    <input class="check" type="checkbox">
+    <input class="check" type="radio" name="r1">
+    <input class="check" type="radio" name="r1">
+    <br>
+    <br>
+    <input type="text" placeholder="some text">
+    <br>
+    <br>
+
+    <p id="t1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad officiis illo ipsa, hic eveniet eligendi odit
+        quibusdam, ipsum aliquam sunt, magnam nisi adipisci et perspiciatis animi impedit. Consequatur, vel incidunt.
+    </p>
+    <p id="t2">target 2</p>
+
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <ol>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+</body>
+
+<style>
+    * {
+        /* transition: 1s; */
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    a:active {
+        color: greenyellow;
+    }
+
+
+    input:checked{
+        width: 35px;
+        height: 35px;
+        box-shadow: 0 0 5px 5px black;
+    }
+
+    input:focus{
+        box-shadow:  0 0 10px 10px #333;
+    }
+
+    /* input:focus:not(.check){
+        box-shadow:  0 0 10px 10px #333;
+        border-radius: 20px;
+    } */
+
+    :target{
+        background-color: indigo;
+        color: snow;
+    }
+
+
+
+    /* ::marker {
+        color: red;
+        font-size: 50px;
+    } */
+
+    ::placeholder {
+        color: red;
+        text-align: center;
+    }
+
+    ::selection {
+        background-color: black;
+        color: yellow;
+    }
+
+    li {
+        position: relative;
+        list-style-type: none;
+    }
+
+    
+     li::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        box-shadow: 0 0 2px 2px inset   black;
+        border-radius: 50%;
+        top: 5px;
+        left: -20px;
+        background: url(/1.jpg) center / cover no-repeat;
+    } 
+
+    li::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        box-shadow: 0 0 2px 2px inset   black;
+        border-radius: 50%;
+        top: 5px;
+        right: 75%;
+        background: url(/1.jpg) center / cover no-repeat;
+    }
+</style>
+
+</html>

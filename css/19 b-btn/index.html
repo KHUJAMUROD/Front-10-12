@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="btn-1">AWESOME</button>
+    <button class="btn-2">FANTASTIC</button>
+
+
+</body>
+
+
+<style>
+    *,
+    ::before,
+    ::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    body {
+        background-color: black;
+    }
+
+
+    button {
+        display: block;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        margin: 5px auto;
+        background-color: #fff;
+    }
+
+    .btn-1 {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .btn-1:hover {
+        box-shadow: inset 105px 0 0 0 red,
+            inset 0 40px 0 0 blue,
+            0 0 20px 5px red,
+            0 0 20px 10px blue;
+    }
+
+    .btn-2 {
+        border: 2px solid cyan;
+        position: relative;
+    }
+
+    .btn-2:before {
+        content: 'FANTASTIC';
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        background: url(/img/2.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.501);
+    }
+
+    .btn-2:hover {
+        color: snow;
+    }
+
+    .btn-2:hover::before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+</style>
+
+</html>
