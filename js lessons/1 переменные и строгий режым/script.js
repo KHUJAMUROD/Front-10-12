@@ -4,11 +4,14 @@ const leftBorderWidth = 1;
 number = 10;
 console.log(number);
 
-    const obj = {
-    a: 50
+const obj = {
+  a: 50,
+};
 
-    };
+obj.a = 10;
 
-    obj.a = 10;
+console.log(obj);
 
-    console.log(obj);
+
+let blockWidth = '200px'
+let blockWidth2 = '200px'
