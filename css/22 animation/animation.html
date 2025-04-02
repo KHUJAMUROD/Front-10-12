@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="block"></div>
+
+</body>
+
+<style>
+    *,
+    ::before,
+    ::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: all 1s ease 0s;
+    }
+
+    body {
+        background-color: #222;
+        color: snow;
+        position: relative;
+    }
+
+    .block {
+        background-color: lightblue;
+        margin: 20px;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border-radius: 50%;
+        /* animation-name: test; */
+        /* animation-duration: 1.5s; */
+        /* animation-timing-function: linear; */
+        /* animation-iteration-count: infinite; */
+        /* animation-iteration-count: 3; */
+        /* animation-direction: alternate; */
+        /* animation-direction: reverse; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-delay: 1s; */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: backwards; */
+        /* animation-fill-mode: both; */
+        /* animation-iteration-count: infinite; */
+        /* animation: test 2s alternate infinite linear 1s forwards running; */
+        /* animation: test 2s alternate infinite linear 1s forwards,
+        firstAnimation 2s alternate infinite linear 1s forwards; */
+
+    }
+
+
+    .block:hover {
+        /* animation-play-state: running; */
+        /* animation-play-state: paused; */
+    }
+
+    @keyframes test {
+        0% {
+            left: 0;
+        }
+
+        50% {
+            border-radius: 0;
+            background-color: red;
+        }
+
+        100% {
+            left: 90%;
+        }
+    }
+
+
+    @keyframes firstAnimation {
+        from{
+            width: 150px;
+            height: 150px;
+        }
+
+
+
+        to{
+            width: 250px;
+            height: 250px;
+        }
+    }
+</style>
+
+</html>
