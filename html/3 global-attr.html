@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,11 @@
     <link rel="shortcut icon" href="/img/logo/Gmail Logo.png" type="image/x-icon">
 </head>
 
-<body >
-    <a href="1 introduction.html">introduction.html</a>
+<body style="
+color: rgb(0, 0, 0);
+background-color: gray;
+">
+    <!-- <a href="1 introduction.html">introduction.html</a>
     <br>
     <a href="2 img-link.html">img-link.html</a>
     <br>
@@ -18,45 +21,51 @@
     <a href="4 table.html">table.html</a>
     <br>
     <a href="5 list.html">list.html</a>
-    <br>
-
+    <br> -->
 
     <details>
         <summary>details</summary>
-        <h1 title="about title">heading 1</h1>
+        <h1 class="testclass" title="about title">heading 1</h1>
         <h1 style="
-        color: red;
-        background-color: gray;
-        color: green;
-        "
-        class="testclass" id="testid"
-        >heading 2</h1>
-        <h1>heading 3</h1>
-        <h1>heading 4</h1>
+    color: rgb(255, 0, 0);
+    background-color: gray;
+    color: green;
+    ">heading 2</h1>
+        <h1 id="testid1" class="testclass">heading 3</h1>
+        <h1 id="testid1">heading 4</h1>
     </details>
 
-    <img src="" alt="" width="" height="">
-    
 
 
 </body>
 <style>
-
-    #testid{
-        color: darkcyan;
-        background-color: darkgray;
+    body {
+        color: snow;
+        background-color: black;
     }
 
-    h1{
-        color: rgb(255, 0, 0);
-        background-color: rgb(0, 0, 0);
-    }
-
-    .testclass{
+    h1 {
         color: blue;
     }
 
- 
+
+    .testclass {
+        color: greenyellow;
+        background-color: darkcyan;
+    }
+
+
+    #testid1 {
+        background-color: green;
+        color: snow;
+        color: red;
+        color: blue;
+    }
+
+
+    #testid1 {
+        color: magenta;
+    }
 </style>
 
 </html>

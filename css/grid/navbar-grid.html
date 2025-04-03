@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar-grid</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+      <nav>
+        <div class="logo">
+            <img src="/img/logo/Intagram Logo.png" alt="" width="70" height="20px">
+        </div>
+        <div class="links">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            <a href="#">link 4</a>
+        </div>
+        <div class="buttons">
+            <button>Log in</button>
+            <button>Register</button>
+        </div>
+      </nav>
+    </div>
+
+
+
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .grid-container {
+        width: 95%;
+        margin: 0 auto;
+        padding:  15px;
+        height: 70px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .grid-container nav{
+        width: 100%;
+        display: grid;
+        height: 100%;
+        grid-template: 1fr / repeat(4, 1fr);
+        align-items: center; 
+        background-color: snow;
+
+    }
+    .links{
+        grid-row: 1 / 1;
+        grid-column: 2 / 2 span;
+    }
+
+ 
+ 
+  
+    .links a{
+        display: inline-block;
+        margin: 0 15px 0 0;
+        color: dodgerblue;
+        font-size: 10px;
+    }
+
+    .buttons button{
+        display: inline-block;
+        padding: 5px 20px;
+        font-size: 10px;
+        border-radius: 5px;
+        margin: 0 20px 0 0;
+    }
+
+    .buttons button:last-child{
+        background-color: dodgerblue;
+        color: snow;
+    }
+
+</style>
+
+</html>
