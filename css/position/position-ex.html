@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-ex</title>
+</head>
+
+<body>
+
+    <main>
+        <aside class="left">
+            <div class="block-1"></div>
+        </aside>
+        <aside class="right">
+            <div class="block-2"></div>
+        </aside>
+        <aside class="bottom">
+            <div class="block-3"></div>
+        </aside>
+    </main>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    main {
+        width: 60%;
+        height: 400px;
+        background-color: black;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .left{
+        width: 50px;
+        height: 50%;
+        background-color: lightblue;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    .right{
+        width: 50px;
+        height: 50%;
+        background-color: rgb(252, 74, 74);
+        position: absolute;
+        top: 25%;
+        right: 0;
+    }
+    .bottom{
+        width: 50%;
+        height: 50px;
+        background-color: rgb(74, 252, 92);
+        position: absolute;
+        left: 25%;
+        bottom: 0;
+    }
+
+    .block-1 {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 40%;
+    }
+
+    .block-2 {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 40%;
+    }
+
+    .block-3 {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+</style>
+
+</html>
