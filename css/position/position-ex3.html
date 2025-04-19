@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-ex3</title>
+</head>
+
+<body>
+
+    <main>
+        <span class="abc">a</span>
+        <p class="p1">aigjeroijg</p>
+        <p>aigjeroijg</p>
+        <p>aigjeroijg</p>
+        <p>aigjeroijg</p>
+        <p>aigjeroijg</p>
+        <p>aigjeroijg</p>
+        <span class="abc">b</span>
+        <p class="p1">bigjeroijg</p>
+        <p>bigjeroijg</p>
+        <p>bigjeroijg</p>
+        <p>bigjeroijg</p>
+        <p>bigjeroijg</p>
+        <p>bigjeroijg</p>
+        <span class="abc">c</span>
+        <p class="p1">cigjeroijg</p>
+        <p>cigjeroijg</p>
+        <p>cigjeroijg</p>
+        <p>cigjeroijg</p>
+        <p>cigjeroijg</p>
+        <p>cigjeroijg</p>
+        <span class="abc">d</span>
+        <p class="p1">digjeroijg</p>
+        <p>digjeroijg</p>
+        <p>digjeroijg</p>
+        <p>digjeroijg</p>
+        <p>digjeroijg</p>
+        <p>digjeroijg</p>
+        <span class="abc">e</span>
+        <p class="p1">eigjeroijg</p>
+        <p>eigjeroijg</p>
+        <p>eigjeroijg</p>
+        <p>eigjeroijg</p>
+        <p>eigjeroijg</p>
+        <p>eigjeroijg</p>
+    </main>
+
+</body>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    main {
+        width: 40%;
+        height: 200px;
+        background-color: dodgerblue;
+        overflow: auto;
+        position: relative;
+        padding: 5px;
+    }
+
+
+    span {
+        float: left;
+        position: sticky;
+        display: inline-block;
+        background-color: black;
+        color: red;
+        border-radius: 50%;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        left: 5px;
+    }
+    p{
+        text-align: center;
+    }
+
+    .p1{
+        position: relative;
+        right: 15px;
+    }
+</style>
+
+</html>

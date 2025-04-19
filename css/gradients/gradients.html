@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradients</title>
+</head>
+
+<body>
+
+    <div></div>
+    <div class="block-2"></div>
+
+</body>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html{
+        height: 100%;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    div{
+        width: 500px;
+        height: 400px;
+        border: 2px solid black;
+        /* background: linear-gradient(to bottom, red, green, blue); */
+        /* background: linear-gradient(to top, red, green, blue); */
+        /* background: linear-gradient(to left, red, green, blue); */
+        /* background: linear-gradient(to right, red, green, blue); */
+        /* background: linear-gradient(to bottom right, red, green, blue); */
+        /* background: linear-gradient(to top right, red, green, blue); */
+        /* background: linear-gradient(-45deg, red, green, blue); */
+        /* background: linear-gradient(45deg, red, green, blue); */
+        /* background: linear-gradient(to right, red 0% 10%, green 20%, blue 30% 50%, black); */
+        /* background: repeating-linear-gradient(to right, red 0% 10%, green 20%, blue 30% 50% ); */
+        /* background: repeating-linear-gradient(to right, red , green 20%, blue 30%, magenta 40%, black 50%); */
+        background: repeating-radial-gradient(red, green 15%, blue 25%);
+        background: repeating-radial-gradient(circle, red, green 15%, blue 25%);
+        background: radial-gradient(red, green, blue);
+
+    }   
+
+    .block-2{
+        background: repeating-radial-gradient(red, green 15%, blue 25%);
+        background: radial-gradient(circle, red, green, blue);
+        width: 500px;
+        height: 400px;
+        border: 2px solid black;
+    }
+</style>
+
+</html>
