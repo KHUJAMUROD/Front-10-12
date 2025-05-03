@@ -11,74 +11,63 @@
 
 <body style="">
 
-    <h1 class="testclass">heading 1</h1>
+    <!-- <h1 class="testclass">heading 1</h1>
     <h1 id="testid1">heading 2</h1>
-
     <h1>heading 3</h1>
 
     <p class="testclass">paragraph 1</p>
     <p id="testid1">paragraph 2</p>
-    <p>paragraph 3</p>
-
+    <p>paragraph 3</p> -->
 
 
     <main>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet. 1</p>
         <div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet. 2</p>
             <footer>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet. 3</p>
             </footer>
         </div>
     </main>
     <br>
     <br>
-    <button type="submit">button</button>
-    <input type="submit">
+    <button id="testid1"  title="about title" type="submit">button</button>
+    <br>
+    <button class="testclass" type="reset">button</button>
+    <br>
+    <input id="testid1" type="submit">
+    <input class="testclass" type="reset">
+
+
+    
 </body>
 <style>
-    h1.testclass {
+
+    input[type='reset'],
+    button.testclass,
+    main > p{
         color: red;
+        background-color: green;
     }
 
-    p.testclass {
-        color: green;
-    }
 
-    h1#testid1 {
-        color: blue;
-    }
-
-    p#testid1 {
-        color: aqua;
-    }
-
-    button[type="submit"] {
+    input#testid1{
+        /* color: greenyellow; */
         /* background-color: #333; */
-        /* color: snow; */
     }
+
+
+    button.testclass{
+        /* color: snow; */
+        /* background-color: darkblue; */
+    }
+
 
     input[type="submit"] {
-        /* background-color: darkgreen; */
-        /* color: snow; */
-    }
-
-    main div footer p {
+        /* background-color: green; */
         /* color: red; */
     }
 
-    main p {
-        /* color: red; */
-    }
-
-    main>p {
-        color: red;
-    }
-
-    main+button {
-        /* background-color: #333; */
-        /* color: snow; */
-    }
 
     main~button {
         /* background-color: #333; */
@@ -86,11 +75,35 @@
     }
 
 
-    button[type="submit"],
-    input[type="submit"] {
-        background-color: darkgreen;
-        color: snow;
+
+    main+br+button {
+        /* background-color: #333; */
+        /* color: snow; */
     }
+
+    main p {
+        /* color: blue; */
+    }
+
+
+    main div footer p {
+        /* color: red; */
+    }
+
+
+    main>p {
+        color: red;
+    }
+
+
+
+    main p {
+        /* color: red; */
+    }
+
+
+
+   
 </style>
 
 </html>

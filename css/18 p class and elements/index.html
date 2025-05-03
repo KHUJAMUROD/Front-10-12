@@ -10,7 +10,7 @@
 <body>
 
 
-    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.w3schools.com">w3schools</a>
     <br>
     <a href="#t1">Link 1</a>
     <br>
@@ -23,6 +23,7 @@
     <br>
     <br>
     <input type="text" placeholder="some text">
+    <br>
     <br>
     <br>
 
@@ -53,12 +54,16 @@
         scroll-behavior: smooth;
     }
 
+    :link{
+        color: red;
+    }
+
     a:visited {
         color: black;
     }
 
     a:hover {
-        color: red;
+        color: blue;
     }
 
     a:active {
@@ -66,14 +71,14 @@
     }
 
 
-    input:checked{
+    input:checked {
         width: 35px;
         height: 35px;
         box-shadow: 0 0 5px 5px black;
     }
 
-    input:focus{
-        box-shadow:  0 0 10px 10px #333;
+    input:focus {
+        box-shadow: 0 0 10px 10px #333;
     }
 
     /* input:focus:not(.check){
@@ -81,7 +86,7 @@
         border-radius: 20px;
     } */
 
-    :target{
+    :target {
         background-color: indigo;
         color: snow;
     }
@@ -94,8 +99,8 @@
     } */
 
     ::placeholder {
-        color: red;
-        text-align: center;
+        /* color: red; */
+        /* text-align: center; */
     }
 
     ::selection {
@@ -105,23 +110,24 @@
 
     li {
         position: relative;
+        line-height: 30px;
         list-style-type: none;
     }
 
-    
-     li::before {
+
+    li::before {
         content: '';
         display: block;
         position: absolute;
         width: 20px;
         height: 20px;
-        background-color: red;
-        box-shadow: 0 0 2px 2px inset   black;
+        /* background-color: red; */
+        box-shadow: 0 0 2px 2px inset red;
         border-radius: 50%;
         top: 5px;
         left: -20px;
-        background: url(/1.jpg) center / cover no-repeat;
-    } 
+        /* background: url(/1.jpg) center / cover no-repeat; */
+    }
 
     li::after {
         content: '';
@@ -130,11 +136,11 @@
         width: 20px;
         height: 20px;
         background-color: red;
-        box-shadow: 0 0 2px 2px inset   black;
+        box-shadow: 0 0 2px 2px inset black;
         border-radius: 50%;
         top: 5px;
         right: 75%;
-        background: url(/1.jpg) center / cover no-repeat;
+        background: url(/img/2.jpg) center / cover no-repeat;
     }
 </style>
 

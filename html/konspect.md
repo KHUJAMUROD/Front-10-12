@@ -67,12 +67,12 @@ lorem или loremru создаёт текст можно указать кол�
 [SHORCUTS]
 
 
-[ ctrl + z = back / ход назад] 
+[ ctrl + z = back / ход назад]  
 [ ctrl + y = back to back / вернут ошибку] 
+[ ctrl + c = copy => копировать]
 [ ctrl + v = paste => вставить]
 [ ctrl + x = cut => вырезать]
 [ ctrl + a = select all => выбрать все]
-[ ctrl + c = copy => копировать]
 [ ctrl + alt + up or down =  select line / выделит линию]
 [ ctrl + left or right = jump all word => прыгать целое слово]
 [ ctrl + up or down =>  вертикально скролить]
@@ -80,7 +80,7 @@ lorem или loremru создаёт текст можно указать кол�
 [ ctrl + enter = open new line]
 [ ctrl + shift + l = select all similars = выбрать одинаковых]
 [ alt + z = off or on horizontal scrollbar => отключение или включение ]
-[ alt + up or down => move line => двигать линию]
+[ alt + up or down => move line => двигать линию] 
 [ alt + left mouse = select area => выбрать область ]
 [ alt + shift + f = format => порядок]
 [ alt + tab = change window  => смена окна ]
