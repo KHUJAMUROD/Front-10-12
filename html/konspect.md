@@ -86,13 +86,16 @@ lorem или loremru создаёт текст можно указать кол�
 [ alt + tab = change window  => смена окна ]
 [ shift + up__ down__left__right = select => выделить]
 [ shift + alt + up or down = quick copy / скопировать линию]
-[ shift + mouserscroll = horizontal scrolling = горизонтальный скролл] [ shift + mouserscroll = horizontal scrolling = горизонтальный скролл] [ shift + mouserscroll = horizontal scrolling = горизонтальный скролл] [ shift + mouserscroll = horizontal scrolling = горизонтальный скролл] 
+[ shift + mouserscroll = horizontal scrolling = горизонтальный скролл] 
 [ end = go to end line = иди к концу]
 [ home = back to start  line= вернутся к началу]
 [ ctrl + home = back to the very begining = вернутся к самому началу ]
 [ ctrl + end = go to the very end = идти к самому концу]
 [ (f2 => quick rename / быстрое переименования) ]
 [ (fn + f2 => quick rename / быстрое переименования) для ноутбуков]
+
+
+
 атрибуты всегда устанавливаются внутри открывающей части тега => <img src=""> / <p class=""></p>
 
 
