@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="">
+<body>
 
     <h1 class="testclass">heading 1</h1>
     <h1 id="testid1">heading 2</h1>
 
-    <h1>heading 3</h1>
 
     <p class="testclass">paragraph 1</p>
     <p id="testid1">paragraph 2</p>
-    <p>paragraph 3</p>
 
-
+    <button type="submit">
+        submit
+    </button>
+    <input type="submit">
 
     <main>
         <p>Lorem ipsum dolor sit amet.</p>
@@ -32,9 +33,22 @@
         </div>
     </main>
     <br>
-    <br>
-    <button type="submit">button</button>
-    <input type="submit">
+    <!-- <div class="block-b">
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+    </div>
+    <div class="block-c">
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+        <button type="submit">button</button>
+    </div> -->
+
 </body>
 <style>
     h1.testclass {
@@ -53,14 +67,18 @@
         color: aqua;
     }
 
-    button[type="submit"] {
-        /* background-color: #333; */
-        /* color: snow; */
+    button {
+        color: red;
     }
 
-    input[type="submit"] {
-        /* background-color: darkgreen; */
-        /* color: snow; */
+    button[type='submit'] {
+        color: green;
+        background-color: #333;
+    }
+
+    input[type='submit'] {
+        color: magenta;
+        background-color: black;
     }
 
     main div footer p {
@@ -72,24 +90,41 @@
     }
 
     main>p {
-        color: red;
+        /* color: red; */
     }
 
-    main+button {
+    main+br+.block-b button {
         /* background-color: #333; */
-        /* color: snow; */
+        /* color: green; */
     }
 
-    main~button {
-        /* background-color: #333; */
-        /* color: snow; */
+    main~.block-c button {
+        background-color: #333;
+        color: snow;
     }
+
 
 
     button[type="submit"],
     input[type="submit"] {
-        background-color: darkgreen;
-        color: snow;
+        /* background-color: darkgreen; */
+        /* color: snow; */
+    }
+
+    .block1,
+    .block2,
+    .block3,
+    body {}
+
+
+    button[type="submit"] {
+        /* background-color: #333; */
+        /* color: snow; */
+    }
+
+    input[type="submit"] {
+        /* background-color: darkgreen; */
+        /* color: snow; */
     }
 </style>
 

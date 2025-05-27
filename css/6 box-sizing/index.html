@@ -9,46 +9,22 @@
 </head>
 
 <body>
-    <!-- <div class="block1">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta mollitia voluptas
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptatem fugiat veniam consequuntur sapiente
-            aliquid, corporis recusandae culpa, enim error similique. Facilis eius minima harum, recusandae ipsum maxime
-            modi architecto ut quae eum. Eum recusandae doloribus, saepe modi repudiandae nemo iusto alias blanditiis
-            praesentium necessitatibus ratione quam deleniti quibusdam pariatur!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta mollitia voluptas
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptatem fugiat veniam consequuntur sapiente
-            aliquid, corporis recusandae culpa, enim error similique. Facilis eius minima harum, recusandae ipsum maxime
-            modi architecto ut quae eum. Eum recusandae doloribus, saepe modi repudiandae nemo iusto alias blanditiis
-            praesentium necessitatibus ratione quam deleniti quibusdam pariatur!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta mollitia voluptas
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptatem fugiat veniam consequuntur sapiente
-            aliquid, corporis recusandae culpa, enim error similique. Facilis eius minima harum, recusandae ipsum maxime
-            modi architecto ut quae eum. Eum recusandae doloribus, saepe modi repudiandae nemo iusto alias blanditiis
-            praesentium necessitatibus ratione quam deleniti quibusdam pariatur!
-        </p>
-    </div> -->
 
 
 
-
-
-    <div class="block2">
+    <div class="block-1">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus soluta mollitia voluptas nesciunt
         </p>
     </div>
-    <!-- <div class="block3">
+    <!-- <div class="block-2">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Voluptatibus soluta mollitia voluptas nesciunt
+            Voluptatibus soluta mollitia voluptas nesciunt
         </p>
     </div> -->
+
 
 
 </body>
@@ -57,66 +33,68 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        text-decoration: none;
     }
 
     body {
         background-color: #333;
     }
 
-    .block1 {
 
+
+    .block-1 {
+        background-color: gray;
         /* background: linear-gradient(to bottom, red,green,blue); */
         /* background: linear-gradient(to top, red,green,blue); */
         /* background: linear-gradient(to left, red,green,blue); */
         /* background: linear-gradient(to right, red,green,blue); */
         /* background: linear-gradient(45deg, red,green,blue); */
         /* background: linear-gradient(-45deg, red,green,blue); */
-        /* background: repeating-linear-gradient(red, yellow 10%, green 20%); */
-        /* background: linear-gradient(red 0 20%,green 20% 40% , blue 40% 60%, yellow); */
-        /* background: linear-gradient(red 0 10%, blue 10% 20%, green 20%); */
-        /* background: linear-gradient(90deg, rgba(255,0,0,0) 25%, rgba(255,0,0,1)); */
+        /* background: linear-gradient(to right, red ,green , blue 25%  ); */
+        /* background: repeating-linear-gradient(to right, red , green , blue 25%); */
+        /* background: repeating-linear-gradient(red , blue, green ); */
         /* background: radial-gradient(red, green, blue); */
         /* background: radial-gradient(circle, red, green, blue); */
-        /* background: repeating-radial-gradient(circle, gray, skyblue, black) ; */
-        /* background: repeating-radial-gradient(circle, gray, skyblue, black) ; */
+        /* background: repeating-radial-gradient(circle, gray, skyblue, black 50%) ; */
+        /* background: repeating-radial-gradient(circle, gray, skyblue, black 20%) ; */
+        background-color: inherit;
 
-
-        /* background-color: inherit; */
-        background-color: black;
-        color: snow;
+        /* color: snow; */
+        margin: 20px auto;
         width: 300px;
         height: 200px;
-        margin: 20px auto;
-        padding: 20px;
-        overflow: auto;
+        /* background-color: black; */
+        /* background-color: gray; */
+        padding: 25px;
         /* box-sizing: border-box; */
+        /* box-shadow: 10px 10px 15px 10px red; */
+        /* box-shadow: -10px -10px 15px 0 red; */
+        /* box-shadow:
+         10px 10px 15px 0 red,
+        -10px -10px 15px 0 blue,
+        15px 15px 15px 0 snow
+        ; */
+        /* box-shadow: 
+        10px 10px 15px 0 red inset,
+        -10px -10px 15px 0 blue inset,
+        10px 10px 15px 0 snow 
+        ; */
+
+        /* text-shadow: 
+        2px 2px 3px snow,
+        -2px -2px 3px blue
+        ; */
         /* color: red; */
-        /* resize: both; */
     }
 
-    .block1::-webkit-scrollbar {
-        /* width: 20px; */
-        /* box-shadow: 0 0 10px 3px red inset; */
-    }
 
-    .block1::-webkit-scrollbar-thumb {
-        /* box-shadow: 0 0 10px 4px green inset; */
-    }
-
-    .block1::-webkit-scrollbar-button {
-        /* box-shadow: 0 0 5px 1px gold inset;  */
-    }
-
-    .block1::-webkit-resizer {
-        /* background-color: blue; */
-    }
-
-    .block2 {
+    .block-2 {
         margin: 20px auto;
         width: 200px;
         height: 200px;
-        background-color: gray;
-        padding: 25px;
+        background-color: #808080;
+        /* padding: 25px; */
+        color: snow;
         /* box-shadow:
          10px 10px 15px 10px red,
          15px 15px 15px 10px blue,

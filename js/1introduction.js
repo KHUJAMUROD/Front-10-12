@@ -1,5 +1,49 @@
+'use strict'
+
+let amira = 10000
+
+console.log(amira);
+
+var amira2 = 15000
+
+var amira2 = 20000
+
+amira = 50000
+
+const amira3 = 100000
+
+let x = 5
+{
+    console.log(x);
+    let z = 10
+}
+
+console.log(z);
 
 
+const amira4 = {
+    key1: 'red',
+    key2: 'green',
+    key3: 'blue',
+}
+
+
+console.log(amira4.key1);
+
+console.log(amira3);
+
+
+
+let arr1 = []
+for(let i = 0, index = 0; i <= 20; i++){
+    
+    if(i%2 === 0 ){
+        arr1[index] = i
+        index++
+    }
+}
+
+console.log(arr1);
 
 // // const arr = [1, 2, 3];
 
