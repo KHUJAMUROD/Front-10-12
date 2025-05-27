@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>animation</title>
 </head>
 
 <body>
@@ -36,15 +36,15 @@
         height: 150px;
         position: absolute;
         border-radius: 50%;
-        /* animation-name: test; */
-        /* animation-duration: 1.5s; */
-        /* animation-timing-function: linear; */
-        /* animation-iteration-count: infinite; */
-        /* animation-iteration-count: 3; */
-        /* animation-direction: alternate; */
-        /* animation-direction: reverse; */
-        /* animation-direction: alternate-reverse; */
-        /* animation-delay: 1s; */
+        animation-name: test;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 3;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-direction: alternate-reverse;
+        animation-direction: alternate;
+        animation-delay: 3s;
         /* animation-fill-mode: forwards; */
         /* animation-fill-mode: backwards; */
         /* animation-fill-mode: both; */
@@ -58,7 +58,7 @@
 
     .block:hover {
         /* animation-play-state: running; */
-        /* animation-play-state: paused; */
+        animation-play-state: paused;
     }
 
     @keyframes test {
@@ -72,7 +72,7 @@
         }
 
         100% {
-            left: 90%;
+            left: 80%;
         }
     }
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation ex2</title>
+</head>
+
+<body>
+    <div>
+        <p>Hello Animation World</p>
+    </div>
+</body>
+<style>
+    body {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    div {
+        background-color: black;
+        padding: 20px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    p {
+        margin-top: 100px;
+        animation: text 4s infinite alternate;
+    }
+
+    @keyframes text {
+        0% {
+            transform: scale(1.1, 1.1) rotateX(180deg) translateX(50px);
+            color: red;
+        }
+
+        25% {
+            transform: scale(1.5, 1.5) rotateY(180deg) translateY(50px);
+            color: green;
+        }
+
+        50% {
+            transform: scale(0.9, 0.9) translateX(-100px);
+            color: orange;
+        }
+
+        75% {
+            transform: scale(0.7, 0.7) rotateY(180deg) translateY(-100px);
+            color: blue;
+        }
+
+        100% {
+            transform: scale(1, 1) rotateX(180deg) translateX(50px);
+            color: cyan;
+        }
+    }
+</style>
+
+</html>

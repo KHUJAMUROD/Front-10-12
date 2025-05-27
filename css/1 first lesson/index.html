@@ -11,12 +11,20 @@
 
 <body>
 
-    <h1 class="testclass">heading 1</h1>
+    <!-- <h1 class="testclass">heading 1</h1>
     <h1 id="testid1">heading 2</h1>
+<<<<<<< HEAD
 
 
     <p class="testclass">paragraph 1</p>
     <p id="testid1">paragraph 2</p>
+=======
+    <h1>heading 3</h1>
+
+    <p class="testclass">paragraph 1</p>
+    <p id="testid1">paragraph 2</p>
+    <p>paragraph 3</p> -->
+>>>>>>> 85ebbee07c63b87e56340753663bf8f11cf34500
 
     <button type="submit">
         submit
@@ -24,15 +32,16 @@
     <input type="submit">
 
     <main>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet. 1</p>
         <div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet. 2</p>
             <footer>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet. 3</p>
             </footer>
         </div>
     </main>
     <br>
+<<<<<<< HEAD
     <!-- <div class="block-b">
         <button type="submit">button</button>
         <button type="submit">button</button>
@@ -49,16 +58,30 @@
         <button type="submit">button</button>
     </div> -->
 
+=======
+    <br>
+    <button id="testid1"  title="about title" type="submit">button</button>
+    <br>
+    <button class="testclass" type="reset">button</button>
+    <br>
+    <input id="testid1" type="submit">
+    <input class="testclass" type="reset">
+
+
+    
+>>>>>>> 85ebbee07c63b87e56340753663bf8f11cf34500
 </body>
 <style>
-    h1.testclass {
+
+    input[type='reset'],
+    button.testclass,
+    main > p{
         color: red;
+        background-color: green;
     }
 
-    p.testclass {
-        color: green;
-    }
 
+<<<<<<< HEAD
     h1#testid1 {
         color: blue;
     }
@@ -97,6 +120,25 @@
         /* background-color: #333; */
         /* color: green; */
     }
+=======
+    input#testid1{
+        /* color: greenyellow; */
+        /* background-color: #333; */
+    }
+
+
+    button.testclass{
+        /* color: snow; */
+        /* background-color: darkblue; */
+    }
+
+
+    input[type="submit"] {
+        /* background-color: green; */
+        /* color: red; */
+    }
+
+>>>>>>> 85ebbee07c63b87e56340753663bf8f11cf34500
 
     main~.block-c button {
         background-color: #333;
@@ -105,6 +147,7 @@
 
 
 
+<<<<<<< HEAD
     button[type="submit"],
     input[type="submit"] {
         /* background-color: darkgreen; */
@@ -125,7 +168,36 @@
     input[type="submit"] {
         /* background-color: darkgreen; */
         /* color: snow; */
+=======
+    main+br+button {
+        /* background-color: #333; */
+        /* color: snow; */
+>>>>>>> 85ebbee07c63b87e56340753663bf8f11cf34500
     }
+
+    main p {
+        /* color: blue; */
+    }
+
+
+    main div footer p {
+        /* color: red; */
+    }
+
+
+    main>p {
+        color: red;
+    }
+
+
+
+    main p {
+        /* color: red; */
+    }
+
+
+
+   
 </style>
 
 </html>

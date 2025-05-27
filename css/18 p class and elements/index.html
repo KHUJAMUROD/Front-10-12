@@ -10,7 +10,7 @@
 <body>
 
 
-    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.w3schools.com">w3schools</a>
     <br>
     <a href="#t1">Link 1</a>
     <br>
@@ -23,6 +23,7 @@
     <br>
     <br>
     <input type="text" placeholder="some text">
+    <br>
     <br>
     <br>
 
@@ -53,49 +54,53 @@
         scroll-behavior: smooth;
     }
 
+    :link{
+        color: red;
+    }
+
     a:visited {
         color: black;
     }
 
     a:hover {
-        color: red;
+        color: blue;
     }
 
     a:active {
         color: greenyellow;
     }
 
-
-    input:checked{
+    input:checked {
         width: 35px;
         height: 35px;
         box-shadow: 0 0 5px 5px black;
     }
 
-    input:focus{
-        box-shadow:  0 0 10px 10px #333;
+    input:focus {
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.413);
     }
 
-    /* input:focus:not(.check){
+    /* input:not(.check){
         box-shadow:  0 0 10px 10px #333;
         border-radius: 20px;
     } */
 
-    :target{
+    :target {
         background-color: indigo;
         color: snow;
     }
 
 
 
-    /* ::marker {
-        color: red;
-        font-size: 50px;
-    } */
+    ::marker {
+        /* color: red; */
+        /* font-size: 20px; */
+        /* text-shadow: 1px 1px 3px blue; */
+    }
 
     ::placeholder {
-        color: red;
-        text-align: center;
+        /* color: red; */
+        /* text-align: center; */
     }
 
     ::selection {
@@ -104,37 +109,39 @@
     }
 
     li {
-        position: relative;
+        /* position: relative; */
+        /* line-height: 30px; */
+        /* list-style-type: armenian; */
         list-style-type: none;
     }
 
-    
-     li::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: red;
-        box-shadow: 0 0 2px 2px inset   black;
-        border-radius: 50%;
-        top: 5px;
-        left: -20px;
-        background: url(/1.jpg) center / cover no-repeat;
-    } 
+
+    li::before {
+        /* content: ''; */
+        /* display: block; */
+        /* position: absolute; */
+        /* width: 20px; */
+        /* height: 20px; */
+        /* background-color: red; */
+        /* box-shadow: 0 0 2px 2px inset red; */
+        /* border-radius: 50%; */
+        /* top: 5px; */
+        /* left: -20px; */
+        /* background: url(/1.jpg) center / cover no-repeat; */
+    }
 
     li::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: red;
-        box-shadow: 0 0 2px 2px inset   black;
-        border-radius: 50%;
-        top: 5px;
-        right: 75%;
-        background: url(/1.jpg) center / cover no-repeat;
+        /* content: ''; */
+        /* display: block; */
+        /* position: absolute; */
+        /* width: 20px; */
+        /* height: 20px; */
+        /* background-color: red; */
+        /* box-shadow: 0 0 2px 2px inset black; */
+        /* border-radius: 50%; */
+        /* top: 5px; */
+        /* right: 75%; */
+        /* background: url(/img/2.jpg) center / cover no-repeat; */
     }
 </style>
 
