@@ -19,6 +19,7 @@
         <div class="grid-item block-7">7</div>
         <div class="grid-item block-8">8</div>
         <div class="grid-item block-9">9</div>
+ 
     </div>
 
 </body>
@@ -37,25 +38,23 @@
     .grid-container {
         border: 5px solid red;
         display: grid;
-        /* grid-template-columns: 200px 30% auto 1fr;  */
-        /* grid-template-columns: 33.333% 33.333% 33.333%; */
-        /* grid-template-columns: 1fr 2fr 1fr; */
-        /* grid-template-columns: 25% 50% 25%; */
-        /* grid-template-columns: 1.5fr 4.2fr 2fr 1fr; */
-        /* grid-template-columns: 18% 45% 27% 9%; */
-        /* grid-template-columns: repeat(2, 1fr) 50%; */
-        grid-template-columns: repeat(3, 1fr);
-        /* grid-template-rows: 200px 200px 200px; */
-        grid-template-rows: repeat(3, 200px);
-        /* grid-template: repeat(3, 200px) / repeat(3, 1fr); */
-        /* column-gap: 50px; */
-        /* row-gap: 50px; */
-        gap: 30px;
         /* grid-auto-flow: row; */
         /* grid-auto-flow: column; */
-        /* grid-auto-flow: dense; */
-        /* grid-auto-columns: 400px; */
-        /* grid-auto-rows: 300px; */
+        /* grid-template-columns: 200px 200px 200px;  */
+        /* grid-template-columns: 200px 30% auto;  */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        /* grid-template-columns: 1fr 2fr auto; */
+        /* grid-template-columns: 25% 50% 25%; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-rows: 200px 200px 200px ; */
+        /* grid-template-rows: repeat(3, 200px);/ */
+        grid-auto-rows: 300px;
+        /* grid-auto-columns: 200px; */
+        grid-template: repeat(3, 300px) / repeat(3, 1fr);
+        /* column-gap: 50px; */
+        /* row-gap: 50px; */
+        /* gap: 30px; */
+        /* gap: 20px 50px; */
         /* justify-items: stretch; */
         /* justify-items: start; */
         /* justify-items: end; */
@@ -67,14 +66,16 @@
         /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
         /* grid-template: repeat(3, 200px) / repeat(auto-fit, minmax(200px, 1fr)); */
         /* grid-auto-flow: row; */
+        grid-auto-flow: dense;
     }
 
     .grid-item {
         display: flex;
         justify-content: center;
         align-items: center;
+        /* margin: auto; */
         /* margin: 30px; */
-        font-size: 25px;
+        font-size: 35px;
         padding: 25px;
         border: 3px dashed green;
     }
@@ -88,13 +89,13 @@
         /* align-self: center; */
         /* margin: auto ; */
         /* grid-row-start: 2;    */
-        /* grid-row-end: 4; */
         /* grid-row-end: 2 span; */
-        /* grid-row: 1 / span 2; */
+        /* grid-row-end: 4; */
+        /* grid-row: 1 /  span 2; */
         /* grid-row: 2 / span 2; */
-        /* grid-column-start: 2; */
+        /* grid-column-start: 1; */
         /* grid-column-end: 2 span; */
-        /* grid-column: 2 / span 2; */
+        grid-column: 2 / span 2;
         /* grid-area: 2 / 2 / 2 span / 2 span; */
         background-color: lightblue;
         order: 1;
@@ -139,9 +140,7 @@
         order: 9;
     }
 
-    .block-10 {
-        order: 10;
-    }
+
 </style>
 
 </html>

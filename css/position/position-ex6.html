@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li>Главная</li>
+            <li>Контакты</li>
+        </ul>
+        <h1>Каталог техники</h1>
+
+        <div class="menu">
+            <div>
+                <input type="checkbox"> <label>Полная пошлина</label>
+                <input type="checkbox"> <label>Распил или конструктор</label>
+            </div>
+
+            <div class="options">
+                <div>
+                    <label for="Тип_техники">Тип техники</label>
+                    <select>
+                        <option>Не выбрано</option>
+                        <option>Опция 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Производитель">Производитель</label>
+                    <select>
+                        <option>Не выбрано</option>
+                        <option>Опция 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Марка">Марка</label>
+                    <select>
+                        <option>Не выбрано</option>
+                        <option>Опция 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Год_выпуска">Год выпуска</label>
+                    <div>
+                        <select>
+                            <option>От</option>
+                            <option>Опция 2</option>
+                        </select>
+                        <select>
+                            <option>До</option>
+                            <option>Опция 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button>Найти</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Автомобилей в наличии: <span id="autos-av">256</span></p>
+                <div>
+                    <button>Расширенный поиск &DownArrowBar;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin-left: 20px;
+        font-size: 12px;
+        color: darkgray;
+    }
+
+    h1 {
+        font-family: sans-serif;
+        line-height: 100px;
+    }
+
+    main {
+        background: url(pics/3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(0, 0, 0, 0.6);
+        background-blend-mode: darken;
+        padding: 10px 30px 50px 30px;
+        color: snow;
+        width: 100%;
+        position: relative;
+    }
+
+    .menu {
+        position: absolute;
+        color: #222;
+        background-color: snow;
+        width: 95%;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 8px 32px lightgray;
+    }
+
+    .menu>div:first-child label {
+        margin-right: 20px;
+    }
+
+    .menu>div:first-child {
+        margin-bottom: 20px;
+    }
+
+    /* -------------------------------- */
+    /*!  OPTIONS  !*/
+    .menu>.options {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .menu>.options>div:nth-child(4) div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .menu>.options select,
+    .menu>.options button,
+    .menu>.options option {
+        width: 100%;
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin: 3px 0;
+        outline: none;
+        border: none;
+    }
+
+    .menu>.options select,
+    .menu>.options option {
+        background-color: lightgray;
+    }
+
+    .menu>.options label {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu>.options button {
+        margin-top: 20px;
+        background-color: #ff1d5e;
+        color: snow;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .menu .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu .footer div {
+        text-align: right;
+    }
+
+    .menu .footer button {
+        color: #ff1d5e;
+        border: 1px solid #ff1d5e;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .menu .footer button:hover {
+        background-color: #ff1d5e;
+        color: snow;
+        cursor: pointer;
+    }
+
+    .menu .footer #autos-av {
+        color: red;
+    }
+</style>
+
+</html>

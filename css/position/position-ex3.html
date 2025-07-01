@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>position-ex3</title>
+    <title>Document</title>
 </head>
-
 <body>
-
-    <main>
-        <span class="abc">a</span>
-        <p class="p1">aigjeroijg</p>
-        <p>aigjeroijg</p>
-        <p>aigjeroijg</p>
-        <p>aigjeroijg</p>
-        <p>aigjeroijg</p>
-        <p>aigjeroijg</p>
-        <span class="abc">b</span>
-        <p class="p1">bigjeroijg</p>
-        <p>bigjeroijg</p>
-        <p>bigjeroijg</p>
-        <p>bigjeroijg</p>
-        <p>bigjeroijg</p>
-        <p>bigjeroijg</p>
-        <span class="abc">c</span>
-        <p class="p1">cigjeroijg</p>
-        <p>cigjeroijg</p>
-        <p>cigjeroijg</p>
-        <p>cigjeroijg</p>
-        <p>cigjeroijg</p>
-        <p>cigjeroijg</p>
-        <span class="abc">d</span>
-        <p class="p1">digjeroijg</p>
-        <p>digjeroijg</p>
-        <p>digjeroijg</p>
-        <p>digjeroijg</p>
-        <p>digjeroijg</p>
-        <p>digjeroijg</p>
-        <span class="abc">e</span>
-        <p class="p1">eigjeroijg</p>
-        <p>eigjeroijg</p>
-        <p>eigjeroijg</p>
-        <p>eigjeroijg</p>
-        <p>eigjeroijg</p>
-        <p>eigjeroijg</p>
-    </main>
-
+    <div class="main">
+        <div class="div-1">
+            <h3>A</h3>
+            <div>
+                <p>Adam</p>
+                <p>Arthem</p>
+                <p>Azeri</p>
+                <p>A-test</p>
+                <p>A-test</p>
+                <p>A-test</p>
+                <p>A-test</p>
+            </div>
+        </div>
+        <div class="div-2">
+            <h3>B</h3>
+            <div>
+                <p>Badang</p>
+                <p>Butcher</p>
+                <p>Bulldog</p>
+                <p>B-test</p>
+                <p>B-test</p>
+                <p>B-test</p>
+                <p>B-test</p>
+                <p>B-test</p>
+            </div>
+        </div>
+        <div class="div-3">
+            <h3>C</h3>
+            <div>
+                <p>C-test</p>
+                <p>C-test</p>
+                <p>C-test</p>
+                <p>C-test</p>
+                <p>C-test</p>
+                <p>C-test</p>
+                <p>C-test</p>
+                <p>C-test</p>
+            </div>
+        </div>
+    </div>
 </body>
 <style>
-    body {
+    .main {
+        width: 20%;
+        margin: 0 auto;
+        height: 50vh;
+        overflow: auto;
+        background-color: skyblue;
+        border-radius: 20px 0 0 20px;
+    }
+    .main > div {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        gap: 5px;
+        padding: 5px;
+        font-size: 2em;
+    }
+    .main h3 {
+        position: sticky;
+        top: 5px;
+        border-radius: 50%;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0,0,0, 0.5);
+        color: snow;
+        padding: 3px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-    }
-
-    main {
-        width: 40%;
-        height: 200px;
-        background-color: dodgerblue;
-        overflow: auto;
-        position: relative;
-        padding: 5px;
-    }
-
-
-    span {
-        float: left;
-        position: sticky;
-        display: inline-block;
-        background-color: black;
-        color: red;
-        border-radius: 50%;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 5px;
-        width: 20px;
-        height: 20px;
-        top: 5px;
-        left: 5px;
-    }
-    p{
-        text-align: center;
-    }
-
-    .p1{
-        position: relative;
-        right: 15px;
     }
 </style>
-
 </html>

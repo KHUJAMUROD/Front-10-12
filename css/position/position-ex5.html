@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a style="float:left;" href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="main">
+        <div class="div-1">
+            <div class="div-2"></div>
+        </div>
+        <div class="div-3">
+            <div class="div-4"></div>
+        </div>
+        <div class="div-5">
+            <div class="div-6"></div>
+        </div>
+        <div class="div-7">
+            <div class="div-8"></div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi saepe possimus voluptatum culpa asperiores
+        repellendus, doloribus quos corrupti voluptates dolorum hic exercitationem assumenda ea dolore commodi officiis
+        consequatur perspiciatis odio laudantium aperiam, repellat aspernatur laboriosam placeat? Harum assumenda cum
+        eius reprehenderit ratione, aliquam dolorem quia labore vel, nam non quam molestiae, illum consequatur earum
+        numquam nesciunt excepturi pariatur natus. At magnam distinctio voluptatibus dolorem iure a quasi ratione
+        corrupti, quae sunt. Ducimus officia nesciunt temporibus quas doloribus cupiditate voluptate commodi
+        voluptatibus quisquam ipsam ad maxime, dolores blanditiis, ut ullam libero! Unde optio aliquam provident labore
+        hic nihil qui culpa cumque.</p>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    body { height: 200vh; }
+    
+    .navbar {
+        background-color: #222;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+    }
+    .navbar a {
+        float: right;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: snow;
+    }
+    .navbar a:hover {background-color: green;}
+    .navbar a:active {background-color: lightgreen;}
+    .main {
+        width: 50%;
+        height: 50vh;
+        background-color: #333;
+        margin: 5px auto;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .main>div,
+    .main>div>div {
+        position: absolute;
+    }
+
+    .main {
+        border: 1px solid red;
+        margin: 0 auto;
+        width: 50%;
+        height: 50vh;
+        background-color: gray;
+        position: relative;
+    }
+
+    .div-1 {
+        width: 40px;
+        height: 50%;
+        top: 25%;
+        background-color: rgb(0, 0, 255, 0.8);
+    }
+
+    .div-2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    .div-3 {
+        width: 40px;
+        height: 50%;
+        background-color: black;
+        top: 25%;
+        right: 0;
+    }
+
+    .div-4 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: greenyellow;
+        bottom: 0;
+    }
+
+    .div-5 {
+        width: 50%;
+        height: 40px;
+        background-color: green;
+        bottom: 0;
+        left: 25%;
+    }
+
+    .div-6 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: magenta;
+    }
+
+    .div-7 {
+        width: 50%;
+        height: 40px;
+        background-color: indigo;
+        left: 25%;
+    }
+    .div-8 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: greenyellow;
+        right: 0;
+    }
+
+    .main:hover .div-2,
+    .main:hover .div-4,
+    .main:hover .div-6,
+    .main:hover .div-8 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main:hover .div-1,
+    .main:hover .div-3 {
+        width: 50px;
+    }
+
+    .main:hover .div-5,
+    .main:hover .div-7 {
+        height: 50px;
+    }
+
+    .main:hover { background-color: #333; }
+    .main:hover>div { border-radius: 30px; }
+
+
+    .main:hover .div-2 {
+        background: radial-gradient(circle, red, greenyellow);
+    }
+
+    .main:hover .div-4 {
+        background: radial-gradient(circle, blue, red);
+    }
+
+    .main:hover .div-6 {
+        background: radial-gradient(circle, magenta, green);
+    }
+    .main:hover .div-8 {
+        background: radial-gradient(circle, violet, purple);
+    }
+</style>
+
+</html>
