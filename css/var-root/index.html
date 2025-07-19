@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Variables</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">CSS Variables</div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi autem quas necessitatibus esse cumque
+                veniam, ut laborum placeat eius! Quas nobis tempore accusamus consequuntur ducimus maiores, quaerat
+                temporibus, veritatis quidem?</p>
+        </div>
+        <a class="btn" href="#">Learn More</a>
+    </div>
+
+</body>
+
+<style>
+    :root {
+        --regular-width: 400px;
+        --radius: 20px;
+        --width: 100%;
+        /* --white: #ff0020; */
+        --white: #f2f2f2;
+        --red: #ff0020;
+        /* --red: #f2f2f2; */
+        --black: #000;
+        --regular-size: 16px;
+        --padding: 20px;
+    }
+
+    * {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+
+
+
+    /* html {
+        font-size: var(--regular-size);
+    } */
+
+    body {
+        min-width: 100%;
+        min-height: 100vh;
+        /* margin: 0; */
+        background-color: var(--black);
+        font-family: Arial, sans-serif;
+        /* font-size: 1rem; */
+        line-height: 1.6;
+        color: var(--white);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        --white: #0066f5;
+        --main-color: darkblue;
+        /* --width: 600px; */
+        /* max-width: var(--width); */
+        max-width: var(--regular-width);
+        /* width: 50%; */
+        margin: 20px auto;
+        padding: var(--padding);
+        border: 2px solid var(--main-color);
+        border-radius: var(--radius, 10px);
+    }
+
+
+
+    .title {
+        font-size: 2.5rem;
+        color: var(--red);
+    }
+
+    .text {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        color: var(--main-color);
+    }
+
+    .btn {
+        --white: 40px;
+        display: inline-block;
+        vertical-align: top;
+        padding: var(--padding);
+        background-color: transparent;
+        border: 2px solid var(--red);
+        border-radius: var(--radius, 8px);
+        font-size: var(--main-color);
+        color: var(--main-color);
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: var(--red);
+    }
+
+    @media (max-width: 400px) {
+
+        :root {
+            --regular-size: 14px;
+            --padding: 1.5rem;
+        }
+    }
+</style>
+
+</html>
