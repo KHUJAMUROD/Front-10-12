@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-hard-ex</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row2">
+            <div class="left"></div>
+            <div class="right">
+                <div class="top">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="bottom">
+                    <div></div>
+                    <div></div>
+                    <div style="background-color: red;"></div>
+                    <div style="background-color: red;"></div>
+                    <div style="margin: -30px 0 0 0;"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    .container {
+        display: grid;
+        width: 600px;
+        height: 500px;
+        margin: 0 auto;
+        gap: 10px;
+        grid-template: 1fr 3fr / 1fr;
+    }
+
+    .row2 div{
+        background-color: gray;
+    }
+
+    .row1 div:not(:nth-child(2)) {
+        background-color: gray;
+    }
+
+    .row1{
+        display: grid;
+        grid-template: 1fr / 2fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .row2{
+        display: grid;
+        grid-template: 1fr / 1fr 3fr;
+        gap: 10px;
+    }
+
+
+    .right{
+        display: grid;
+        grid-template: 1fr 3fr / 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .right .top div, .right .bottom div:not(:nth-child(2)){
+        background-color: lightgray;
+    }
+
+    .right .top{
+        display: grid;
+        grid-template: 1fr / 1fr 2.07fr;
+        gap: 10px;
+    }
+
+    .right .bottom{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 0 10px;
+    }
+</style>
+
+</html>
