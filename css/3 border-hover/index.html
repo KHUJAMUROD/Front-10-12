@@ -10,14 +10,19 @@
 <body>
 
     <div class="block">
-        Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit.
-        Placeat aperiam blanditiis optio
-        animi reiciendis, at obcaecati
-        <span>
-            optio deserunt sapiente provident iure architecto alias hic?
-        </span>
-        corporis ad!
+        <div>
+            Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit.
+            Placeat aperiam blanditiis optio
+            animi reiciendis, at obcaecati
+            corporis ad!
+        </div>
+        <br>
+        <!-- <span>
+            Lorem ipsum dolor sit amet
+        </span> -->
+        <br>
+        <button>button</button>
     </div>
     <br>
     <br>
@@ -35,15 +40,17 @@
 
     .block {
         /* border: 5px solid black; */
+        /* outline: 5px solid black; */
         /* border-left: 5px solid red; */
         /* border-right: 5px  dotted green; */
-        /* border-top: 5px dashed blue; */
-        /* border-bottom: 5px double yellow; */
+        /* border-bottom: 5px dashed blue; */
+        /* border-top: 5px double black; */
         /* margin: 50px auto; */
         /* background-color: #333; */
         width: 200px;
         height: 200px;
-        border: 10px solid green;
+        /* outline: 10px solid red; */
+        border: 5px solid black;
         /* border: 10px dotted green; */
         /* border: 10px dashed green; */
         /* border: 10px double green; */
@@ -52,36 +59,60 @@
         /* border: 20px groove green; */
         /* border: 20px ridge green;  */
         /* color: snow; */
-        /* border-radius: 10px; */
+        /* border-radius: 10px;     */
         /* border-radius: 10px 20px; */
         /* border-radius: 10px 20px 40px; */
         /* border-radius: 10px 20px 40px 60px; */
         /* border-radius: 50%; */
     }
 
+    .block div {
+        /* border: 5px dotted black; */
+    }
 
     .block:hover {
         width: 300px;
+        color: red;
         background: url(/img/1.jpg) center / cover no-repeat;
         background-blend-mode: darken;
-        background-color: rgba(0, 0, 0, 0.512);
+        background-color: rgba(0, 0, 0, 0.3);
         /* border-radius: 50%; */
     }
 
-    .block:hover span{
+    .block:hover span {
+        /* outline: 5px solid black; */
         /* color: red; */
     }
 
+    .block:hover button {
+        background-color: #333;
+        color: greenyellow;
+    }
 
+    .block span:hover {
+        /* background-color: gray; */
+    }
+
+
+    .block button:hover {
+        background-color: darkgreen;
+        color: red;
+    }
+
+
+    .block button:active{
+        background-color: greenyellow;
+        color: black;
+    }
     span {
-        /* border: 5px solid black; */
-        outline: 2px solid black;
+        /* border: 10px solid black; */
+        outline: 5px solid black;
     }
 
 
     span:hover {
-        color: red;
-        background-color: gray;
+        /* color: red; */
+        /* background-color: gray; */
     }
 </style>
 

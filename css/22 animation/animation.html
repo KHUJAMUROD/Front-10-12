@@ -36,22 +36,22 @@
         height: 150px;
         position: absolute;
         border-radius: 50%;
-        animation-name: test;
-        animation-duration: 1.5s;
-        animation-timing-function: linear;
-        animation-iteration-count: 3;
-        animation-iteration-count: infinite;
-        animation-direction: reverse;
-        animation-direction: alternate-reverse;
-        animation-direction: alternate;
-        animation-delay: 3s;
+        /* animation-name: test; */
+        /* animation-duration: 1.5s; */
+        /* animation-timing-function: linear; */
+        /* animation-direction: alternate; */
         /* animation-fill-mode: forwards; */
-        /* animation-fill-mode: backwards; */
         /* animation-fill-mode: both; */
+        /* animation-iteration-count: calc(1 * 3); */
+        /* animation-delay: 1s; */
         /* animation-iteration-count: infinite; */
-        /* animation: test 2s alternate infinite linear 1s forwards running; */
-        /* animation: test 2s alternate infinite linear 1s forwards,
-        firstAnimation 2s alternate infinite linear 1s forwards; */
+        /* animation-direction: reverse; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-fill-mode: backwards; */
+        /* animation-iteration-count: infinite; */
+        /* animation: test 1s 2s alternate infinite linear  forwards running; */
+        animation: test 2s alternate infinite linear 1s forwards,
+            firstAnimation 2s alternate infinite linear 1s forwards;
 
     }
 
@@ -78,7 +78,8 @@
 
 
     @keyframes firstAnimation {
-        from{
+
+        /* from{
             width: 150px;
             height: 150px;
         }
@@ -88,6 +89,22 @@
         to{
             width: 250px;
             height: 250px;
+        } */
+
+        
+        0% {
+            width: 150px;
+            height: 150px;
+        }
+
+        50% {
+            width: 250px;
+            height: 250px;
+        }
+
+        100% {
+            width: 150px;
+            height: 150px;
         }
     }
 </style>

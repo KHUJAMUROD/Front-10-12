@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Colors Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .calculator {
+            width: 320px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .display {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: right;
+        }
+
+        #result {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        #history {
+            font-size: 1rem;
+            color: #aaa;
+            height: 20px;
+            overflow: hidden;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        button {
+            border: none;
+            padding: 25px 0;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            filter: brightness(90%);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* Primary Colors */
+        .number {
+            background-color: #FFD700; /* Yellow */
+            color: #333;
+        }
+
+        .operation {
+            background-color: #FF0000; /* Red */
+            color: white;
+        }
+
+        .special {
+            background-color: #0000FF; /* Blue */
+            color: white;
+        }
+
+        .equals {
+            background-color: #0000FF; /* Blue */
+            color: white;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div id="history"></div>
+            <div id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button class="special" onclick="clearAll()">AC</button>
+            <button class="special" onclick="clearEntry()">CE</button>
+            <button class="special" onclick="backspace()">⌫</button>
+            <button class="operation" onclick="appendOperation('/')">÷</button>
+            
+            <button class="number" onclick="appendNumber('7')">7</button>
+            <button class="number" onclick="appendNumber('8')">8</button>
+            <button class="number" onclick="appendNumber('9')">9</button>
+            <button class="operation" onclick="appendOperation('*')">×</button>
+            
+            <button class="number" onclick="appendNumber('4')">4</button>
+            <button class="number" onclick="appendNumber('5')">5</button>
+            <button class="number" onclick="appendNumber('6')">6</button>
+            <button class="operation" onclick="appendOperation('-')">-</button>
+            
+            <button class="number" onclick="appendNumber('1')">1</button>
+            <button class="number" onclick="appendNumber('2')">2</button>
+            <button class="number" onclick="appendNumber('3')">3</button>
+            <button class="operation" onclick="appendOperation('+')">+</button>
+            
+            <button class="number" onclick="appendNumber('0')">0</button>
+            <button class="number" onclick="appendDecimal('.')">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        let currentInput = '0';
+        let previousInput = '';
+        let operation = null;
+        let resetInput = false;
+
+        const resultElement = document.getElementById('result');
+        const historyElement = document.getElementById('history');
+
+        function updateDisplay() {
+            resultElement.textContent = currentInput;
+            historyElement.textContent = previousInput + (operation ? ' ' + operation + ' ' : '');
+        }
+
+        function appendNumber(number) {
+            if (currentInput === '0' || resetInput) {
+                currentInput = number;
+                resetInput = false;
+            } else {
+                currentInput += number;
+            }
+            updateDisplay();
+        }
+
+        function appendDecimal(decimal) {
+            if (resetInput) {
+                currentInput = '0' + decimal;
+                resetInput = false;
+            } else if (!currentInput.includes(decimal)) {
+                currentInput += decimal;
+            }
+            updateDisplay();
+        }
+
+        function appendOperation(op) {
+            if (operation !== null && !resetInput) {
+                calculate();
+            }
+            previousInput = currentInput;
+            operation = op;
+            resetInput = true;
+            updateDisplay();
+        }
+
+        function calculate() {
+            if (operation === null || resetInput) return;
+            
+            let result;
+            const prev = parseFloat(previousInput);
+            const current = parseFloat(currentInput);
+            
+            switch (operation) {
+                case '+':
+                    result = prev + current;
+                    break;
+                case '-':
+                    result = prev - current;
+                    break;
+                case '*':
+                    result = prev * current;
+                    break;
+                case '/':
+                    result = prev / current;
+                    break;
+                default:
+                    return;
+            }
+            
+            // Handle potential floating point issues
+            result = Math.round(result * 1000000) / 1000000;
+            
+            currentInput = result.toString();
+            operation = null;
+            previousInput = '';
+            updateDisplay();
+        }
+
+        function clearAll() {
+            currentInput = '0';
+            previousInput = '';
+            operation = null;
+            resetInput = false;
+            updateDisplay();
+        }
+
+        function clearEntry() {
+            currentInput = '0';
+            resetInput = false;
+            updateDisplay();
+        }
+
+        function backspace() {
+            if (currentInput.length === 1 || (currentInput.length === 2 && currentInput.startsWith('-'))) {
+                currentInput = '0';
+            } else {
+                currentInput = currentInput.slice(0, -1);
+            }
+            updateDisplay();
+        }
+
+        // Initialize display
+        updateDisplay();
+    </script>
+</body>
+</html>
