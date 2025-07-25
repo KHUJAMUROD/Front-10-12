@@ -100,9 +100,10 @@ p {
 
 .content__rotate:hover {
 	/* transform: rotate(180deg); */
-	transform: rotate(180deg);
+	/* transform: rotate(180deg); */
 	/* transform: rotateX(180deg);	 */
-	/* transform: rotateY(180deg);	 */
+	transform: rotateY(180deg);	
+	backface-visibility: hidden;
 }
 
 /* skew */
@@ -148,7 +149,7 @@ p {
 }
 
 .content__transform-origin:hover {
-	transform: rotate(-90deg);
+	/* transform: rotate(-90deg); */
 }
 
 /* 3D */
@@ -184,17 +185,17 @@ p {
 
 /* translate3D */
 .content__translate3D {
-	transform: translate3D(0px, 0px, 0px);
+	transform: translate3D(0px, 0px, 0px) ;
 	background-color: orangered;
 }
 
 .content__translate3D:hover {
-	transform: translate3D(40px, 20px, 50px);
+	transform: translate3D(40px, 40px, 50px);
 }
 
 /* scale3D */
 .content__scale3D {
-	transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1) ;
 	background-color: slateblue;
 }
 
@@ -231,10 +232,10 @@ p {
 .content__transform-style-wrapper {
 	width: 150px;
 	height: 150px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.495);
 	perspective: 200px;
 	/* transform-style: flat; */
-	transform-style: preserve-3d;
+	transform-style: preserve-3d;	
 }
 
 .content__transform-style {
