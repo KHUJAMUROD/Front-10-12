@@ -24,10 +24,10 @@
                 </div>
                 <div class="bottom">
                     <div></div>
-                    <div style="background-color: lightgray;"></div>
-                    <div style="background-color: red;"></div>
-                    <div style="background-color: red;"></div>
                     <div></div>
+                    <div style="background-color: red;"></div>
+                    <div style="background-color: red;"></div>
+                    <div style="margin: -30px 0 0 0;"></div>
                     <div></div>
                 </div>
             </div>
@@ -36,90 +36,62 @@
 
 </body>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    body{
-        background-color: #333;
-    }
-
     .container {
+        display: grid;
         width: 600px;
         height: 500px;
         margin: 0 auto;
+<<<<<<< HEAD
         display: grid
+=======
+>>>>>>> 1fb6b345c11cc9653347ca60ada864fff55ccbcc
         gap: 10px;
-        grid-template-rows: 1fr 3fr;
-        grid-template-columns: 1fr;
+        grid-template: 1fr 3fr / 1fr;
     }
 
-    .row1 {
-        display: grid;
-        gap: 10px;
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-
-    .row2 {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr;
-    }
-
-
-    .row2 .left,
-    .row2 .right,
-    .row1 div:not(:nth-child(2)),
-    .row2 .right .top,
-    .row2 .right .bottom {
-        background-color: lightgray;
-    }
-
-    .row2 .right {
-        display: grid;
-        gap: 10px;
-        padding: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-    }
-
-
-
-    .row2 .right .top {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 2.09fr;
-        grid-template-rows: 1fr;
-    }
-
-
-
-    .row2 .right .top div,
-    .row2 .right .bottom div {
+    .row2 div{
         background-color: gray;
     }
 
-    .row2 .right .bottom {
+    .row1 div:not(:nth-child(2)) {
+        background-color: gray;
+    }
+
+    .row1{
         display: grid;
+        grid-template: 1fr / 2fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .row2{
+        display: grid;
+        grid-template: 1fr / 1fr 3fr;
+        gap: 10px;
+    }
+
+
+    .right{
+        display: grid;
+        grid-template: 1fr 3fr / 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .right .top div, .right .bottom div:not(:nth-child(2)){
+        background-color: lightgray;
+    }
+
+    .right .top{
+        display: grid;
+        grid-template: 1fr / 1fr 2.07fr;
+        gap: 10px;
+    }
+
+    .right .bottom{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
         gap: 0 10px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
-
-    .row2 .right .bottom div:nth-child(5) {
-        margin: -30px 0 0 0;
-    }
-
-    .left {}
-
-    .right {}
 </style>
-
 
 </html>

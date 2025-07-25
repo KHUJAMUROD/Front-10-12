@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-chess2</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #333;
+    }
+
+
+    .container {
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+        width: 600px;
+        height: 400px;
+        gap: 10px;
+    }
+
+    .container div {
+        background-color: lightgray;
+    }
+
+    .container div:nth-child(odd) {
+        background-color: black;
+    }
+</style>
+
+</html>
