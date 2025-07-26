@@ -18,7 +18,7 @@
         <div class="row2">
             <div class="left"></div>
             <div class="right">
-                <div class="to">
+                <div class="top">
                     <div></div>
                     <div></div>
                 </div>
@@ -41,15 +41,16 @@
         width: 600px;
         height: 500px;
         margin: 0 auto;
-<<<<<<< HEAD
-        display: grid
-=======
->>>>>>> 1fb6b345c11cc9653347ca60ada864fff55ccbcc
+        display: grid;
         gap: 10px;
         grid-template: 1fr 3fr / 1fr;
     }
 
-    .row2 div{
+    body{
+        background-color: #333;
+    }
+
+    .row2 div {
         background-color: gray;
     }
 
@@ -57,37 +58,38 @@
         background-color: gray;
     }
 
-    .row1{
+    .row1 {
         display: grid;
         grid-template: 1fr / 2fr 1fr 1fr;
         gap: 10px;
     }
 
-    .row2{
+    .row2 {
         display: grid;
         grid-template: 1fr / 1fr 3fr;
         gap: 10px;
     }
 
 
-    .right{
+    .right {
         display: grid;
-        grid-template: 1fr 3fr / 1fr;
+        grid-template: 1fr 2fr / 1fr;
         gap: 10px;
         padding: 10px;
     }
 
-    .right .top div, .right .bottom div:not(:nth-child(2)){
+    .right .top div,
+    .right .bottom div:not(:nth-child(2)) {
         background-color: lightgray;
     }
 
-    .right .top{
+    .right .top {
         display: grid;
         grid-template: 1fr / 1fr 2.07fr;
         gap: 10px;
     }
 
-    .right .bottom{
+    .right .bottom {
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
         gap: 0 10px;
