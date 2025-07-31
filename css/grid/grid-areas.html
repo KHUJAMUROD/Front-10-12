@@ -10,7 +10,7 @@
 <body>
 
 
-    <!-- 
+    
     <div class="grid-container">
         <div class="grid-item block-1">header</div>
         <div class="grid-item block-2">left-aside</div>
@@ -18,10 +18,10 @@
         <div class="grid-item block-4">content-2</div>
         <div class="grid-item block-5">right-aside</div>
         <div class="grid-item block-6">foooter</div>
-    </div> -->
+    </div>
 
 
-    <div class="main-grid">
+    <!-- <div class="main-grid">
         <div class="row-1">Row-1</div>
         <div class="row-2">
             <div class="left"></div>
@@ -32,7 +32,7 @@
             <div class="right"></div>
         </div>
         <div class="row-3">Row-3</div>
-    </div>
+    </div> -->
 
 
 
@@ -112,11 +112,11 @@
         minmax(100px, auto) 
         / 1fr 3fr 1fr; */
         width: 100%;
-        grid-template: repeat(4, 200px) / repeat(3, 1fr);
+        grid-template: repeat(4, 200px) / 1fr 3fr 1fr;
         grid-template-areas:
             'header        header       header'
-            'left-aside    content     right-aside'
-            'left-aside    content-2   right-aside'
+            'left-aside    content      right-aside'
+            'left-aside    content-2    right-aside'
             'footer        footer       footer'
         ;
         gap: 5px;
