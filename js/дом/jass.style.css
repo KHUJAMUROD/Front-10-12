@@ -1,0 +1,24 @@
+
+.block {
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:snow;
+}
+.block-accsess {
+    background-color: yellowgreen;
+}
+
+.block-restricted {
+    background-color:red;
+}
+
+.block:hover {
+    box-shadow: 0px 20px 20px 20px aqua;
+}

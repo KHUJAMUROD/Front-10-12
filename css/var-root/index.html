@@ -62,8 +62,9 @@
     }
 
     .container {
+        --red: rgb(200, 85, 85);
         --white: #0066f5;
-        --main-color: darkblue;
+        --main-color: green;
         /* --width: 600px; */
         /* max-width: var(--width); */
         max-width: var(--regular-width);
@@ -95,7 +96,7 @@
         background-color: transparent;
         border: 2px solid var(--red);
         border-radius: var(--radius, 8px);
-        font-size: var(--main-color);
+        font-size: var(--regular-size);
         color: var(--main-color);
         text-decoration: none;
     }
@@ -107,8 +108,13 @@
     @media (max-width: 400px) {
 
         :root {
+            --back-color: #777;
             --regular-size: 14px;
             --padding: 1.5rem;
+        }
+
+        body{
+            background-color: var(--back-color);
         }
     }
 </style>
