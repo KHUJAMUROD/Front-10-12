@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,75 +8,90 @@
 </head>
 <body>
     <div class="main">
-        <div class="div-1">
-            <h3>A</h3>
-            <div>
-                <p>Adam</p>
-                <p>Arthem</p>
-                <p>Azeri</p>
-                <p>A-test</p>
-                <p>A-test</p>
-                <p>A-test</p>
-                <p>A-test</p>
-            </div>
-        </div>
-        <div class="div-2">
-            <h3>B</h3>
-            <div>
-                <p>Badang</p>
-                <p>Butcher</p>
-                <p>Bulldog</p>
-                <p>B-test</p>
-                <p>B-test</p>
-                <p>B-test</p>
-                <p>B-test</p>
-                <p>B-test</p>
-            </div>
-        </div>
-        <div class="div-3">
-            <h3>C</h3>
-            <div>
-                <p>C-test</p>
-                <p>C-test</p>
-                <p>C-test</p>
-                <p>C-test</p>
-                <p>C-test</p>
-                <p>C-test</p>
-                <p>C-test</p>
-                <p>C-test</p>
-            </div>
-        </div>
+        <span>a</span>
+        <p>amir</p>
+        <p>aziz</p>
+        <p>azamat</p>
+        <p>abdu</p>
+        <p>asqar</p>
+        <p>azim</p>
+        <p>axad</p>
+        <p>akbar</p>
+        <p>asad</p>
+        <span>b</span>
+        <p>bobur</p>
+        <p>baxtiyor</p>
+        <p>bilol</p>
+        <p>bahrom</p>
+        <p>botir</p>
+        <p>bekzod</p>
+        <p>bahodir</p>
+        <span>s</span>
+        <p>sarvar</p>
+        <p>samir</p>
+        <p>sattor</p>
+        <p>sardor</p>
+        <p>sanjar</p>
+        <p>saftar</p>
+        <p>saftar</p>
+        <p>said</p>
+        <p>sayfullo</p>
+        <p>salim</p>
+        <span>d</span>
+        <p>dilshod</p>
+        <p>dilmurod</p>
+        <p>doniyor</p>
+        <p>doston</p>
+        <p>davlat</p>
+        <p>davron</p>
+        <p>damir</p>
+        <p>diyor</p>
+        <p>daler</p>
     </div>
 </body>
 <style>
-    .main {
-        width: 20%;
-        margin: 0 auto;
-        height: 50vh;
-        overflow: auto;
-        background-color: skyblue;
-        border-radius: 20px 0 0 20px;
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
-    .main > div {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-        gap: 5px;
-        padding: 5px;
-        font-size: 2em;
+
+    html,
+    body{
+        width: 100%;
+        height: 100%;
     }
-    .main h3 {
-        position: sticky;
-        top: 5px;
-        border-radius: 50%;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        background-color: rgb(0,0,0, 0.5);
-        color: snow;
-        padding: 3px;
+
+    body{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .main {
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+        height: 200px;
+        line-height: 30px;
+        overflow: auto;
+        background-color: skyblue;
+        border-radius: 20px 0 0 20px;
+        text-transform: uppercase;
+    }
+
+    .main span {
+        float: left;
+        background-color: #333;
+        color: red;
+        padding: 2px 10px ;
+        border-radius: 50%;
+        position: sticky;
+        left: 10px; 
+        top: 10px;
+        margin-right: -30px;
+    }
+
+       
 </style>
 </html>
