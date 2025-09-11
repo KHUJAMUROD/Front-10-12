@@ -27,7 +27,8 @@
                 <h1>Title heading</h1>
                 <p>option <b>Title descr, Dec 2 2024</b></p>
                 <div class="img">
-                    <b>Image</b>
+                    <img src="/img/1.jpg" alt="">
+                    <img src="/img/2.jpg" alt="">
                 </div>
                 <p>Some text ...</p>
                 <p>
@@ -41,7 +42,8 @@
                 <h1>Title heading</h1>
                 <p>option <b>Title descr, Dec 2 2024</b></p>
                 <div class="img">
-                    <b>Image</b>
+                    <img src="/img/3.jpg" alt="">
+                    <img src="/img/4.jpg" alt="">
                 </div>
                 <p>Some text ...</p>
                 <p>
@@ -134,12 +136,45 @@
     }
 
     .left .img {
-        background-color: gray;
+        position: relative;
         height: 200px;
         padding: 50px;
         font-size: 20px;
     }
 
+    .left .img img:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .left .img img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    [src="/img/1.jpg"] {
+        filter: blur(2px);
+    }
+
+    [src="/img/2.jpg"] {
+        filter: grayscale(100%);
+    }
+
+    [src="/img/3.jpg"] {
+        filter: sepia(100%);
+    }
+
+    [src="/img/4.jpg"] {
+        filter: hue-rotate(180deg);
+    }
 
     .right {
         float: left;

@@ -15,8 +15,6 @@
         <div class="block-1">block-1</div>
         <div class="block-2 item-2">block-2</div>
         <div class="block-3">block-3</div>
-        <!-- <div class="block-2 item-2">block-2</div>
-        <div class="block-3">block-3</div>
         <div class="block-2 item-2">block-2</div>
         <div class="block-3">block-3</div>
         <div class="block-2 item-2">block-2</div>
@@ -29,8 +27,11 @@
         <div class="block-3">block-3</div>
         <div class="block-2 item-2">block-2</div>
         <div class="block-3">block-3</div>
-        <div class="block-4">block-4</div> -->
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-4">block-4</div>
     </div>
+  
   
 
 </body>
@@ -44,7 +45,7 @@
 
     .main {
         border: 5px solid green;
-        width: 70%;
+        width: 1200px;
         height: 700px;
         margin: 0 auto;
         overflow: auto;
@@ -61,15 +62,14 @@
     }
 
     .block-1 {
-        /* position: static; */
-        position: relative;
+        /* position: relative; */
         /* position: absolute; */
-        /* position: sticky; */
         /* position: fixed; */
-        top: 150px;
+        position: sticky;
         /* z-index: -2; */
-        /* top: 45%; */
-        /* left: 0px; */
+        top: 0;
+        /* left: 0; */
+        /* right: 40%; */
         /* bottom:  0px; */
         /* right:  0px; */
         background-color: rgb(105, 90, 205);
@@ -92,10 +92,10 @@
     }
 
     .block-3 {
-        position: relative;
+        /* position: relative; */
         /* position: absolute; */
-        /* position: sticky; */
         /* position: fixed; */
+        /* position: sticky; */
         /* top: 150px; */
         /* left: 40%; */
         /* right: 40%; */

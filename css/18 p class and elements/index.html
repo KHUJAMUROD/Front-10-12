@@ -35,9 +35,9 @@
     <p id="target2">target 2</p>
 
     <ul>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+     <li><span>before</span>  text  <span>after</span></li> 
+     <li><span>before</span>  text  <span>after</span></li> 
+     <li><span>before</span>  text  <span>after</span></li> 
     </ul>
     <ol>
         <li>text</li>
@@ -56,7 +56,7 @@
     }
 
     :link{
-        color: blue;
+        color: red;
     }
 
     a:visited {
@@ -78,7 +78,7 @@
     }
 
     input:focus {
-        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.413);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 100, 0.413);
     }
 
     /* input:not(.check){
@@ -87,16 +87,16 @@
     } */
 
     :target {
-        background-color: indigo;
-        color: snow;
+        /* background-color: indigo; */
+        /* color: snow; */
     }
 
 
 
     ::marker {
         color: red;
-        font-size: 20px;
-        /* text-shadow: 1px 1px 3px blue; */
+        font-size: 30px;
+        text-shadow: 1px 1px 3px blue;
     }
 
     ::placeholder {
@@ -110,29 +110,38 @@
     }
 
     li {
-        position: relative;
+        /* position: relative; */
+        /* width: 200px; */
+        /* padding: 30px; */
+        /* margin: 30px 0; */
+        /* background: url(/img/1.jpg) center / cover no-repeat ; */
+        /* font-size: 25px; */
+        /* text-align: center; */
+        /* color: snow; */
+        /* background-blend-mode: darken; */
+        /* background-color: rgba(0, 0, 0, 0.463); */
         /* line-height: 30px; */
         /* list-style-type: armenian; */
         list-style-type: none; 
     }
 
 
-    li::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 15px;
-        height: 15px;
+    ol li::before {
+        /* content: ''; */
+        /* display: block; */
+        /* position: absolute; */
+        /* width: 15px; */
+        /* height: 15px; */
         /* background: url(/img/2.jpg) center / cover no-repeat; */
-        border-radius: 50%;
+        /* border-radius: 50%; */
         /* background-color: red; */
-        box-shadow: 0 0 2px 2px inset red;
+        /* box-shadow: 0 0 2px 2px inset red; */
         /* top: -5px; */
-        left: -30px;
+        /* left: -30px; */
     }
 
-    li::after {
-        /* content: ''; */
+   ol li::after {
+        content: ' after';
         /* display: block; */
         /* position: absolute; */
         /* width: 20px; */

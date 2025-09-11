@@ -1,6 +1,8 @@
 // let age = 10;
 // alert(age <= 12 ? "доступ запрещен" : "можете скачать приложения");
 
+
+
 // let age = +prompt("сколько вам лет", 18);
 // let message;
 // if (age < 12){
@@ -13,7 +15,9 @@
 //     message = "нынче столько не живут";
 // }
 
-// alert(message);
+
+
+// alert(message);  
 
 // let age = +prompt("сколько вам лет", 18);
 // let message;
@@ -23,7 +27,7 @@
 // alert(message)
 
 // let age = 20;
-// let message =
+// let message = 
 // age >=18
 // ? age >=60
 // ? "ВЫ ПЕНСИОНЕР"
@@ -65,23 +69,19 @@
 //             alert("ну это вряд ли")
 //  }
 
-// console.log(2 == "2");
-// console.log(2 === "2");
-
-
 //  <------ 1,11 урок ------>
-
-
 // let i = 0;
 // while (i < 5) {
 //     console.log("значения i:" + i);
 //     i++
+
 // }
 
 // let i = 0;
 // while (i < 5) {
-//     i++
+//     i++ 
 //     console.log("значения i:" + i);
+
 // }
 
 // let i = 0;
@@ -92,45 +92,37 @@
 // }
 
 // let i = 5;
-// while (i > 5) {
+// while (i > 0) {
 //     console.log("значения i:" + i);
 //     i--;
 // }
-//               0               1           2            3              4             5
+
 // let data = [" Понидельник ", " Вторник ", " среда ",  " Четверг ",  " пятница ", " Субота "]
 // let index = 0
 
-// // console.log('sometext'.length);
-// // console.log('sometext'[2]);
-// // console.log(data.length);
-
-// //      0           6
 // while (index < data.length){
-//     console.log("элемент:" = data[index]);
+//     console.log("элемент:" + data[index]);
 //     index++;
 // }
 
-// let i = 5;
+// let i = 0;
 
-// do {
-//     console.log("значения i:" + i);
-//     i++
-// } while (i < 5);
+// do{
+// console.log("значения i:" + i );
+// i++
+// }while (i < 5);
 //  <------ 1,12 урок ------>
 
 // let i = 0;
 
-// while (i < 5) {
-//     if (i === 3) {
-//         // break;
-//         i++
-//         continue;
+// while (i < 5){
+//     if(i === 3) {
+//         break;
 //     }
 //     console.log(i);
 //     i++
 // }
-
-
+// console.log ('все')
 
 // let numbers = [5, 8, 11, 15, 20, 9, 7];
 // let numbers = [5, 8, 9, 7];
@@ -145,10 +137,6 @@
 //     }
 //     i++;
 // }
-// 
-
-// let found;
-// console.log(null == 0);
 
 // if(!found) {
 //     console.log("ничего не найдено")
@@ -167,7 +155,7 @@
 //         alert("верно!");
 //         break
 //     }else if (iteration >= tries) {
-//         alert("попытки закончились ((")
+//         alert("попытки закончились ((") 
 //     }else {
 //         alert ("осталось попыток:" + (tries - iteration));
 //     }

@@ -1,17 +1,23 @@
 // let regexp1 = new RegExp('^[а-яА-Я]*$');
 // let regexpFlag = new RegExp('^[а-яА-Я]*$', 'gmi');
-
+// let regexp2 = /^[а-яА-Я]*$/gmi
 
 
 // let regexp2 = /^[а-яА-Я]*$/;
 // let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 
+// let str = 'my name Jasur. my full\n name is Jasur Khamrakulov';m
+// console.log(str.replace(/Jasur/im, "JUSTIN#"));
 
-//  let str = 'my name Jasur. my full name is Jasur Khamrakulov';
-//  console.log(str.replace(/Jasur/i, "JUSTIN#"));
+//  let str = 'my name Jasur. my full\n name is Jasur Khamrakulov';
+//  console.log(str.replace(/jasur/gmi, "JUSTIN#"));
 
-//  let str = 'my name Jasur. my full name is Jasur Khamrakulov';
-//  console.log(str.replace(/Jasur/gi, "JUSTIN#"));
+//  const re = /^line1$/m;
+// const str = "line2\ntest\nline1";
+// console.log(str);
+
+// console.log(re.test(str));
+
 
 //  let str = 'my name Jasur. my full name is Jasur Khamrakulov';
 //  console.log(str.match(/jasur/gi));
@@ -24,24 +30,26 @@
 
 // let nameUser = prompt('Введите ваше имя на кирилице');
 
-// if (regexp.test()) {
+// if (regexp.test(nameUser)) {
 //     alert("ваше имя сохранено")
 // }else {
 //     alert("введены некорртиные символ");
 // }
 
 
-// const families = [
-//     "Иванов А.А.",
-//     "Иванова В.В.",
-//     "Ивановский Г.Г.",
-//     "Ивановский Г.Г.",
-//     "Иванченко Д.Д.",
-// ];
+const families = [
+    "Иванов А.А.",
+    "Иванова В.В.",
+    "Ивановский Г.Г.",
+    "Ивановский Г.Г.",
+    "Иванченко Д.Д.",
+];
 
 // let person = prompt("Введите фамилю");
 
-// let regexp = new RegExp(`${person}`)
+// let regexp = new RegExp(`${person}`, 'gmi',)
+// let regexp = /person/gim // error
+
 
 // families.forEach((el) => {
 //     if(regexp.test(el)) {

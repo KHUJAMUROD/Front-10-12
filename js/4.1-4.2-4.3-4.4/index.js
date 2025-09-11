@@ -31,9 +31,9 @@
 // console.log(arr);
 
 
-// const arr = [1, 2, 3, 4, 5, 6];
+// const arr = [1, 2, 3];
 
-// arr.fill(0, 1, 3);
+// arr.fill(0, 1, 2);
 
 // console.log(arr);
 
@@ -78,7 +78,7 @@
 
 // const originalArray = [1, 2, 3, 4, 5];
 
-// const newArray = [...originalArray, 6];
+// const newArray = [ ...originalArray, 6];
 
 // console.log(originalArray);
 
@@ -184,7 +184,6 @@
 // };
 
 // const person2 = JSON.parse(JSON.stringify (person));
-
 // person2.params.height = 174;
 
 
@@ -207,14 +206,6 @@
 
 // console.log(person);
 // console.log(updatePersonOne);
-
-
-
-
-
-
-
-
 
 
 
@@ -441,25 +432,21 @@
 //   "PHP for Beginners"
 // ]
 
-// const jsTopics = topics.filter((topic) => topic.includes("JavaScript"));
+// const jsTopics = topics.filter((topic) => topic.toLowerCase().includes("javascript"));
 // console.log(jsTopics);
+// console.log(topics);
 
 
 
-// const tasks = [
-//   { id: 1, description: 'КУПИТЬ ХЛЕБА', completed: false},
-//   { id: 2, description: 'СДЕЛАТЬ УРОКИ', completed: true},
-//   { id: 3, description: 'ПОЗВОНИТЬ МАМЕ', completed: false},
-// ];
 
-// const incompleteTasks = tasks.filter((task) => !task.completed);
+const incompleteTasks = tasks.filter((task) => !task.completed);
 
-// const taskList = document.getElementById("task-list");
+const taskList = document.getElementById("task-list");
 
-// let taskItems = "";
+let taskItems = "";
 
-// incompleteTasks.forEach(task =>{
-//   taskItems += `<li>${task.description}</li>`;
-// });
+incompleteTasks.forEach(task =>{
+  taskItems += `<li>${task.description}</li>`;
+});
 
-// taskList.innerHTML = taskItems; 
+taskList.innerHTML = taskItems; 

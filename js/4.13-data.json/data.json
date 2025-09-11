@@ -1,0 +1,30 @@
+{
+    "stringValue": "Hello, World!",
+    "numberValue": 42,
+    "booleanValue": true,
+    "nullValue": null,
+    "arrayValue":[1, 2, 3, 4, 5],
+    "objectValue": {
+        "nestedString": "nested value",
+        "nestedNumber": "123.45",
+        "nestedBoolean": false,
+        "nestedArray": ["a", "b", "c"],
+        "nestedObject": {
+            "deepString": "deep nested value",
+            "deepNumber": 678.9
+        }
+    },
+    "dataValue": "2023-10-05T14:48:00Z",
+    "complexArray": [
+        {
+            "name": "John Doe",
+            "age": 30,
+            "isActive": true
+        },
+        {
+            "name": "Jane Smith",
+            "age": 25,
+            "isActive": false
+        }
+    ]
+}
