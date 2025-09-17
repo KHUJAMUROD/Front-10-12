@@ -15,7 +15,7 @@
 //     const width = window.innerWidth;
 //     let numberOfItems;
 
-//     if(width < 600) {
+//     if(window < 600) {
 //         numberOfItems = 2;
 //     }else if (width < 900) {
 //         numberOfItems = 4;
@@ -28,12 +28,12 @@
 //     let itemsHTML = '';
 
 //     for (let i = 0; i < numberOfItems; i++) {
-//         itemsHTML += `<div class="item">${i + 1}</div>`
+//         itemsHTML += '<div class="item"></div>'
 //     }
     
-//     return container.innerHTML = itemsHTML;
+//     container.innerHTML = itemsHTML;
 // }
-// updateElements()
+// // updateElements()
 
 // window.onload = updateElements;
 
@@ -42,17 +42,11 @@
 
 // const btn = document.querySelector("button");
 
-// btn.addEventListener("click",    goTo);
+// btn.addEventListener("click", goTo);
 
 // function goTo() {
 //     window.location.href = "https://github.com/";
 // }
-
-
-
- //////5-2/////////
-
-
 
 
 // document.querySelectorAll(".myClass").forEach((el) => {
@@ -87,8 +81,7 @@
 //  const btn = document.getElementById("button");
 
 //  function changeText() {
-
-//     texEl.innerHTML = `<h1 class='text'>${}</h1>`;
+//     texEl.innerHTML = "<h1 class='text'>новый текст</h1>";
 //  }
  
 // btn.addEventListener("click", changeText);
@@ -105,7 +98,7 @@
  
 // btn.addEventListener("click", changeText);
 
-{/* <img src="," onerror="alert('ха-ха, веши данные украдены!');"> */}
+////////<img src="," onerror="alert('ха-ха, веши данные украдены!');">`//////
 
 
 
@@ -113,7 +106,7 @@
 //  const btn = document.getElementById("button");
 
 //  function changeText() {
-//     texEl.innerHTML = `<h1 class='text'>${userInput.value}</h1>`;
+//     texEl.innerHTML += " новый текст".toUpperCase();
 //  }
  
 // btn.addEventListener("click", changeText);
@@ -126,7 +119,7 @@
 
 
 //  function changeText() {
-//     setInterval(() => (textEl.hidden = !textEl.hidden), 1000);
+//     setInterval(() => (textEl.hidden = !textEl.hidden), 300);
 //  }
  
 // btn.addEventListener("click", changeText);

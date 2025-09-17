@@ -11,7 +11,7 @@ export const products1 = `
       "weight": 12.5,
       "description": "Прочный горный велосипед для бездорожья.",
       "arrival_date": "2024-09-01",
-      "quantity": 0,
+      "quantity": 1,
       "img": "bike.jpg"
     },
     {

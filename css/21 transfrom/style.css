@@ -98,16 +98,16 @@ p {
 	background-color: green;
 	/* display: none !important; */
 	/* opacity: 0; */
-	/* visibility: hidden; */
-
 }
 
 .content__rotate:hover {
 	/* transform: rotate(180deg); */
-	/* transform: rotate(180deg); */
-	/* transform: rotateX(180deg);	 */
-	/* transform: rotateY(180deg);	 */
+	/* transform: rotate(-180deg); */
+	/* transform: rotateX(45deg);	 */
+	/* transform: rotateY(45deg);	 */
+	transform: rotateY(180deg);	
 	/* backface-visibility: hidden; */
+	
 }
 
 /* skew */
@@ -140,16 +140,20 @@ p {
 
 .content__multi:hover {
 	background-color: green;
-	transform: translate(50px, 50px) scale(0.5) rotate(45deg);
+	transform: translate(100px, 50px)  scale(0.5)  rotate(360deg);
 }
 
 /* transform-origin */
 .content__transform-origin {
 	background-color: orange;
 	/* transform-origin: right bottom; */
-	/* transform-origin: bottom right; */
+	/* transform-origin: center bottom; */
+	/* transform-origin: 150px 50%; */
+	/* transform-origin: left top; */
+	/* transform-origin: 0 0; */
 	/* transform-origin: 100% 100%; */
 	/* transform-origin: 0 150px; */
+	/* transform-origin: 150px 0px; */
 	/* transform: rotate(0deg); */
 }
 
@@ -185,7 +189,7 @@ p {
 
 .content__perspective:hover {
 	background-color: green;
-	transform: rotateX(50deg);
+	transform: rotateX(75deg);
 }
 
 /* translate3D */
@@ -205,17 +209,17 @@ p {
 }
 
 .content__scale3D:hover {
-	transform: scale3d(1.5, 1.5, 1);
+	transform: scale3d(1.5, 1.5, 1) ;
 }
 
 /* rotate3D  */
 .content__rotate3d {
-	transform: rotate3d(1, 1, 1, 0deg);
+	transform: rotate3d(0, 1, 0, 0deg);
 	background-color: green;
 }
 
 .content__rotate3d:hover {
-	transform: rotate3d(1, 1, 1, 45deg);
+	transform: rotate3d(0, 1, 0, 45deg);
 }
 
 /* matrix3d */
@@ -229,7 +233,7 @@ p {
 
 .content__multi3d:hover {
 	background-color: orangered;
-	transform: translate3d(50px, 50px, 20px) rotate3d(1, 1, 1, 40deg);
+	transform: translate3d(30px, 30px, 50px) rotate3d(1, 1, 1, 40deg);
 }
 
 /* transform-style */
@@ -237,9 +241,8 @@ p {
 .content__transform-style-wrapper {
 	width: 150px;
 	height: 150px;
-	background-color: rgba(255, 255, 255, 0.484);
+	background-color: rgba(255, 255, 255, 0.466);
 	perspective: 200px;
-	/* transform-style: flat; */
 	transform-style: preserve-3d;	
 }
 

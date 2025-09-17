@@ -2,17 +2,18 @@
 
 // <------ 1,1 урок ------>
 
-let a = 123456;
+// let a = 123456;
 // let b = 12.44;
 // let c = 0.999;
 // let d = 2_555_777;
 
-// typeof a;
+// // typeof a;
 
 
 // console.log(a + "hello")
+// console.log(a - "hello")
 // console.log(typeof (a))
-console.log(typeof (a + "hello"))
+// console.log(typeof (a + "hello"))
 
 // console.log(1 / 0 )
 
@@ -33,27 +34,43 @@ console.log(typeof (a + "hello"))
 // let str1 = 'это я';
 // console.log(str, str1);
 
-// let str1 = "I'm here"; 
+// str1 = "I'm here"; 
 // console.log(str1)
 
 // let age = 25
 
-// // const obj = {
-// //     name: 'Jasur',
-// //     surname: "Hamrakulov",
-// //     age: 16
-// // }
 
-// // obj.name = 'Said'
+// const n = 10
+// n = 20
+// console.log(n);
 
-// // console.log(obj);
+// const obj = {
+//     name: 'Jasur',
+//     surname: "Hamrakulov",
+//     age: 16
+// }
 
+// console.log(obj);
+// obj.name = 'Said'
 
-// let str1 = 
-// ` Мне ${age} лет `;
-// console.log(str1);
+// console.log(obj);
 
-// console.log(typeof str1); 
+console.log(`hello 
+    azizjon`);
+console.log('hello \n azizjon');
+
+let str1 = 
+` Мне ${age} лет `;
+console.log(str1);
+
+console.log(typeof str1); 
+
+let myName = 'hunter'
+let age = 27
+
+console.log(`My name is ${myName}    
+I'm  ${age} years old    
+`);
 
 // let str1 = 'это называется""строка"';
 // console.log(str1);

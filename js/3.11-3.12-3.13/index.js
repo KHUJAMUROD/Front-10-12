@@ -74,8 +74,6 @@
 //     alert("tick");
 //  }, 2000);
 
-
-
 //  setTimeout(() => {
 //     clearInterval(timeId);
 //     alert("STOP")
@@ -90,7 +88,8 @@
 
 
 
-// let interval = 1000;
+let interval = 1000;
+
 
 
 
@@ -107,14 +106,13 @@
 
 
 
-// const timer = (deadline) => {
+
+//  const timer = (deadline) => {
 //     setInterval(() => {
-//         console.log(deadline);
+//     console.log(deadline);
 //     }, 1000);
-// }
-
-
-// timer(5)
+//  }
+//  timer(3)
 
 
 
@@ -150,30 +148,6 @@
 // timer("tt");
 
 
-// console.log(isNaN('wefw')); //true
-// console.log(isNaN(123)); // true
-
-// let sinfo = 'Damirjon'
-// console.log(sinfo);
-
-// const ssinfo= 'Damirjon'
-// const obj = {
-//     name: 'Damirjon',
-//     age: 16
-// }
-
-// console.log(obj);
-
-// obj.name = 'Damirjon Qilichov'
-
-// console.log(obj);
-
-// console.log(ssinfo);
-// sinfo = 'Qilichov Damirjon'
-
-// ssinfo = 'Damirjon Qilichov'
-// console.log(sinfo);
-// console.log(ssinfo);
 
 
 // const timer = (deadline) => {
@@ -188,23 +162,24 @@
 //         console.log(time);
 //     }, 1000);
 //     setTimeout(() => {
-//         clearInterval(interval);
+//         setInterval(interval);
 //         console.log("время истекло");
 //     }, deadline * 1000);
 // };
 
-// const deadline = +prompt("на сколько секунд вы хотите установить таймер");
+// const deadline = prompt("на сколько секунд вы хотите установить таймер");
 
 // timer(deadline);
 
 
 
-console.log("привет я иду первым!"); //1
+// console.log("привет я иду первым!");
 
-setTimeout(() => console.log("теперь иду я!?"), 2000); //4
+// setTimeout(() => console.log("теперь иду я!?"), 2000);
 
-setTimeout(() => console.log("когда моя очерадь"), 0); //3
+// setTimeout(() => console.log("когда моя очерадь"), 0);
 
-console.log("разве я последний?"); // 2
+// console.log("разве я последний?");
 
 
+       

@@ -6,7 +6,6 @@ const searchBtn = document.getElementById("search-button");
 const productsContainer = document.getElementById("products-container");
 const loader = document.getElementById("loader");
 
-
 const data1 = JSON.parse(products1);
 const data2 = JSON.parse(products2);
 
@@ -39,8 +38,6 @@ const discountedProducts = sortedProducts.map((product) => {
   };
 });
 
-
-
 // Упорядочиваем id товаров
 
 const productsWithNewIds = discountedProducts.map((product, index) => {
@@ -49,9 +46,6 @@ const productsWithNewIds = discountedProducts.map((product, index) => {
     id: index + 1,
   };
 });
-
-
-
 
 function renderProducts(productsWithNewIds) {
   if (productsWithNewIds.length === 0) {
@@ -90,7 +84,7 @@ function renderProducts(productsWithNewIds) {
           <p><strong>Цвет:</strong> ${color}</p>
           <p class="product-description"><strong>Описание:</strong> ${description}</p>
           <!--Если товар есть на складе, ничего не указываем, а если нет, выводим сообщение-->
-          ${quantity ? `<p><strong>Товар закончился</strong></p>` : ""}
+          ${!quantity ? `<p><strong>Товар закончился</strong></p>` : ""}
           ${
             size
               ? `<p class="product-size"><strong>Размер:</strong> ${size}</p>`
@@ -101,8 +95,6 @@ function renderProducts(productsWithNewIds) {
     `;
     })
     .join("");
-    
-    
 
   productsContainer.innerHTML = productsHTML;
 }
@@ -137,8 +129,6 @@ function performSearch() {
     hideLoader();
   }, 2000);
 }
-
-
 
 searchBtn.addEventListener("click", performSearch);
 
