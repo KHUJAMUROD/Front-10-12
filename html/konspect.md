@@ -67,6 +67,7 @@ lorem или loremru создаёт текст можно указать кол�
 [SHORCUTS]
 
 
+
 [ ctrl + z = back / ход назад]  
 [ ctrl + y = back to back / вернут ошибку] 
 [ ctrl + c = copy => копировать]
@@ -79,7 +80,7 @@ lorem или loremru создаёт текст можно указать кол�
 [ ctrl + f = search menu = меню поиска]
 [ ctrl + enter = open new line]
 [ ctrl + shift + l = select all similars = выбрать одинаковых]
-[ alt + z = off or on horizontal scrollbar => отключение или включение ]
+[ alt + z = off or on horizontal scrollbar => отключение или включение ] 
 [ alt + up or down => move line => двигать линию] 
 [ alt + left mouse = select area => выбрать область ]
 [ alt + shift + f = format => порядок]

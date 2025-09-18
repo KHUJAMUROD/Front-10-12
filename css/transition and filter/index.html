@@ -13,17 +13,17 @@
 <body>
 
 
-    <!-- <main>
+    <main>
         <div id="div1">linear</div>
         <div id="div2">ease</div>
         <div id="div3">ease-in</div>
         <div id="div4">ease-out</div>
         <div id="div5">ease-in-out</div>
         <div id="div6">cubick-bezier</div>
-    </main> -->
+    </main>
 
     <!-- <img src="/responsive-landing-page-headphones-main/assets/img/product1.png" alt="" width="100" height="100"> -->
-    <img src="/img/1.jpg" alt="" width="200" height="200">
+    <!-- <img src="/img/1.jpg" alt="" width="200" height="200"> -->
 </body>
 
 </html>
@@ -43,6 +43,9 @@
     body {
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* background-blend-mode: darken; */
         /* background-color: slateblue; */
         /* background: url(/img/1.jpg) center / 100% 100% no-repeat ; */
@@ -52,6 +55,9 @@
     }
 
     main {
+        width: 70%;
+        background-color: #333;
+        padding: 20px;
         /* width: 100%; */
         /* height: 100vh; */
     }
@@ -62,6 +68,11 @@
         background: greenyellow;
         transition: 2s;
         margin: 30px 0;
+    }
+
+
+    main:hover div {
+        width: 100%;
     }
 
     #div1 {
@@ -81,11 +92,11 @@
     }
 
     #div5 {
-        /* transition-timing-function: ease-in-out; */
+        transition-timing-function: ease-in-out;
     }
 
     #div6 {
-        transition-timing-function: cubic-bezier(.16, 1.07, .74, 1.31);
+        transition-timing-function: cubic-bezier(1,-0.95,.33,-7.55);
     }
 
 
@@ -102,14 +113,12 @@
         background-color: #222;
     } */
 
-    /* main:hover div {
-        width: 100%;
-    } */
+
 
     img {
         /* filter: brightness(50%); */
         /* box-shadow: 0px 0px 10px 10px red; */
-        /* filter: drop-shadow(0 0 10px red); */
+        /* filter: drop-shadow(0 0 10px red) drop-shadow(0 0 20px blue); */
     }
 
     img:hover {
@@ -117,7 +126,7 @@
         /* filter: invert(100%); */
         /* filter: saturate(200%); */
         /* filter: opacity(0%); */
-        /* filter: brightness(100%) hue-rotate(180deg); */
+        filter: brightness(50%) hue-rotate(180deg);
         /* filter: blur(1px); */
     }
 </style>

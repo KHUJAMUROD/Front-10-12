@@ -63,7 +63,7 @@ p {
 	width: 150px;
 	height: 150px;
 	/* margin-left: 50%; */
-	transition: all 0.8s ease 0s;
+	transition: all 60s ease 0s;
 }
 
 /* translate */
@@ -78,7 +78,7 @@ p {
 }
 
 .content__translate:hover {
-	transform: translate(100px, 100px);
+	/* transform: translate(100px, 100px); */
 	/* transform: translate(-100px, -100px); */
 }
 
@@ -100,10 +100,11 @@ p {
 
 .content__rotate:hover {
 	/* transform: rotate(180deg); */
-	/* transform: rotate(180deg); */
-	/* transform: rotateX(180deg);	 */
-	transform: rotateY(180deg);	
-	backface-visibility: hidden;
+	/* transform: rotate(-180deg); */
+	/* transform: rotateX(45deg); */
+	/* transform: rotateY(180deg); */
+	/* transform: rotate3d(1, 1, 1, 360deg); */
+	/* backface-visibility: hidden; */
 }
 
 /* skew */
@@ -113,13 +114,13 @@ p {
 }
 
 .content__skew:hover {
-	/* transform: skew(20deg, 20deg); */
-	transform: skew(-20deg, -10deg);
+	/* transform: skew(30deg, 30deg); */
+	/* transform: skew(-20deg, -10deg); */
 }
 
 /* matrix */
 .content__matrix {
-	transform: matrix(1, 0, 0, 1, 0, 0);
+	/* transform: matrix(1, 0, 0, 1, 0, 0); */
 	background-color: indigo;
 }
 
@@ -131,12 +132,12 @@ p {
 /* multi */
 .content__multi {
 	background-color: green;
-	/* transform: translate(50px, 50px) scale(0.5) rotate(45deg); */
+	transform: translate(50px, 50px) scale(0.5) rotate(90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000deg);
 }
 
 .content__multi:hover {
 	background-color: green;
-	transform: translate(50px, 50px) scale(0.5) rotate(45deg);
+	transform: translate(50px, 50px) scale(0.5) rotate(1020deg);
 }
 
 /* transform-origin */
