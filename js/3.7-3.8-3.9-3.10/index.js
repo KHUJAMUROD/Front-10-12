@@ -148,6 +148,7 @@
 // function createPerson(name) {
 //     let age = 17;
 //     return {
+//         age: 20,
 //         getName() {
 //             return name;
 //         },
@@ -173,17 +174,19 @@
 // console.log(currentDate);
 
 
-// let myDate = new Date(1729821024819)
+// let myDate = new Date(1754543482)
 // console.log(myDate);
 
-// let myDate = +new Date(1729821024819)
+// let myDate = new Date(1754543878272)
 // console.log(myDate);
 
 
 
 // let myDate = +new Date();
+// let myDate = new Date(1753680914685);
+// console.log(myDate);
 
-// let tenDaysAgo = 10 * 24 * 60 * 1000;
+// let tenDaysAgo = 10 * 24 * 60 * 60 * 1000;
 
 // let searchDate = myDate - tenDaysAgo;
 
@@ -191,14 +194,14 @@
 
 
 
-// let myDate = new Date("26 october 2024");
-// let myDate = new Date ("10/26/2024");
+// let myDate = new Date("26 october 2025");
+// let myDate = new Date ("10/26/2025");
 // console.log(myDate);
 
 // let myDate = new Date (2024, 9, 26, 12, 30, 20, 10);
 // console.log(myDate);
 
-// let myDate = new Date (2024, 9, 45);
+// let myDate = new Date (2025, 9, 45);
 // console.log(myDate);
 
 // let date = new Date().getDate();
@@ -213,18 +216,18 @@
 // let timeStr = new Date().toTimeString();
 
 
-// console.log(
-//     date,
-//     day,
-//     Month,
-//     year,
-//     dateStr,
-//     hours,
-//     minutes,
-//     seconds,
-//     millisec,
-//     timeStr
-// );
+console.log(
+    // date,
+    // day,
+    // Month,
+    // year,
+    // dateStr,
+    // hours,
+    // minutes,
+    // seconds,
+    // millisec,
+    // timeStr
+);
 
 
 // const days = [
@@ -254,7 +257,7 @@
 
 // let myDate = new Date();
 
-// let fullDate = "Сегодня:" + " " +  myDate.getDate() +  " " + months[myDate.getMonth()] + myDate.getFullYear() + ", " + days[myDate.getDay()];
+// let fullDate = `Сегодня: ${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()} ${days[myDate.getDay()]}`;
 
 // console.log(fullDate);
 
@@ -280,7 +283,7 @@
 //     day: "numeric",
 // };
 
-// const myFormattedDate = currentDate.toLocaleDateString("ru-RU", options);
+// const myFormattedDate = currentDate.toLocaleDateString("en-EN", options);
 
 
 // console.log(myFormattedDate);

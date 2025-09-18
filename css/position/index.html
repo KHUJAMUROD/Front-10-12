@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="shortcut icon" href="/2.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class="block-1">block-1</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-2 item-2">block-2</div>
+        <div class="block-3">block-3</div>
+        <div class="block-4">block-4</div>
+    </div>
+  
+  
+
+</body>
+
+<style>
+
+    body {
+        padding: 30px;
+        background-color: #222;
+    }
+
+    .main {
+        border: 5px solid green;
+        width: 1200px;
+        height: 700px;
+        margin: 0 auto;
+        overflow: auto;
+        /* position: relative; */
+    }
+
+    .main>div {
+        line-height: 50px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        /* height: 100px; */
+        padding: 50px;
+    }
+
+    .block-1 {
+        /* position: relative; */
+        /* position: absolute; */
+        /* position: fixed; */
+        position: sticky;
+        /* z-index: -2; */
+        top: 0;
+        /* left: 0; */
+        /* right: 40%; */
+        /* bottom:  0px; */
+        /* right:  0px; */
+        background-color: rgb(105, 90, 205);
+    }
+
+    .block-2 {
+        /* position: relative; */
+        background-color: #1e90ff;
+        /* z-index: 2; */
+    }
+
+    .item-2 {
+        /* position: fixed; */
+        /* z-index: 0; */
+        /* top: 0; */
+        /* left: 45%; */
+        /* right: 200px; */
+        /* bottom: 50px; */
+        background-color: green;
+    }
+
+    .block-3 {
+        /* position: relative; */
+        /* position: absolute; */
+        /* position: fixed; */
+        /* position: sticky; */
+        /* top: 150px; */
+        /* left: 40%; */
+        /* right: 40%; */
+        /* bottom: 40%; */
+        background-color: gold;
+        color: #000;
+    }
+    .block-4 {
+        /* position: relative; */
+        /* position: absolute; */
+        /* position: sticky; */
+        /* position: fixed; */
+        top: 20px;
+        left:  20px;
+        width: 200px;
+        height: 200px;
+        /* left: 40%; */
+        /* right: 40%; */
+        /* bottom: 40%; */
+        background-color: dodgerblue;
+        color: #000;
+        z-index: 4;
+    }
+
+</style>
+
+</html>

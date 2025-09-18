@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
+    <title>transition and filter</title>
 </head>
 
 <body>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
     <main>
         <div id="div1">linear</div>
         <div id="div2">ease</div>
@@ -21,18 +22,88 @@
         <div id="div5">ease-in-out</div>
         <div id="div6">cubick-bezier</div>
     </main>
+<<<<<<< HEAD
 
     <!-- <img src="/responsive-landing-page-headphones-main/assets/img/product1.png" alt="" width="100" height="100"> -->
     <!-- <img src="/img/1.jpg" alt="" width="200" height="200"> -->
+=======
+
+
+
+    <!-- <img src="/img/1.jpg" alt="Pineapple" width="300" height="300"> 
+    <img class="blur" src="/img/1.jpg" alt="Pineapple" width="300" height="300">              
+    <img class="brightness" src="/img/1.jpg" alt="Pineapple" width="300" height="300">
+    <img class="contrast" src="/img/1.jpg" alt="Pineapple" width="300" height="300">
+    <img class="grayscale" src="/img/1.jpg" alt="Pineapple" width="300" height="300">
+    <img class="huerotate" src="/img/3.jpg" alt="Pineapple" width="300" height="300">
+    <img class="invert" src="/img/1.jpg" alt="Pineapple" width="300" height="300">
+    <img class="opacity" src="/img/1.jpg" alt="Pineapple" width="300" height="300">
+    <img class="saturate" src="/img/1.jpg" alt="Pineapple" width="300" height="300">
+    <img class="sepia" src="/img/1.jpg" alt="Pineapple" width="300" height="300">
+    <img class="shadow" src="/responsive-landing-page-headphones-main/assets/img/product1.png" alt="" width="100"height="100">  -->
+
+>>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
 </body>
 
 </html>
 
 <style>
+    body {
+        overflow: auto;
+    }
+
+    img {
+        width: 33%;
+        height: 200px;
+        float: left;
+    }
+
+    .blur {
+        filter: blur(2px);
+    }
+
+    .brightness {
+        filter: brightness(150%);
+    }
+
+    .contrast {
+        filter: contrast(150%);
+    }
+
+    .grayscale {
+        filter: grayscale(100%);
+    }
+
+    .huerotate {
+        filter: hue-rotate(45deg);
+    }
+
+    .invert {
+        filter: invert(100%);
+    }
+
+    .opacity {
+        filter: opacity(50%);
+    }
+
+    .saturate {
+        filter: saturate(7);
+    }
+
+    .sepia {
+        filter: sepia(100%);
+    }
+
+    .shadow {
+        margin: 0 0 0 20px;
+        filter: drop-shadow(8px 8px 10px green);
+        /* box-shadow:  0 0 10px 5px green; */
+    }
+
     * {
         padding: 0;
         margin: 0;
-        transition: 1s;
+        /* transition: 1s; */
     }
 
     html {
@@ -55,16 +126,25 @@
     }
 
     main {
+<<<<<<< HEAD
         width: 70%;
         background-color: #333;
         padding: 20px;
         /* width: 100%; */
         /* height: 100vh; */
+=======
+        background-color: #333;
+        width: 70%;
+        padding: 20px;
+>>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
     }
 
     div {
-        width: 100px;
-        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 70px;
         background: greenyellow;
         transition: 2s;
         margin: 30px 0;
@@ -96,7 +176,12 @@
     }
 
     #div6 {
+<<<<<<< HEAD
         transition-timing-function: cubic-bezier(1,-0.95,.33,-7.55);
+=======
+
+        transition-timing-function: cubic-bezier(.99,.66,.73,-1.98);
+>>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
     }
 
 
@@ -113,6 +198,7 @@
         background-color: #222;
     } */
 
+<<<<<<< HEAD
 
 
     img {
@@ -128,6 +214,10 @@
         /* filter: opacity(0%); */
         filter: brightness(50%) hue-rotate(180deg);
         /* filter: blur(1px); */
+=======
+    main:hover div {
+        width: 100%;
+>>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
     }
 </style>
 

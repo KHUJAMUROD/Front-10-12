@@ -1,5 +1,28 @@
 // console.log("Это файл index.js")
 
+//  negatives  => '',  0,  NaN,  false, undefined, null
+
+console.log('text' - 12);
+
+// if(-1){
+//     console.log('positive');
+// }else{
+//     console.log('negative');
+// }
+
+-1 ? console.log('positive') : console.log('negative');
+10 > 5 ? console.log('true') : console.log('false');
+10 > 50 ? console.log('true') : console.log('false');
+
+console.log(1 && 2 && 3);
+console.log(1 && 2 && 3 && false);
+console.log(undefined && NaN && '' && false);
+
+
+console.log(1 || 2 || 3);
+console.log(NaN || 2 || '' || false || 10);
+console.log(undefined || NaN || '' || false);
+
 // <------ 1,1 урок ------>
 
 // let a = 123456;

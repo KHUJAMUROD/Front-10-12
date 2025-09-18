@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Mockup</title>
+    <style>
+        /* Общая сцена */
+        .stage {
+            width: 720px;
+            height: 520px;
+            background: #2e2e2e;
+            display: grid;
+            grid-template-columns: 160px 20px 380px 120px;
+            grid-template-rows: 110px 20px 320px;
+            grid-template-areas:
+                "topL . . topR"
+                "side gap board ."
+                "side . board .";
+            place-content: center;
+            padding: 40px;
+            /* внутренние отступы, чтобы элементы не прилипали к краям */
+            box-sizing: border-box;
+            gap: 0;
+        }
+
+        /* Светло-серые блоки снаружи */
+        .top-left {
+            grid-area: topL;
+            background: #d9d9d9;
+            border-radius: 2px;
+        }
+
+        .top-right {
+            grid-area: topR;
+            background: #d9d9d9;
+            border-radius: 2px;
+        }
+
+        .sidebar {
+            grid-area: side;
+            background: #d9d9d9;
+            border-radius: 2px;
+        }
+
+        /* Центральная доска с сеткой */
+        .board {
+            grid-area: board;
+            background: transparent;
+            border: 12px solid #d9d9d9;
+            /* светлая рамка */
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 14px;
+            padding: 14px;
+            /* отступ, чтобы имитировать внутреннюю окантовку */
+        }
+
+        .cell {
+            background: #7f7f82;
+            /* серые ячейки */
+            border-radius: 2px;
+        }
+
+        .cell.light {
+            background: #cfcfcf;
+            /* светло-серый блок в центре */
+        }
+
+        .cell.red {
+            background: #e30606;
+        }
+
+        /* Раскладка внутренних блоков по макету */
+        .a {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .b {
+            grid-column: 2 / span 2;
+            grid-row: 1;
+        }
+
+        .c {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .d {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .e {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .f {
+            grid-column: 3;
+            grid-row: 2 / span 2;
+        }
+
+        .g {
+            grid-column: 2;
+            grid-row: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="sidebar"></div>
+
+        <div class="board">
+            <div class="cell a"></div>
+            <div class="cell b"></div>
+            <div class="cell c"></div>
+            <div class="cell light d"></div>
+            <div class="cell red e"></div>
+            <div class="cell red f"></div>
+            <div class="cell g"></div>
+        </div>
+    </div>
+</body>
+
+</html>

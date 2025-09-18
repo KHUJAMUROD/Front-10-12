@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Playground</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card-grid">
+            <div class="card">
+                <h3>Dynamic Box 1</h3>
+                <p>This box changes its shape and size on hover.</p>
+            </div>
+            <div class="card">
+                <h3>Dynamic Box 2</h3>
+                <p>Watch this one transform with a different effect.</p>
+            </div>
+            <div class="card">
+                <h3>Dynamic Box 3</h3>
+                <p>Hover over me for a unique visual experience.</p>
+            </div>
+            <div class="card">
+                <h3>Dynamic Box 4</h3>
+                <p>A final demonstration of advanced CSS powers.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    /* Basic Resets & Global Styles */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* Global transition for smoothness, similar to your approach */
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        /* More advanced easing */
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1a1a2e;
+        color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        overflow: hidden;
+        /* Prevent scrollbar from large hover effects */
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* --- */
+
+    /* Grid Layout */
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        /* Responsive grid */
+        gap: 30px;
+        padding: 20px;
+    }
+
+    /* --- */
+
+    /* Card Styling */
+    .card {
+        background-color: #2e2e4e;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        position: relative;
+        /* For absolute positioning of pseudo-elements */
+        overflow: hidden;
+        /* Clip pseudo-elements */
+        cursor: pointer;
+        border: 2px solid transparent;
+        /* For border transition */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        /* Ensure a base height */
+    }
+
+    .card h3 {
+        margin-bottom: 15px;
+        font-size: 1.8em;
+        color: #8be9fd;
+        /* Light blue */
+        z-index: 2;
+        /* Keep text above pseudo-elements */
+        position: relative;
+    }
+
+    .card p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #f8f8f2;
+        /* Light grey */
+        z-index: 2;
+        /* Keep text above pseudo-elements */
+        position: relative;
+    }
+
+    /* --- */
+
+    /* Advanced Hover Effects */
+
+    /* Common pseudo-element for background effect */
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ff79c6, #bd93f9);
+        /* Pink to Purple */
+        z-index: 1;
+        opacity: 0;
+        transform: scale(0.8);
+        /* Start smaller */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        /* Default square */
+    }
+
+    /* Hover effect for all cards */
+    .card:hover {
+        transform: translateY(-10px) scale(1.02);
+        /* Lift and slight grow */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        border-color: #6272a4;
+        /* Dracula theme accent */
+    }
+
+    .card:hover::before {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .card:hover h3,
+    .card:hover p {
+        color: #282a36;
+        /* Darker text on hover for contrast */
+    }
+
+    /* Specific clip-path animations for each card */
+
+    .card:nth-child(odd)::before {
+        background: linear-gradient(45deg, #50fa7b, #f1fa8c);
+        /* Green to Yellow */
+        clip-path: circle(0% at 50% 50%);
+        /* Start as a tiny circle */
+    }
+
+    .card:nth-child(odd):hover::before {
+        clip-path: circle(75% at 50% 50%);
+        /* Expand to a large circle */
+    }
+
+    .card:nth-child(even)::before {
+        background: linear-gradient(45deg, #ffb86c, #ff79c6);
+        /* Orange to Pink */
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        /* Default square, but will morph */
+    }
+
+    .card:nth-child(even):hover::before {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        /* Diamond shape */
+    }
+
+    /* More specific effects for individual cards for extra flair */
+
+    .card:nth-child(1):hover {
+        transform: rotateZ(-3deg) scale(1.05);
+        /* Rotate slightly */
+    }
+
+    .card:nth-child(2):hover {
+        transform: translateX(10px) scale(1.03);
+        /* Slide right */
+    }
+
+    .card:nth-child(3):hover {
+        transform: translateY(-20px) skewX(-5deg);
+        /* Lift and skew */
+    }
+
+    .card:nth-child(4):hover {
+        transform: rotateY(10deg) scale(1.04);
+        /* Flip slightly on Y axis */
+    }
+
+    /* --- */
+</style>
+
+</html>

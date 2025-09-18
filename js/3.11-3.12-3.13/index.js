@@ -1,12 +1,12 @@
 //  setTimeout(() => {
 //     console.log("прошло 5 секунд");
+//  }, 2000)
 
-//  }, 5000)
 
-
-// function logMessage() {
+// function logMessage(name) {
 //     console.log( "прошло 5 секунд");
 // }
+
 
 // setTimeout(logMessage, 5000);
 
@@ -16,7 +16,6 @@
 
 // setTimeout((name, age) => {
 //     console.log(`привет, ${name}! тебе ${age} лет`);
-
 // }, 2000, "иван", 30)
 
 
@@ -24,7 +23,6 @@
 // const timeId = setTimeout(() => {
 //     console.log("прошло 5 секунд");
 // }, 5000);
-
 
 
 // setTimeout(() =>{
@@ -49,6 +47,7 @@
 // }
 
 // setTimeout(checkForCancel, 1000)
+
 
 
 // const timeId = setTimeout(() => {
@@ -86,6 +85,14 @@
 //     alert("tick");
 //     timeId = setTimeout(tick, 2000)
 // }, 2000);
+<<<<<<< HEAD
+=======
+
+
+
+let interval = 1000;
+
+>>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
 
 
 

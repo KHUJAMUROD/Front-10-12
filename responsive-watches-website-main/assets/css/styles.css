@@ -6,7 +6,7 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(31, 100%, 70%);
+   --first-color: hsl(233, 56%, 36%);
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
   --title-color: hsl(0, 0%, 15%);
@@ -109,7 +109,7 @@ button {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: hsl(31, 76%, 74%);
+  --first-color: hsl(233, 56%, 36%);
   --button-color: hsl(0, 0%, 24%);
   --button-color-alt: hsl(0, 0%, 28%);
   --title-color: hsl(0, 0%, 95%);
@@ -153,6 +153,7 @@ body.dark-theme {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
+  
   max-width: 1024px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -300,6 +301,7 @@ body.dark-theme {
 
 /*=============== HOME ===============*/
 .home__container {
+
   position: relative;
   row-gap: 2.5rem;
 }
@@ -395,6 +397,7 @@ body.dark-theme {
 
 /*=============== FEATURED ===============*/
 .featured__container {
+  --first-color: red;
   row-gap: 2.5rem;
 }
 
