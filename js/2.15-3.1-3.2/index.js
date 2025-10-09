@@ -1,11 +1,10 @@
-let regexp1 = new RegExp('^[а-яА-Я]*$');
-
-let regexpFlag = new RegExp('^[а-яА-Я]*$', 'gmi');
-
-let regexp2 = /^[а-яА-Я]*$/;
+// let regexp1 = new RegExp('^[а-яА-Я]*$');
+// let regexpFlag = new RegExp('^[а-яА-Я]*$', 'gmi');
 
 
-let regexpFlag2 = /^[а-яА-Я]*$/gmi;
+
+// let regexp2 = /^[а-яА-Я]*$/;
+// let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 
 
 //  let str = 'my name Jasur. my full name is Jasur Khamrakulov';
@@ -15,7 +14,7 @@ let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 //  console.log(str.replace(/Jasur/gi, "JUSTIN#"));
 
 //  let str = 'my name Jasur. my full name is Jasur Khamrakulov';
-//  console.log(str.match(/jasur/ig));
+//  console.log(str.match(/jasur/gi));
 
 //  let str = 'My name Jasur. my full name is Jasur Khamrakulov';
 //  console.log(/jasur/gi.exec(str));
@@ -25,7 +24,7 @@ let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 
 // let nameUser = prompt('Введите ваше имя на кирилице');
 
-// if (regexp.test(nameUser)) {
+// if (regexp.test()) {
 //     alert("ваше имя сохранено")
 // }else {
 //     alert("введены некорртиные символ");
@@ -36,13 +35,13 @@ let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 //     "Иванов А.А.",
 //     "Иванова В.В.",
 //     "Ивановский Г.Г.",
+//     "Ивановский Г.Г.",
 //     "Иванченко Д.Д.",
-//     "Иванченко Е,Е",
 // ];
 
 // let person = prompt("Введите фамилю");
 
-// let regexp = new RegExp(`${person}`, 'i')
+// let regexp = new RegExp(`${person}`)
 
 // families.forEach((el) => {
 //     if(regexp.test(el)) {
@@ -56,8 +55,6 @@ let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 // console.log(regexp.test('Вкусный пирог'));
 // console.log(regexp.test('пирон'));
 // console.log(regexp.test('Пирон'));
-
-
 
 // let regexp = /[abc]/;
 // console.log(regexp.test('button'));
@@ -102,12 +99,9 @@ let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 
 
 // function greet(name) {
-//     return console.log("Привет, " + name + "!");
-//     ;
+//     return "Привет, " + name + "!";
 // }
 
-
-// greet('jurabek negr')
 // let message = greet("Алиса");
 // console.log(message);
 
@@ -153,7 +147,7 @@ let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 
 
 // function isEven(number) {
-//     return number % 2 ;
+//     return number % 2;
 // }
 // console.log(isEven(4));
 // console.log(isEven(7));
@@ -164,12 +158,9 @@ let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 //     let sum = 0;
 //     for (let index = 0; index < arr.length; index++) {
 //     sum += arr[index];    
-//     console.log(sum);
 //     }
 //     return sum;
 // }
-
-
 
 // console.log(sumArray([1, 2, 3, 4, 5]));
 

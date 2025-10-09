@@ -19,22 +19,24 @@
 // dog2.bark()
 
 
-// function getArea() {
-//     return this.width * this.heighty;
-// }
+function getArea() {
+    return this.width * this.height;
+}
 
 
-// function getPerimeter() {
-//     return this.width * 2 + this.height * 2;
-// }
+function getPerimeter() {
+    return this.width * 2 + this.height * 2;
+}
 
-// const square1 = {
-//     width: 4,
-//     height: 5,
-//     getArea: getArea,
-//     getPerimeter: getPerimeter,
-// };
+const square1 = {
+    width: 4,
+    height: 5,
+    getArea: getArea,
+    getPerimeter: getPerimeter,
+};
 
+console.log(square1.getArea());
+console.log(square1.getPerimeter());
 
 
 // const square2 = {

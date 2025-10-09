@@ -70,28 +70,38 @@
 // while (i < 5) {
 //     console.log("значения i:" + i);
 //     i++
-
 // }
 
 // let i = 0;
 // while (i < 5) {
 //     i++ 
 //     console.log("значения i:" + i);
-
 // }
+
+
+
+
+
+
 
 // let i = 0;
 // while (i <= 5) {
 //     console.log("значения i:" + i);
 //     i--;
-
 // }
+
+
+
+
 
 // let i = 5;
 // while (i > 0) {
 //     console.log("значения i:" + i);
 //     i--;
 // }
+
+
+
 
 // let data = [" Понидельник ", " Вторник ", " среда ",  " Четверг ",  " пятница ", " Субота "]
 // let index = 0
@@ -100,6 +110,8 @@
 //     console.log("элемент:" + data[index]);
 //     index++;
 // }
+
+
 
 // let i = 0;
 

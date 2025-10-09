@@ -8,25 +8,34 @@
 // a != b 
 // a = b
 
-// console.log(2 > 1);
-// console.log(2 < 1);
-// console.log(2 >= 1);
-// console.log(2 == 1);
-// console.log(2 = 1);
-// console.log(2 != 1);
+// console.log(10 > 5);
+// console.log(10 < 5);
+// console.log(10 <= 10);
+// console.log(10 >= 10);
+// console.log(2 != 3);
+// console.log('2' != 2);
 
+
+
+
+// negatives => 0 '' false NaN null udenfined
+
+
+
+
+// console.log('abc' - 123);  // NaN
 // let result = 5 > 4;
 // console.log(result);
 // console.log( 0 == false);
-// console.log( "" == false);
-// console.log( "" === false);
+// console.log("" == false);
+// console.log("" === false);
 // console.log( 0 === false);
-// console.log( "1" == 1);
+// console.log("abc" == 1);
+// console.log("1" == 1);
 // console.log( "1" === 1);
-// console.log( "1" === 1);
-// console.log( "1" !== 1);
-// console.log("2" > 1);
-// console.log("01" == 1);
+// console.log("1" !== 1);
+// console.log("2" > 1); 
+// console.log("1" == 1); 
 // console.log(true == 1);
 
 // <------ 1,6 урок ------>
@@ -37,11 +46,22 @@
 // &&=ЛОГИЧЕСКОЕ ПРИСВАИВАНИЕ И
 // ! НЕ
 
+
+// console.log(1 && 2 && 3);
+// console.log(1 && 2 && 3 && NaN);
+// console.log(NaN && null && false);
+
+
+// console.log(NaN || null || false);
+// console.log(NaN || null || false || 2);
+// console.log(9 || 100 || 3 || 2);
+
+
 // && И
 // console.log(1 === 1 && 2 === 2);
 // console.log(1 === 1 && 2 === 3);
 // console.log(1 === 1 && 2 === 3 && "3" === 3);
-// console.log(1 === 1 && 2 === 3 && 3 === 3);
+// console.log(1 === 1 && 2 !== 3 && 3 === 3);
 
 // let a = null;
 // let b = false;
@@ -62,13 +82,9 @@
 // console.log(a && b && e);
 
 // let age = prompt("введети ваш возраст");
-// alert (age && "спасибо за информацию");
+// alert(age && "спасибо за информацию");
 
-// let isInfo = true;
-// alert(isInfo && "это информация по вашему запросу");
 
-// let isInfo = false;
-// alert(isInfo && "это информация по вашему запросу");
 
 // let isAdmin = prompt("если вы админ, введите любой текст");
 // let isLogin = prompt("введите логин");
@@ -76,12 +92,17 @@
 // let canAccessAdminPanel = isAdmin && isLogin && isPassword;
 // alert(canAccessAdminPanel && "доступ разрешено");
 
+
+
 // let hour = 10;
 // if(hour >= 9 && hour < 18){
 //     console.log("открыто");
 // }else{
-//     console.log("закрыто")
+//     console.log("закрыто");
 // }
+
+
+
 
 // let hour = 8;
 // if(hour >= 9 && hour < 18){

@@ -85,18 +85,14 @@
 //     alert("tick");
 //     timeId = setTimeout(tick, 2000)
 // }, 2000);
-<<<<<<< HEAD
-=======
 
 
 
 let interval = 1000;
 
->>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
 
 
 
-// let interval = 1000;
 
 // function tick() {
 //     console.log("tick " + interval);
@@ -171,7 +167,7 @@ let interval = 1000;
 //     }, deadline * 1000);
 // };
 
-// const deadline = +prompt("на сколько секунд вы хотите установить таймер");
+// const deadline = prompt("на сколько секунд вы хотите установить таймер");
 
 // timer(deadline);
 

@@ -4,29 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced CSS Playground</title>
+    <title>Advanced CSS without Transforms/Animations</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="card-grid">
-            <div class="card">
-                <h3>Dynamic Box 1</h3>
-                <p>This box changes its shape and size on hover.</p>
+    <div class="pricing-container">
+        <h2>Our Flexible Plans</h2>
+        <div class="pricing-grid">
+
+            <div class="plan-card basic">
+                <div class="plan-header">
+                    <h3>Basic Plan</h3>
+                    <p class="price">$9<span>/month</span></p>
+                </div>
+                <ul class="features-list">
+                    <li>5 GB Storage</li>
+                    <li>1 User Account</li>
+                    <li>Basic Support</li>
+                    <li class="excluded">Custom Domain</li>
+                    <li class="excluded">Advanced Analytics</li>
+                </ul>
+                <button>Choose Basic</button>
             </div>
-            <div class="card">
-                <h3>Dynamic Box 2</h3>
-                <p>Watch this one transform with a different effect.</p>
+
+            <div class="plan-card standard">
+                <div class="plan-header">
+                    <h3>Standard Plan</h3>
+                    <p class="price">$29<span>/month</span></p>
+                </div>
+                <ul class="features-list">
+                    <li>50 GB Storage</li>
+                    <li>5 User Accounts</li>
+                    <li>Priority Support</li>
+                    <li>Custom Domain</li>
+                    <li class="excluded">Advanced Analytics</li>
+                    fungicide
+                </ul>
+                <button>Choose Standard</button>
             </div>
-            <div class="card">
-                <h3>Dynamic Box 3</h3>
-                <p>Hover over me for a unique visual experience.</p>
+
+            <div class="plan-card premium">
+                <div class="plan-header">
+                    <h3>Premium Plan</h3>
+                    <p class="price">$99<span>/month</span></p>
+                </div>
+                <ul class="features-list">
+                    <li>Unlimited Storage</li>
+                    <li>Unlimited Users</li>
+                    <li>24/7 VIP Support</li>
+                    <li>Custom Domain</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+                <button>Choose Premium</button>
             </div>
-            <div class="card">
-                <h3>Dynamic Box 4</h3>
-                <p>A final demonstration of advanced CSS powers.</p>
-            </div>
+
         </div>
     </div>
 
@@ -39,176 +71,370 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        /* Global transition for smoothness, similar to your approach */
-        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-        /* More advanced easing */
+        /* Global transition for smoothness */
+        transition: all 0.5s ease-in-out;
+        /* Smooth but not complex transform transitions */
     }
 
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #1a1a2e;
-        color: #e0e0e0;
+        background-color: #f0f2f5;
+        color: #333;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        padding: 20px;
-        overflow: hidden;
-        /* Prevent scrollbar from large hover effects */
+        padding: 40px 20px;
+        overflow-x: hidden;
     }
 
-    .container {
-        width: 90%;
+    .pricing-container {
+        width: 100%;
         max-width: 1200px;
-        margin: auto;
-    }
-
-    /* --- */
-
-    /* Grid Layout */
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        /* Responsive grid */
-        gap: 30px;
-        padding: 20px;
-    }
-
-    /* --- */
-
-    /* Card Styling */
-    .card {
-        background-color: #2e2e4e;
-        border-radius: 15px;
-        padding: 30px;
         text-align: center;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        position: relative;
-        /* For absolute positioning of pseudo-elements */
-        overflow: hidden;
-        /* Clip pseudo-elements */
-        cursor: pointer;
-        border: 2px solid transparent;
-        /* For border transition */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 200px;
-        /* Ensure a base height */
     }
 
-    .card h3 {
-        margin-bottom: 15px;
-        font-size: 1.8em;
-        color: #8be9fd;
-        /* Light blue */
-        z-index: 2;
-        /* Keep text above pseudo-elements */
+    .pricing-container h2 {
+        font-size: 3em;
+        color: #2c3e50;
+        margin-bottom: 50px;
         position: relative;
+        padding-bottom: 15px;
     }
 
-    .card p {
-        font-size: 1.1em;
-        line-height: 1.6;
-        color: #f8f8f2;
-        /* Light grey */
-        z-index: 2;
-        /* Keep text above pseudo-elements */
-        position: relative;
-    }
-
-    /* --- */
-
-    /* Advanced Hover Effects */
-
-    /* Common pseudo-element for background effect */
-    .card::before {
+    .pricing-container h2::after {
         content: '';
         position: absolute;
-        top: 0;
+        left: 50%;
+        bottom: 0;
+        width: 80px;
+        height: 4px;
+        background-color: #3498db;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+
+    /* --- Pricing Grid Layout --- */
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        justify-content: center;
+        align-items: flex-start;
+        /* Align cards to the top */
+    }
+
+    /* --- Plan Card Styling --- */
+    .plan-card {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        /* For pseudo-elements */
+        overflow: hidden;
+        /* Hide overflowing pseudo-elements */
+        border: 2px solid transparent;
+    }
+
+    .plan-header {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .plan-header h3 {
+        font-size: 2.2em;
+        margin-bottom: 10px;
+        color: #2980b9;
+    }
+
+    .price {
+        font-size: 3.5em;
+        font-weight: bold;
+        color: #34495e;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+
+    .price span {
+        font-size: 0.4em;
+        font-weight: normal;
+        color: #7f8c8d;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .features-list {
+        list-style: none;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .features-list li {
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 1.1em;
+        color: #555;
+        position: relative;
+        padding-left: 30px;
+        /* Space for checkmark/cross */
+    }
+
+    .features-list li:last-child {
+        border-bottom: none;
+    }
+
+    /* Checkmark for included features */
+    .features-list li:not(.excluded)::before {
+        content: '\2713';
+        /* Checkmark Unicode character */
+        color: #27ae60;
+        /* Green */
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        font-size: 1.2em;
+        line-height: 1;
+        transform: translateY(-50%);
+    }
+
+    /* Cross for excluded features */
+    .features-list li.excluded::before {
+        content: '\2717';
+        /* Cross Unicode character */
+        color: #e74c3c;
+        /* Red */
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        font-size: 1.2em;
+        line-height: 1;
+        transform: translateY(-50%);
+    }
+
+    button {
+        background-color: #3498db;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2em;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        letter-spacing: 1px;
+    }
+
+    /* --- Advanced Hover Effects (No Transforms/Animations) --- */
+
+    /* Universal hover for cards */
+    .plan-card:hover {
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        border-color: #2ecc71;
+        /* General hover border */
+        margin-top: -15px;
+        /* "Lift" effect by changing margin */
+        padding-bottom: 60px;
+        /* Expand card slightly */
+    }
+
+    .plan-card:hover button {
+        background-color: #2ecc71;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Pseudo-element for dynamic background fill (no transform) */
+    .plan-card::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
         left: 0;
         width: 100%;
+        height: 0;
+        /* Start at 0 height */
+        background: linear-gradient(to top, #3498db, #8e44ad);
+        /* Default gradient */
+        z-index: 0;
+        /* Behind content */
+        border-radius: 0 0 10px 10px;
+        /* Match card border radius */
+    }
+
+    .plan-card:hover::before {
         height: 100%;
-        background: linear-gradient(45deg, #ff79c6, #bd93f9);
-        /* Pink to Purple */
-        z-index: 1;
-        opacity: 0;
-        transform: scale(0.8);
-        /* Start smaller */
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        /* Default square */
+        /* Fill up the card */
+        opacity: 0.8;
+        /* Slight transparency */
     }
 
-    /* Hover effect for all cards */
-    .card:hover {
-        transform: translateY(-10px) scale(1.02);
-        /* Lift and slight grow */
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-        border-color: #6272a4;
-        /* Dracula theme accent */
+    /* Text color change on hover when pseudo-element fills */
+    .plan-card:hover h3,
+    .plan-card:hover .price,
+    .plan-card:hover .price span,
+    .plan-card:hover .features-list li {
+        color: white;
+        /* Change text to white for contrast */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        /* Add subtle text shadow */
     }
 
-    .card:hover::before {
+    .plan-card:hover .features-list li:not(.excluded)::before {
+        color: #c0f7d8;
+        /* Lighter green checkmark */
+    }
+
+    .plan-card:hover .features-list li.excluded::before {
+        color: #f7a49a;
+        /* Lighter red cross */
+    }
+
+    /* Specific styles and hover effects for each plan card */
+
+    /* Basic Plan */
+    .plan-card.basic .plan-header h3 {
+        color: #e67e22;
+    }
+
+    .plan-card.basic .price {
+        color: #d35400;
+    }
+
+    .plan-card.basic button {
+        background-color: #e67e22;
+    }
+
+    .plan-card.basic::before {
+        background: url('https://picsum.photos/id/1018/800/600') no-repeat center center / cover;
+        /* Image background */
+        background-color: rgba(230, 126, 34, 0.7);
+        /* Orange overlay */
+        background-blend-mode: multiply;
+        /* Blend mode */
+        height: 0;
+    }
+
+    .plan-card.basic:hover {
+        border-color: #d35400;
+    }
+
+    .plan-card.basic:hover::before {
+        height: 100%;
         opacity: 1;
-        transform: scale(1);
+        /* Fully opaque image */
+        background-position: top center;
+        /* Shift background position */
     }
 
-    .card:hover h3,
-    .card:hover p {
-        color: #282a36;
-        /* Darker text on hover for contrast */
+    .plan-card.basic:hover button {
+        background-color: #d35400;
     }
 
-    /* Specific clip-path animations for each card */
-
-    .card:nth-child(odd)::before {
-        background: linear-gradient(45deg, #50fa7b, #f1fa8c);
-        /* Green to Yellow */
-        clip-path: circle(0% at 50% 50%);
-        /* Start as a tiny circle */
+    /* Standard Plan */
+    .plan-card.standard .plan-header h3 {
+        color: #27ae60;
     }
 
-    .card:nth-child(odd):hover::before {
-        clip-path: circle(75% at 50% 50%);
-        /* Expand to a large circle */
+    .plan-card.standard .price {
+        color: #229954;
     }
 
-    .card:nth-child(even)::before {
-        background: linear-gradient(45deg, #ffb86c, #ff79c6);
-        /* Orange to Pink */
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        /* Default square, but will morph */
+    .plan-card.standard button {
+        background-color: #27ae60;
     }
 
-    .card:nth-child(even):hover::before {
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-        /* Diamond shape */
+    .plan-card.standard::before {
+        background: linear-gradient(to top, #2ecc71, #28b463);
+        /* Green gradient */
+        height: 0;
     }
 
-    /* More specific effects for individual cards for extra flair */
-
-    .card:nth-child(1):hover {
-        transform: rotateZ(-3deg) scale(1.05);
-        /* Rotate slightly */
+    .plan-card.standard:hover {
+        border-color: #229954;
     }
 
-    .card:nth-child(2):hover {
-        transform: translateX(10px) scale(1.03);
-        /* Slide right */
+    .plan-card.standard:hover::before {
+        height: 100%;
+        opacity: 0.9;
+        /* No background-position change, just full height fill */
     }
 
-    .card:nth-child(3):hover {
-        transform: translateY(-20px) skewX(-5deg);
-        /* Lift and skew */
+    .plan-card.standard:hover button {
+        background-color: #229954;
     }
 
-    .card:nth-child(4):hover {
-        transform: rotateY(10deg) scale(1.04);
-        /* Flip slightly on Y axis */
+    /* Premium Plan */
+    .plan-card.premium .plan-header h3 {
+        color: #9b59b6;
     }
 
-    /* --- */
+    .plan-card.premium .price {
+        color: #8e44ad;
+    }
+
+    .plan-card.premium button {
+        background-color: #9b59b6;
+    }
+
+    .plan-card.premium::before {
+        background: url('https://picsum.photos/id/1040/800/600') no-repeat fixed center center / cover;
+        /* Parallax image */
+        background-color: rgba(155, 89, 182, 0.7);
+        /* Purple overlay */
+        background-blend-mode: overlay;
+        /* Different blend mode */
+        height: 0;
+    }
+
+    .plan-card.premium:hover {
+        border-color: #8e44ad;
+    }
+
+    .plan-card.premium:hover::before {
+        height: 100%;
+        opacity: 1;
+        /* No background-position change on hover, fixed attachment gives parallax */
+    }
+
+    .plan-card.premium:hover button {
+        background-color: #8e44ad;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .pricing-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .plan-card {
+            padding: 20px;
+        }
+
+        .plan-header h3 {
+            font-size: 1.8em;
+        }
+
+        .price {
+            font-size: 3em;
+        }
+
+        .features-list li {
+            font-size: 1em;
+            padding: 10px 0;
+            padding-left: 25px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1.1em;
+        }
+    }
 </style>
 
 </html>

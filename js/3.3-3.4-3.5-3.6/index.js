@@ -1,11 +1,9 @@
-
-
-// function mult  (a, b) {
+// function mult (a, b) {
 //     let result = a * b;
 //     console.log(`произведения чисел a и b равняется ${result}`);
 // }
 
-//  mult(2, 3);
+// mult(2, 3);
 
 
 // const mult = function (a, b) {
@@ -39,7 +37,7 @@
 
 // let age = 16;
 
-// if (age < 18) {
+// if (age < 14) {
 
 //     function printMessage() {
 //         console.log("привет");
@@ -53,7 +51,7 @@
 
 // printMessage()
 
-"use strict"
+// "use strict"
 // let age = 16;
 // let printMessage;
 
