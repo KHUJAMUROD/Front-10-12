@@ -19,9 +19,15 @@
 // dog2.bark()
 
 
+<<<<<<< HEAD
 function getArea() {
     return this.width * this.height;
 }
+=======
+// function getArea() {
+//     return this.width * this.height;
+// }
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
 
 
 function getPerimeter() {
@@ -35,8 +41,13 @@ const square1 = {
     getPerimeter: getPerimeter,
 };
 
+<<<<<<< HEAD
 console.log(square1.getArea());
 console.log(square1.getPerimeter());
+=======
+// console.log(square1.getArea());
+// console.log(square1.getPerimeter());
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
 
 
 // const square2 = {
@@ -94,19 +105,26 @@ console.log(square1.getPerimeter());
 //   } in the sentence`
 // );
 
-// const products = [
-//     'Яйцо столовое',
-//     'молоко молочник',
-//     'кровка молоко',
-//     'виноград изабела'
-// ];
+const products = [
+    'Яйцо столовое',
+    'молоко молочник',
+    'кровка молоко',
+    'виноград изабела'
+];
 
+// console.log(products.slice(-3));
 
 // let search = 'молоко';
 // products.forEach((products) => {
 //     if (products.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
 //         console.log(products);
 //     }
+// });
+// let search = 'молоко';
+// products.forEach((products, index, arr) => {
+//    console.log(`
+//     ${products}  ----    ${index}   ----    ${arr}`);
+   
 // });
 
 
@@ -137,7 +155,7 @@ console.log(square1.getPerimeter());
 
 // let userName = 'Alexei';
 // let str = `My name is ${userName}`;
-// console.log(str.split(' '));
+// console.log(str.split(''));
 
 
 // let userName = 'Alexei';
@@ -147,6 +165,7 @@ console.log(square1.getPerimeter());
 // let userName = 'Alexei';
 // let str = `                                                        My name is ${userName}`;
 // console.log(str.trim());
+// console.log('Jurabek krasavchik'.replace('krasavchik', 'yellownigga'));
 
 
 // let email1 = "toto@gmail.com"

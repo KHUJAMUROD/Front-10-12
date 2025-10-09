@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /* 5.14 */
 
+=======
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
 body {
   display: flex;
   flex-direction: column;
@@ -21,7 +24,11 @@ ul {
   width: 300px;
   height: 200px;
   color: #fff;
+<<<<<<< HEAD
   background-color: rgba(74, 32, 133, 0.508);
+=======
+  background-color: rgb(84, 21, 172);
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
   position: fixed;
   top: 50%;
   left: 50%;

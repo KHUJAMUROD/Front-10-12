@@ -9,15 +9,23 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <!-- 5.14 -->
     <!-- <form id="myForm">
         Текстовое поле
         <input type="text" id="username" placeholder="Имя" /><br />
         Пароль
+=======
+    <form id="myForm">
+        Текстовое поле
+        <input type="text" id="username" placeholder="Имя" /><br />
+         Пароль
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
         <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Пароль должен содержать как минимум одну цифру, одну строчную и одну заглавную букву, и быть не менее 8 символов длиной"
             placeholder="Пароль" required /><br />
 
+<<<<<<< HEAD
         Email
         <input type="email" id="email" placeholder="email" required /><br />
 
@@ -40,6 +48,30 @@
         <input type="checkbox" id="remember" /><br />
 
         Радиокнопки
+=======
+         Email 
+        <input type="email" id="email" placeholder="email" required /><br />
+
+        Tel 
+        <input type="tel" id="phone" placeholder="Телефон" title="Пожалуйста, введите номер в формате +7XXXXXXXXXX"
+            pattern="\+7\d{10}" /><br />
+
+        Search 
+        <input type="search" id="search" placeholder="Найти" /><br />
+
+        Число 
+        <input type="number" id="number" placeholder="Возраст" /><br />
+
+         Date 
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" required /><br />
+
+        Чекбокс 
+        <label for="remember">Запомнить меня:</label>
+        <input type="checkbox" id="remember" /><br />
+
+       Радиокнопки 
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
         <label>Пол:</label><br />
 
         <input type="radio" id="male" name="gender" value="male" />
@@ -47,6 +79,7 @@
         <input type="radio" id="female" name="gender" value="female" />
         <label for="female">Женщина</label><br />
 
+<<<<<<< HEAD
         Range
         <label for="volume">Громкость:</label>
         <input type="range" id="volume" /><br />
@@ -56,6 +89,17 @@
         <input type="color" id="color" value="#a35688" /><br />
 
         File
+=======
+         Range
+        <label for="volume">Громкость:</label>
+        <input type="range" id="volume" /><br />
+
+         Color
+        <label for="color">Любимый цвет:</label>
+        <input type="color" id="color" value="#a35688" /><br />
+
+         File 
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
         <label for="file">Загрузите файлы:</label>
         <input type="file" id="file" multiple accept=".jpg,.jpeg,.png" /><br />
 
@@ -63,7 +107,11 @@
         <label for="comment">Введите текст комментария:</label><br />
         <textarea id="comment"></textarea><br />
 
+<<<<<<< HEAD
         Селект
+=======
+        Селект 
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
         <label for="country">Страна:</label>
         <select id="country">
             <option value="usa">USA</option>
@@ -71,6 +119,7 @@
             <option value="uk">UK</option>
         </select><br />
 
+<<<<<<< HEAD
         Кнопка отправки
         <button type="submit">Отправить</button>
     </form> -->
@@ -78,6 +127,15 @@
     <!-- 5.15 -->
     <!-- 
     <div class="container">
+=======
+        Кнопка отправки 
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- 5.16 -->
+
+    <!-- <div class="container">
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
         <button class="button1">кнопка 1</button>
         <div class="inner-container">
             <button class="button2">кнопка 2</button>
@@ -86,6 +144,7 @@
 
     <!-- 5.16 -->
 
+<<<<<<< HEAD
     <h1>Данные о работниках</h1>
     <ul id="list"></ul>
     <div class="know-more"></div>
@@ -93,6 +152,15 @@
 </body>
 <style>
     /* 5.15 */
+=======
+      <!-- <h1>Данные о работниках</h1>
+    <ul id="list"></ul>
+    <div class="know-more"></div> -->
+
+    <script src="index.js"></script>
+</body>
+<style>
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
     /* .container {
         background-color: lightgreen;
         height: 150px;
@@ -110,6 +178,7 @@
         align-items: center;
         background-color: lightcoral;
     } */
+<<<<<<< HEAD
 </style>
 
 <!-- /// 5.15 ///  -->
@@ -139,5 +208,40 @@
     //     console.log("нажата кнопка 2");
     // });
 </script>
+=======
+
+   
+
+
+</style>
+
+<!-- <script>
+    /// 5.15 /// 
+    const container = document.querySelector(".container");
+    const innerContainer = document.querySelector(".inner-container");
+    const button1 = document.querySelector(".button1");
+    const button2 = document.querySelector(".button2");
+
+    container.addEventListener("click", (e) => {
+        e.stopPropagation();
+        console.log("кликнут внешнний контейнера");
+    });
+
+    innerContainer.addEventListener("click", (e) => {
+        e.stopPropagation();
+        console.log("кликнуть внутренний контейнера");
+    });
+
+    button1.addEventListener("click", (e) => {
+        e.stopPropagation();
+        console.log("нажата кнопка 1");
+    });
+
+    button2.addEventListener("click", (e) => {
+        e.stopPropagation();
+        console.log("нажата кнопка 2");
+    });
+</script> -->
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
 
 </html>

@@ -90,10 +90,14 @@ p {
 }
 
 .content__scale:hover {
+<<<<<<< HEAD
 	transform: scale(1.5, 1.5);
 	/* transform: scale(.5, .5); */
 	/* transform: scale(0, 0); */
 	/* transform: scale(-1, 1); */
+=======
+	/* transform: scale(1.5, 1.5); */
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
 }
 
 /* rotate  */
@@ -105,11 +109,16 @@ p {
 }
 
 .content__rotate:hover {
-	/* transform: rotate(180deg); */
+	transform: rotate(180deg);
 	/* transform: rotate(-180deg); */
+<<<<<<< HEAD
 	/* transform: rotateX(180deg); */
 	transform: rotateY(180deg);
 	/* transform: rotate3d(1, 1, 1, 360deg); */
+=======
+	/* transform: rotateX(180deg);	 */
+	/* transform: rotateY(180deg);	 */
+>>>>>>> 5a5b2e96050dcb5c602bbca76b00590a979d6372
 	/* backface-visibility: hidden; */
 }
 
@@ -192,7 +201,7 @@ p {
 
 .content__perspective:hover {
 	background-color: green;
-	transform: rotateX(75deg);
+	transform: rotateX(55deg);
 }
 
 /* translate3D */
@@ -222,7 +231,7 @@ p {
 }
 
 .content__rotate3d:hover {
-	transform: rotate3d(0, 1, 0, 45deg);
+	transform: rotate3d(1, 1, 1, 45deg);
 }
 
 /* matrix3d */
@@ -244,7 +253,7 @@ p {
 .content__transform-style-wrapper {
 	width: 150px;
 	height: 150px;
-	background-color: rgba(255, 255, 255, 0.466);
+	background-color: rgba(252, 252, 252, 0.48);
 	perspective: 200px;
 	transform-style: preserve-3d;
 }

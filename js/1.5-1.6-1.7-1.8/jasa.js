@@ -38,6 +38,14 @@
 // console.log("1" == 1); 
 // console.log(true == 1);
 
+
+console.log('abc' * 2);
+console.log(isNaN(123)); // false
+console.log(isNaN('abc')); //true
+console.log(Array.isArray([])); // true
+console.log(Array.isArray({})); // false
+
+
 // <------ 1,6 урок ------>
 
 // && И
@@ -215,7 +223,7 @@
 
 // let age = prompt("введите ваш возраст")
 // if (age >= 16) {
-//     alert("приходите в нашу автошколу")
+    // alert("приходите в нашу автошколу")
 // }
 
 // if (age) {
@@ -293,11 +301,11 @@
 //     let age = +prompt("введите ваш возраст");
 
 //     if(isNaN(age)) {
-//         alert("вы ввули не числою пожалуйста введите корректный возраст");
+//         alert("вы ввели не числойув пожалуйста введите корректный возраст");
 //         question();
 //     }else {
 //         message(age);
-//     }
+//     }20
 // }
 
 // question();
