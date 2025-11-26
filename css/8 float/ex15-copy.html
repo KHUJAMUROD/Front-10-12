@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex15-copy</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ratione!
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li style="float: left;"><a href="#">Link</a></li>
+            <li style="float: left;"><a href="#">Link</a></li>
+            <li style="float: right;"><a href="#">Link</a></li>
+            <li style="float: right;"><a href="#">Link</a></li>
+            <li style="float: right;"><a href="#">Link</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="left">
+            <div class="content">
+                <h1>Title heading</h1>
+                <p>option <b>Title descr, Dec 2 2024</b></p>
+                <div class="image">
+                    <img src="/img/2.jpg" alt="">
+                    <img src="/img/4.jpg" alt="">
+                </div>
+                <p>Some text ...</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse impedit nihil dolores! Porro ullam ipsam libero! Iure
+                    cupiditate quas esse laudantium dicta vero! Praesentium,
+                    quaerat maiores non incidunt atque doloribus.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Title heading</h1>
+                <p>option <b>Title descr, Dec 2 2024</b></p>
+                <div class="image">
+                    <img src="/img/3.jpg" alt="">
+                    <img src="/img/5.jpg" alt="">
+                </div>
+                <p>Some text ...</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse impedit nihil dolores! Porro ullam ipsam libero! Iure
+                    cupiditate quas esse laudantium dicta vero! Praesentium,
+                    quaerat maiores non incidunt atque doloribus.
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="about_me">
+                <h2>About Me</h2>
+                <div class="img_block">
+                    <p>Image</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae sequi recusandae reiciendis fugit quos beatae,
+                    culpa deleniti hic. Recusandae repellat sit repudiandae
+                    quos fuga? Porro praesentium perferendis nemo nobis aliquid.
+                </p>
+            </div>
+            <div class="popular_post">
+                <h2>Popular Post</h2>
+                <div class="img_block">
+                    <p>Image</p>
+                </div>
+                <div class="img_block">
+                    <p>Image</p>
+                </div>
+                <div class="img_block">
+                    <p>Image</p>
+                </div>
+            </div>
+            <div class="follow_me">
+                <h2>
+                    Follow Me
+                </h2>
+                <p>
+                    Some text ...
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: cursive;
+    }
+
+    header {
+        text-align: center;
+        padding: 45px;
+        line-height: 60px;
+        font-size: 30px;
+    }
+
+    ul {
+        overflow: auto;
+        background-color: #555;
+    }
+
+    ul li {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    ul li:hover {
+        background-color: red;
+    }
+
+    ul li a {
+        color: snow;
+    }
+
+    main {
+        overflow: auto;
+    }
+
+    main .left,
+    main .right {
+        float: left;
+    }
+
+    main .left {
+        width: 70%;
+    }
+
+    main .right {
+        width: 30%;
+    }
+
+    main .left .content {
+        background-color: lightgray;
+        margin: 10px 15px;
+        padding: 20px;
+    }
+
+    main .left .content .image img:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .left .content .image img:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 49%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .left .content .image {
+        height: 200px;
+        padding: 20px;
+        color: snow;
+        position: relative;
+
+    }
+
+    main .left .content * {
+        line-height: 40px;
+    }
+
+    .right .about_me {
+        background-color: lightgray;
+        padding: 30px;
+        margin: 10px;
+    }
+
+    .right .img_block {
+        height: 100px;
+        background-color: #999;
+        padding: 30px;
+        margin: 10px 20px;
+    }
+
+    .right .popular_post {
+        background-color: lightgray;
+        padding: 30px;
+        margin: 10px;
+    }
+
+    .right .follow_me {
+        background-color: lightgray;
+        padding: 30px;
+        margin: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 70px;
+        background-color: lightgray;
+    }
+</style>
+
+</html>

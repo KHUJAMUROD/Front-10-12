@@ -359,6 +359,12 @@
     }
 
     .plan-card.standard:hover::before {
+            background: url('/img/mountain.jpg') no-repeat center center / cover;
+        /* Image background */
+        background-color: rgba(230, 126, 34, 0.7);
+        /* Orange overlay */
+        background-blend-mode: multiply;
+        /* Blend mode */
         height: 100%;
         opacity: 0.9;
         /* No background-position change, just full height fill */
@@ -367,6 +373,7 @@
     .plan-card.standard:hover button {
         background-color: #229954;
     }
+
 
     /* Premium Plan */
     .plan-card.premium .plan-header h3 {

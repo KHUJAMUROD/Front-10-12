@@ -10,14 +10,23 @@
 // console.log(factorial(4));
 
 
-// function factorial(n) {
+function factorial(n) {
 
-//     if (n === 1) {
-//         return 1;
-//     }
-//     return n * factorial(n - 1);
-// }
-// console.log(factorial(4));
+    if (n === 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+console.log(factorial(4));
+
+// 4 - 1 = 3
+// 3 - 1 = 2
+// 2 - 1 = 1
+
+// 1 * 2 = 2
+// 2 * 3 = 6
+// 6 * 4 = 24
+
 
 
 // let result = 1;
@@ -65,7 +74,7 @@
 //     };
 
 //     console.log(result(5));
-
+    
 //     multiplier = 3;
 //     console.log(result(5));
 // }
@@ -163,11 +172,25 @@
 
 // const person = createPerson("Alice");
 
+
+
 // console.log(person.getName());
 // console.log(person.getAge());
 // person.celebrateBirthday();
 // console.log(person.getAge());
 // console.log(person.age);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // let currentDate = new Date();
