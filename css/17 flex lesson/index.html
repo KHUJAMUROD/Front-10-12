@@ -23,6 +23,7 @@
         <div class="flex__items item-3">
             <div class="flex__content content-3">3</div>
         </div>
+
         <!-- <div class="flex__items item-4">
             <div class="flex__content content-4">4</div>
         </div>
@@ -63,15 +64,16 @@
 
 
 
-    </p>
 </body>
 
 <style>
+
+
     *,
     ::before,
     ::after {
         padding: 0;
-        margin: 0;
+        /* margin: 0; */
         /* transition: 0.5s; */
         box-sizing: border-box;
         /* text-align: right; */
@@ -98,20 +100,18 @@
         /* flex-direction: column-reverse; */
         /* width: 50%; */
         /* display: inline-flex; */
-        /* flex-direction: column; */
         /* justify-content: start; */
         /* justify-content: end; */
         /* justify-content: center; */
-        /* justify-content: space-between; */
         /* justify-content: space-evenly; */
         /* justify-content: space-around; */
-        /* align-content: start; */
+        /* justify-content: space-between; */
         /* display: inline-flex; */
         /* align-items: stretch; */
         /* align-items: start; */
-        /* align-items: center; */
-        /* align-items: baseline; */
         /* align-items: end; */
+        /* align-items: baseline; */
+        /* align-items: center; */
         /* flex-wrap: nowrap; */
         /* flex-wrap: wrap; */
         /* flex-wrap: wrap-reverse; */
@@ -119,8 +119,10 @@
 
     .flex__items {
         /* width: 200px; */
+        /* width: 100px; */
         /* width: 100%; */
         /* flex-basis: auto; */
+        /* flex-basis: 100%; */
         /* flex-basis: 250px; */
         /* flex-basis: 33.333%; */
         border: 3px solid green;
@@ -146,13 +148,13 @@
 
     .item-2 {
         /* align-self: center; */
-        flex-basis: 400px;
+        /* flex-basis: 400px;    */
         order: 2;
         /* flex-grow: 0; */
         /* flex-grow: 1; */
         /* flex-shrink: 0; */
         /* flex-shrink: 1; */
-        flex: 0 1 400px;
+        /* flex: 0 1 400px; */
     }
 
     .content-2 {

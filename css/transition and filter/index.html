@@ -10,35 +10,37 @@
 
 <body>
 
-    <main>
-    <div id="div1">linear</div>
-    <div id="div2">ease</div>
-    <div id="div3">ease-in</div>
-    <div id="div4">ease-out</div>
-    <div id="div5">ease-in-out</div>
-    <div id="div6">cubick-bezier</div>
-    </main>
+    <!-- <div class="main"> -->
+    <!-- <div id="div1">linear</div> -->
+    <!-- <div id="div2">ease</div> -->
+    <!-- <div id="div3">ease-in</div> -->
+    <!-- <div id="div4">ease-out</div> -->
+    <!-- <div id="div5">ease-in-out</div> -->
+    <!-- <div id="div6">cubick-bezier</div> -->
+    <!-- </div> -->
 
 
-    <!-- <img src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="blur" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="brightness" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="contrast" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="grayscale" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="huerotate" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="invert" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="opacity" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="saturate" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="sepia" src="/img/3.jpg" alt="" width="300" height="300"> -->
-    <!-- <img class="shadow" src="/responsive-landing-page-headphones-main/assets/img/product2.png" alt="" width="300" height="300"> -->
+    <img src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="blur" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="brightness" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="contrast" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="grayscale" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="huerotate" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="invert" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="opacity" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="saturate" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="sepia" src="/img/3.jpg" alt="" width="300" height="300">
+    <img class="shadow" src="/responsive-landing-page-headphones-main/assets/img/product2.png" alt="" width="300" height="300"> 
 
+     <img class="several-filters" src="/img/3.jpg" alt="" width="300" height="300">
 
 
 </body>
-
-</html>
-
 <style>
+
+    *{
+        transition: 2s;
+    }
     body {
         overflow: auto;
     }
@@ -66,7 +68,7 @@
     }
 
     .huerotate {
-        filter: hue-rotate(90deg);
+        filter: hue-rotate(-90deg);
     }
 
     .invert {
@@ -87,8 +89,12 @@
 
     .shadow {
         margin: 0 0 0 20px;
-        filter: drop-shadow(8px 8px 10px red);
+        /* filter: drop-shadow(8px 8px 10px red)   drop-shadow(-8px -8px 10px rgb(0, 0, 0)); */
         /* box-shadow:  0 0 10px 5px red; */
+    }
+
+    .several-filters {
+        /* filter:  brightness(50%) saturate(150%); */
     }
 
     * {
@@ -105,9 +111,9 @@
     body {
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
         /* background-blend-mode: darken; */
         /* background-color: slateblue; */
         /* background: url(/img/1.jpg) center / 100% 100% no-repeat ; */
@@ -116,7 +122,7 @@
 
     }
 
-    main {
+    .main {
         width: 70%;
         background-color: #333;
         padding: 20px;
@@ -124,7 +130,7 @@
         /* height: 100vh; */
     }
 
-    div {
+    .main div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -136,7 +142,7 @@
     }
 
 
-    main:hover div {
+    .main:hover div {
         width: 100%;
     }
 
@@ -161,7 +167,7 @@
     }
 
     #div6 {
-        transition-timing-function: cubic-bezier(0, -0.13, 1, -0.65);
+        transition-timing-function: cubic-bezier(.83, 1.68, .72, -1.77);
     }
 
 
@@ -191,11 +197,9 @@
         /* filter: invert(100%); */
         /* filter: saturate(200%); */
         /* filter: opacity(0%); */
-        /* filter: brightness(50%) hue-rotate(180deg); */
+        filter: brightness(50%) hue-rotate(360deg);
         /* filter: blur(1px); */
     }
 </style>
-
-</body>
 
 </html>

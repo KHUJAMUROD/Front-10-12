@@ -27,8 +27,8 @@
                 <h1>Title heading</h1>
                 <p>option <b>Title descr, Dec 2 2024</b></p>
                 <div class="img">
-                    <img src="/img/1.jpg" alt="">
-                    <img src="/img/2.jpg" alt="">
+                    <!-- <img src="/img/1.jpg" alt="">
+                    <img src="/img/2.jpg" alt=""> -->
                 </div>
                 <p>Some text ...</p>
                 <p>
@@ -42,8 +42,8 @@
                 <h1>Title heading</h1>
                 <p>option <b>Title descr, Dec 2 2024</b></p>
                 <div class="img">
-                    <img src="/img/3.jpg" alt="">
-                    <img src="/img/4.jpg" alt="">
+                    <!-- <img src="/img/3.jpg" alt="">
+                    <img src="/img/4.jpg" alt=""> -->
                 </div>
                 <p>Some text ...</p>
                 <p>
@@ -103,6 +103,13 @@
     }
 
 
+
+    /* nav::after {
+        content: "";
+        display: table;
+        clear: both;
+    } */
+
     a {
         padding: 20px;
         font-size: 20px;
@@ -140,33 +147,34 @@
         height: 200px;
         padding: 50px;
         font-size: 20px;
+        background-color: gray;
     }
 
-    .left .img img:nth-child(1) {
+    /* .left .img img:nth-child(1) {
         position: absolute;
         top: 0;
         left: 0;
         width: 50%;
         height: 100%;
         object-fit: cover;
-    }
+    } */
 
-    .left .img img:nth-child(2) {
-        position: absolute;
+    /* .left .img img:nth-child(2) {
+        /* position: absolute;
         top: 0;
         left: 50%;
         width: 50%;
         height: 100%;
-        object-fit: cover;
-    }
+        object-fit: cover; */
 
-    [src="/img/1.jpg"] {
+
+    /* [src="/img/1.jpg"] {
         filter: blur(2px);
     }
 
     [src="/img/2.jpg"] {
         filter: grayscale(100%);
-    }
+    } 
 
     [src="/img/3.jpg"] {
         filter: sepia(100%);
@@ -174,7 +182,7 @@
 
     [src="/img/4.jpg"] {
         filter: hue-rotate(180deg);
-    }
+    } */
 
     .right {
         float: left;

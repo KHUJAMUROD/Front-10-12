@@ -4,64 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo/youtub-logo.png" type="image/x-icon">
     <title>Global-Attributes</title>
-    <link rel="shortcut icon" href="/img/logo/Intagram Logo.png" type="image/x-icon">
 </head>
 
-<body>
+<!-- <body style="background-color: black; color: snow;"> -->
+<!-- <body style="background-color: rgb(69, 13, 13);"> -->
+<body >
 
     <details>
         <summary>details</summary>
         <h1 class="testclass">heading</h1>
         <h1 id="testid1">heading</h1>
-        <h1 style="
-    color: rgb(97, 97, 255);
-    background-color: rgb(67, 12, 12);
-    ">heading</h1>
         <h1 title="since 1976">heading</h1>
+        <h1 style="
+    color: rgb(130, 255, 130);
+    background-color: rgb(14, 64, 64);
+    ">heading</h1>
 
         <button style="
-    background-color: darkblue;
-    color: snow;
-    " id="btn-id1" class="btn-class">button</button>
+    color: dodgerblue;
+    background-color: rgb(18, 50, 37);
+    " id="btn-id1" title="btn-tit" class="btn-class">
+            button
+        </button>
     </details>
+
 </body>
 <style>
-    h1 {
-        color: red;
-        background-color: gray;
+
+    body{
+        background-color: black; color: snow;
     }
 
     #btn-id1 {
+        color: magenta;
+        background-color: rgb(7, 46, 64);
+    }
+
+
+    [title="btn-tit"] {
+        background-color: darkred;
         color: blue;
-        background-color: black;
     }
 
     .btn-class {
-        color: red;
-        background-color: aqua;
+        color: greenyellow;
+        background-color: black;
     }
 
+
     button {
-        background-color: black;
-        color: snow;
-        background-color: green;
+        color: red;
+        color: blue;
+    }
+
+
+    h1 {
+        color: rgb(106, 0, 255);
+        background-color: gray;
+        /* width: 100%; */
+        /* height: 0; */
     }
 
     .testclass {
-        color: rgb(0, 128, 0);
-        background-color: #000000;
+        color: red;
+        background-color: black;
     }
 
     #testid1 {
-        color: aqua;
-        background-color: rgb(16, 44, 16);
+        color: rgb(255, 90, 217);
+        background-color: rgb(7, 55, 7);
     }
 
 
     [title="since 1976"] {
-        color: greenyellow;
-        background-color: darkblue;
+        color: snow;
+        background-color: rgb(13, 13, 72);
     }
 </style>
 

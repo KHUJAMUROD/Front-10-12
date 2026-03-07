@@ -367,7 +367,7 @@ const capitalofCountries = {
 // const user = {
 //     name: 'Alexander',
 //     greeting: function () {
-//     console.log("Hello!");
+//         console.log("Hello!");
 //     },
 // };
 // user.greeting();
@@ -396,7 +396,8 @@ const capitalofCountries = {
 //     city: "London",
 
 //     getInfo() {
-//          return `пользователь ${user.name}, в возрасте ${user.age}, проживает в г. ${user.city}`;
+//         //  return `пользователь ${user.name}, в возрасте ${user.age}, проживает в г. ${user.city}`;
+//          return `пользователь ${this.name}, в возрасте ${this.age}, проживает в г. ${this.city}`;
 //     },
 // };
 

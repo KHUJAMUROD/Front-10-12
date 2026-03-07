@@ -9,6 +9,7 @@
 
 <body>
 
+
     <div class="grid-container">
         <div class="grid-item block-1">1</div>
         <div class="grid-item block-2">2</div>
@@ -20,6 +21,7 @@
         <div class="grid-item block-8">8</div>
         <div class="grid-item block-9">9</div>
     </div>
+
 
 </body>
 
@@ -33,40 +35,57 @@
     body {
         padding: 20px;
     }
+    
 
     .grid-container {
         border: 5px solid red;
         display: grid;
+        /* width: 1000px; */
+        /* height: 1000px; */
+        /* grid-template-columns: 200px 30% auto; */
+        /* grid-template-columns: 1fr 3fr 1fr; */
+        /* grid-template-rows: 200px 200px 200px 200px; */
+        /* grid-template-rows: 1fr 3fr 1fr; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-rows: repeat(3, 200px); */
+        /* grid-template: repeat(3, 200px) / repeat(3, 1fr); */
+        /* grid-auto-flow: row; */
+        /* grid-auto-rows: 200px; */
+        /* grid-auto-flow: column; */
+        /* grid-auto-columns: 200px; */
+        /* grid-auto-flow: dense; */
+        /* grid-auto-columns: 400px; */
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        /* grid-auto-rows: 250px; */
+        /* grid-template-columns: minmax(400px, 600px) 1fr auto; */
+        /* grid-template-rows: repeat(3, 200px); */
+        /* row-gap: 50px; */
+        /* column-gap: 50px; */
+        /* gap: 50px; */
+        /* gap: 20px 40px; */
         /* height: 600px; */
         /* grid-auto-flow: row; */
-        grid-auto-rows: 200px;
         /* grid-auto-flow: column; */
+        /* grid-auto-flow: dense; */
+        /* grid-auto-rows: 200px; */
         /* grid-auto-columns: 400px; */
-        /* grid-template-columns: 200px 1fr auto; */
-        /* grid-template-rows: 20% 150px auto; */
-        /* grid-template-columns: repeat(2, 1fr) 2fr; */
-        /* grid-template-columns: 1fr 3fr 1fr; */
-        /* grid-template-rows: 200px 200px 200px; */
-        /* grid-template-columns: 1fr 2fr auto; */
-        /* grid-template-columns: 25% 50% 25%; */
-        /* grid-template-columns: repeat(3, 1fr); */
-        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-        /* grid-template-rows: repeat(3, 200px);/ */
-        /* grid-template: repeat(3, 300px) / repeat(3, 1fr); */
+        /* grid-template: repeat(3, 200px) / repeat(3, 1fr); */
+        /* grid-auto-flow: dense; */
         /* column-gap: 50px; */
         /* row-gap: 50px; */
-        gap: 30px;
+        /* gap: 30px; */
         /* gap: 20px 50px; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-rows: repeat(3, 200px); */
         /* justify-items: start; */
         /* justify-items: end; */
         /* justify-items: center; */
         /* align-items: start; */
         /* align-items: end; */
         /* align-items: center; */
-        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-        /* grid-template: repeat(3, 200px) / repeat(auto-fit, minmax(200px, 1fr)); */
-        /* grid-auto-flow: row; */
-        /* grid-auto-flow: dense; */
+        /* grid-template: repeat(3, 200px) / repeat(auto-fit, minmax(300px, 1fr)); */
+        /* grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr)); */
+        /* grid-auto-rows: 200px; */
     }
 
     .grid-item {
@@ -89,17 +108,18 @@
         /* align-self: center; */
         /* margin: auto ; */
         /* grid-row-start: 1;    */
-        /* grid-row-end: 4 span; */
         /* grid-row-end: 4; */
-        /* grid-row: 1  /  span 2; */
+        /* grid-row-end: 3 span; */
         /* grid-row: 2 / span 2; */
-        /* grid-column-start: 1; */
-        /* grid-column-end: 2 span; */
+        /* grid-row: 2 / span 2; */
+        /* grid-column-start: 2; */
+        /* grid-column-end: 2 span;/ */
         /* grid-column: 2 / span 2; */
-        /* grid-area: 2 / 2 / 2 span / 2 span; */
+        /* grid-area: 3 / 1 / 3 / 3 span; */
         background-color: lightblue;
         order: 1;
     }
+
 
     .block-2 {
         /* grid-row: span 2 ; */

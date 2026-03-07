@@ -27,14 +27,7 @@
             <div class="div-8"></div>
         </div>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi saepe possimus voluptatum culpa asperiores
-        repellendus, doloribus quos corrupti voluptates dolorum hic exercitationem assumenda ea dolore commodi officiis
-        consequatur perspiciatis odio laudantium aperiam, repellat aspernatur laboriosam placeat? Harum assumenda cum
-        eius reprehenderit ratione, aliquam dolorem quia labore vel, nam non quam molestiae, illum consequatur earum
-        numquam nesciunt excepturi pariatur natus. At magnam distinctio voluptatibus dolorem iure a quasi ratione
-        corrupti, quae sunt. Ducimus officia nesciunt temporibus quas doloribus cupiditate voluptate commodi
-        voluptatibus quisquam ipsam ad maxime, dolores blanditiis, ut ullam libero! Unde optio aliquam provident labore
-        hic nihil qui culpa cumque.</p>
+
 </body>
 <style>
     * {
@@ -43,22 +36,33 @@
         box-sizing: border-box;
         transition: 0.5s;
     }
-    body { height: 200vh; }
-    
+
+    body {
+        height: 200vh;
+    }
+
     .navbar {
         background-color: #222;
         overflow: hidden;
         position: sticky;
         top: 0;
     }
+
     .navbar a {
         float: right;
         padding: 10px 20px;
         text-decoration: none;
         color: snow;
     }
-    .navbar a:hover {background-color: green;}
-    .navbar a:active {background-color: lightgreen;}
+
+    .navbar a:hover {
+        background-color: green;
+    }
+
+    .navbar a:active {
+        background-color: lightgreen;
+    }
+
     .main {
         width: 50%;
         height: 50vh;
@@ -94,6 +98,8 @@
         height: 40px;
         border-radius: 50%;
         background-color: red;
+        position: absolute;
+        top: 0;
     }
 
     .div-3 {
@@ -109,7 +115,7 @@
         height: 40px;
         border-radius: 50%;
         background-color: greenyellow;
-        bottom: 0;
+        bottom: 0 ;
     }
 
     .div-5 {
@@ -125,6 +131,7 @@
         height: 40px;
         border-radius: 50%;
         background-color: magenta;
+        left: 0;
     }
 
     .div-7 {
@@ -133,6 +140,7 @@
         background-color: indigo;
         left: 25%;
     }
+
     .div-8 {
         width: 40px;
         height: 40px;
@@ -159,23 +167,34 @@
         height: 50px;
     }
 
-    .main:hover { background-color: #333; }
-    .main:hover>div { border-radius: 30px; }
+    .main:hover {
+        background-color: #333;
+    }
+
+    .main:hover>div {
+        border-radius: 30px;
+    }
 
 
     .main:hover .div-2 {
         background: radial-gradient(circle, red, greenyellow);
+        position: absolute;
+        top: 80%;
     }
 
     .main:hover .div-4 {
         background: radial-gradient(circle, blue, red);
+        bottom: 80%;
     }
 
     .main:hover .div-6 {
         background: radial-gradient(circle, magenta, green);
+        left: 90%;
     }
+
     .main:hover .div-8 {
         background: radial-gradient(circle, violet, purple);
+        right: 90%;
     }
 </style>
 

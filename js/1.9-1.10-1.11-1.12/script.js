@@ -2,10 +2,12 @@
 // alert(age <= 12 ? "доступ запрещен" : "можете скачать приложения");
 
 // let age = +prompt("сколько вам лет", 18);
+
 // let message;
-// if (age < 12){
+
+// if (age <= 12){
 //     message = "здраствуй малыш!";
-// }else if (age < 18) {
+// }else if (age <= 18) {
 //     message = "привет друг";
 // }else if (age < 150){
 //     message = "здраствуйте!";
@@ -16,10 +18,13 @@
 // alert(message);  
 
 // let age = +prompt("сколько вам лет", 18);
+
 // let message;
+
 // age < 12 ? message = 'здраствуй малыш!' :
 // age < 18 ? message = 'привет друг' :
-// age < 150 ? message = 'здраствуйте!' : 'нынче столько не живут'
+// age < 150 ? message = 'здраствуйте!' : message = 'нынче столько не живут'
+
 // alert(message)
 
 // let age = 20;
@@ -32,30 +37,30 @@
 // console.log(message);
 
 // let age = 20;
-// let = message;
-// let = category;
+// let message;
+// let category;
 // if (age >= 18){
 //     if (age >= 60){
 //         message = 'вы пенсионер';
-//         category = pensioner;
+//         category = 'pensioner';
 //     }else {
 //         message = 'доступ разрешен';
-//         category = adult;
+//         category = 'adult';
 //     }
 // }else {
 //     message = 'доступ огранечен';
-//     category = child;
+//     category = 'child';
 // }
-// console.log(message);
+// console.log(message, category);
 
 // <------ 1,10 урок ------>
-//  let capital = prompt ("введите столицу Турции");
-
+//  let capital = prompt("введите столицу Турции").toLowerCase();
+// // if(условия => >, <, >=, =<, ===, ==, и др..)   //switch( только => ===)
 //  switch (capital) {
 //     case "стамбул":
 //         alert("крупый город но не столица");
 //         break;
-//     case "Анталия":
+//     case "анталия":
 //         alert("это туристическое центр но не столица");
 //         break;
 //     case "анкара":
@@ -67,7 +72,7 @@
 
 //  <------ 1,11 урок ------>
 // let i = 0;
-// while (i < 5) {
+// while (i <= 5) {
 //     console.log("значения i:" + i);
 //     i++
 // }
@@ -80,17 +85,11 @@
 
 
 
-
-
-
-
-// let i = 0;
-// while (i <= 5) {
+// let i = 5;
+// while (i >= 0) {
 //     console.log("значения i:" + i);
 //     i--;
 // }
-
-
 
 
 
@@ -103,22 +102,35 @@
 
 
 
-// let data = [" Понидельник ", " Вторник ", " среда ",  " Четверг ",  " пятница ", " Субота "]
-// let index = 0
+// console.log('hello'.length);
+let data = [" Понидельник ", " Вторник ", " среда ",  " Четверг ",  " пятница ", " Суббота ", ' воскресенье ']
+let index = 0
+// console.log(data.length);
+// console.log(data[0]);
+// console.log(data[1]);
+// console.log(data[2]);
+// console.log(data[3]);
+// console.log(data[4]);
+// console.log(data[5]);
 
 // while (index < data.length){
 //     console.log("элемент:" + data[index]);
 //     index++;
 // }
 
-
-
 // let i = 0;
 
 // do{
 // console.log("значения i:" + i );
 // i++
-// }while (i < 5);
+// }while (i > 5);
+
+
+// while(i > 5){
+//     console.log("значения i:" + i );
+// }
+
+
 //  <------ 1,12 урок ------>
 
 // let i = 0;

@@ -156,7 +156,6 @@ body.dark-theme {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-
   max-width: 1024px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -314,6 +313,7 @@ body.dark-theme {
 }
 
 .home__img-bg {
+    --first-color: hsl(119, 60%, 16%);
   background-color: var(--first-color);
   width: 258px;
   height: 430px;
@@ -400,7 +400,7 @@ body.dark-theme {
 
 /*=============== FEATURED ===============*/
 .featured__container {
-  --first-color: red;
+  /* --first-color: red; */
   row-gap: 2.5rem;
 }
 

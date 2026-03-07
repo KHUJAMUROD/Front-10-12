@@ -17,7 +17,7 @@
     <a href="#target2">Link 2</a>
     <br>
     <br>
-   
+
     <input class="check" type="checkbox">
     <input class="check" type="radio" name="r1">
     <input class="check" type="radio" name="r1">
@@ -35,15 +35,22 @@
     <p id="target2">target 2</p>
 
     <ul>
-     <li><span>before</span>  text  <span>after</span></li> 
-     <li><span>before</span>  text  <span>after</span></li> 
-     <li><span>before</span>  text  <span>after</span></li> 
+        <li><span>before</span> text <span>after</span></li>
+        <li><span>before</span> text <span>after</span></li>
+        <li><span>before</span> text <span>after</span></li>
     </ul>
+
+
+
     <ol>
         <li>text</li>
         <li>text</li>
         <li>text</li>
     </ol>
+
+<span>
+
+</span>
 </body>
 
 <style>
@@ -54,40 +61,47 @@
     html {
         scroll-behavior: smooth;
     }
-   :link{
-        color: red;
+
+
+
+
+    a {
+        /* color: green; */
     }
 
+    :link {
+        color: red;
+    }
 
     a:visited {
         color: black;
     }
 
-     a:hover {
+
+    a:hover {
         color: blue;
     }
+
 
     a:active {
         color: greenyellow;
     }
 
-   
-    
- 
+
     input:checked {
-        width: 35px;
-        height: 35px;
-        box-shadow: 0 0 5px 5px black;
+        /* width: 35px; */
+        /* height: 35px; */
+        /* box-shadow: 0 0 5px 5px black; */
     }
 
     input:focus {
-        box-shadow: 0 0 10px 10px rgba(0, 0, 100, 0.413);
+        /* box-shadow: 0 0 10px 10px rgba(0, 0, 100, 0.413); */
     }
 
-    /* input:not(.check){
-        box-shadow:  0 0 10px 10px #333;
-        border-radius: 20px;
-    } */
+    input:not(.check){
+        /* box-shadow:  0 0 10px 10px #333; */
+        /* border-radius: 20px; */
+    }
 
     :target {
         /* background-color: indigo; */
@@ -97,23 +111,33 @@
 
 
     ::marker {
-        color: red;
-        font-size: 30px;
-        text-shadow: 1px 1px 3px blue;
+        /* color: red; */
+        /* font-size: 30px; */
+        /* text-shadow: 1px 1px 3px blue; */
+    }
+
+
+    #target1::first-line {
+        /* color: blue; */
+    }
+
+    #target1::first-letter {
+        /* color: red; */
+        /* font-size: 30px; */
     }
 
     ::placeholder {
-        color: rgba(255, 0, 0, 0.493);
-        text-align: center;
+        /* color: rgba(255, 0, 0, 0.493); */
+        /* text-align: center; */
     }
 
     ::selection {
-        background-color: black;
-        color: red;
+        /* background-color: black; */
+        /* color: red; */
     }
 
     li {
-        /* position: relative; */
+        position: relative;
         /* width: 200px; */
         /* padding: 30px; */
         /* margin: 30px 0; */
@@ -125,37 +149,27 @@
         /* background-color: rgba(0, 0, 0, 0.463); */
         /* line-height: 30px; */
         /* list-style-type: armenian; */
-        list-style-type: none; 
+        /* list-style-type: none; */
     }
 
 
-<<<<<<< HEAD
-    li::before {
-        content: '';
-=======
     ol li::before {
-        /* content: ''; */
->>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
-        /* display: block; */
+        content: '';
+        /* display: inline; */
         /* position: absolute; */
-        /* width: 15px; */
-        /* height: 15px; */
+        /* width: 20px; */
+        /* height: 20px; */
         /* background: url(/img/2.jpg) center / cover no-repeat; */
         /* border-radius: 50%; */
         /* background-color: red; */
         /* box-shadow: 0 0 2px 2px inset red; */
-        /* top: -5px; */
-        /* left: -30px; */
+        /* top: 1px; */
+        /* left: -21px; */
     }
 
-<<<<<<< HEAD
-    li::after {
+    ol li::after {
         content: '';
-=======
-   ol li::after {
-        content: ' after';
->>>>>>> ee18498bbc428b60f4d75e7e5d35611ed3f4121f
-        /* display: block; */
+        /* display: inline-block; */
         /* position: absolute; */
         /* width: 20px; */
         /* height: 20px; */
