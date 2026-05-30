@@ -9,6 +9,8 @@
 
 <body>
 
+
+
     <div class="flex__container">
         <div class="flex__items item-1">
             <div class="flex__content content-1">1</div>
@@ -67,8 +69,6 @@
 </body>
 
 <style>
-
-
     *,
     ::before,
     ::after {
@@ -86,7 +86,7 @@
     body {
         background-color: #222;
         color: snow;
-        padding: 20px;
+        /* padding: 20px; */
         /* text-align: center; */
     }
 
@@ -104,16 +104,22 @@
         /* justify-content: end; */
         /* justify-content: center; */
         /* justify-content: space-evenly; */
-        /* justify-content: space-around; */
         /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* align-content: start; */
+        /* align-content: end; */
+        /* align-content: center; */
+        /* align-content: space-evenly; */
+        /* align-content: space-between; */
+        /* align-content: space-around; */
         /* display: inline-flex; */
         /* align-items: stretch; */
         /* align-items: start; */
         /* align-items: end; */
-        /* align-items: baseline; */
         /* align-items: center; */
+        /* align-items: baseline; */
         /* flex-wrap: nowrap; */
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         /* flex-wrap: wrap-reverse; */
     }
 
@@ -130,7 +136,7 @@
 
     .flex__content {
         /* width: 100%; */
-        background-color: rgb(51, 44, 112);
+        background-color: rgb(41, 37, 129);
         padding: 20px;
     }
 
@@ -148,7 +154,7 @@
 
     .item-2 {
         /* align-self: center; */
-        /* flex-basis: 400px;    */
+        /* flex-basis: 400px; */
         order: 2;
         /* flex-grow: 0; */
         /* flex-grow: 1; */
@@ -158,8 +164,8 @@
     }
 
     .content-2 {
-        /* padding: 50px; */
-        /* font-size: 50px; */
+        padding: 50px;
+        font-size: 50px;
     }
 
     .content-3,

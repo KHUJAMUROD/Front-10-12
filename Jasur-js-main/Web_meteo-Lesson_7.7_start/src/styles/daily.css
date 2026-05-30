@@ -1,0 +1,54 @@
+/* Прогноз на 5 дней */
+.forecast {
+  background-color: var(--bg-block);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0 0 0 0.1);
+}
+
+.forecast h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--light-text-color);
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  text-align: center;
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 3px rgba(0 191 255 0.8);
+  transition: background-color 1s ease;
+}
+
+.forecast-item img {
+  width: 80px;
+  height: 80px;
+}
+
+.forecast-item .temp {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.temp-day {
+  color: var(--dark-text-color);
+}
+
+.temp-night {
+  color: #737373;
+}

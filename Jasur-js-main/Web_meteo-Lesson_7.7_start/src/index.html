@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Meteo</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Web Meteo</h1>
+      <div class="switch-theme">
+        <input type="checkbox" id="themeSwitch" aria-label="Переключить на дневную / ночную тему" />
+
+        <label for="themeSwitch">
+          <div class="switch-block">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                <path
+                  d="M10.6067 2.12132C9.83451 1.34916 8.89689 0.8358 7.9126 0.572756C8.44717 2.57528 7.93381 4.79418 6.36403 6.36396C4.79425 7.93374 2.57535 8.4471 0.572826 7.91253C0.83587 8.89682 1.34923 9.83444 2.12139 10.6066C4.46333 12.9485 8.26473 12.9485 10.6067 10.6066C12.9486 8.26466 12.9486 4.46326 10.6067 2.12132Z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div id="error-message"></div>
+      <form class="search-form">
+        <div class="search-block">
+          <input type="search" class="city-input" placeholder="Введите город" required autocomplete="off" />
+          <ul id="recent-cities-list" class="recent-cities"></ul>
+        </div>
+
+        <button type="submit" class="search-button">Поиск</button>
+      </form>
+    </header>
+
+    <main>
+      <div class="current-weather">
+        <h2 class="now">Сейчас: вс, 9 сент., 12:29</h2>
+        <div class="weather-info">
+          <div class="weather-icon">
+            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Погода" />
+          </div>
+          <div class="weather-details">
+            <p class="city">Москва</p>
+            <p class="temperature">20°C</p>
+            <p class="feels">Ощущается как 19°C</p>
+            <p class="description">Солнечно</p>
+          </div>
+        </div>
+        <div class="weather-stats">
+          <div class="stat-item">
+            <div>
+              <span class="stat-label">Ветер</span>
+              <span class="stat-value wind">5 м/с</span>
+            </div>
+            <div class="wind">
+              <img src="./public/icons/icon-direction.png" alt="Направление ветра" id="wind-direction-icon" />
+              <p class="direction" id="wind-direction-text">Ю</p>
+            </div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Видимость</span>
+            <span class="stat-value visibility">10 км</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Влажность</span>
+            <span class="stat-value humidity">60%</span>
+            <div class="humidity">
+              <div class="humidity-points">
+                <div>0</div>
+                <div>50</div>
+                <div>100</div>
+              </div>
+              <div class="scale">
+                <div class="parameter"></div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Давление</span>
+            <span class="stat-value pressure">760 мм рт.ст.</span>
+          </div>
+        </div>
+        <div class="sunrise-sunset">
+          <div class="sun-info">
+            <span class="sun-label">Восход</span>
+            <span class="sun-time sunrise">06:30</span>
+          </div>
+          <div class="day-parameters">
+            <div class="sun-graphic">
+              <svg viewBox="0 0 200 50" width="180" height="100" class="sun-disk">
+                <line x1="0" y1="40" x2="200" y2="40" stroke="#ccc" stroke-width="2" />
+                <circle cx="50" cy="40" r="10" fill="#EC6E4C" />
+                <path d="M20 40 A90 90 0 0 1 180 40" stroke="#EC6E4C" stroke-width="2" fill="none" />
+              </svg>
+
+              <div class="day-length">Долгота дня 12 час 15 мин</div>
+            </div>
+          </div>
+
+          <div class="sun-info">
+            <span class="sun-label">Закат</span>
+            <span class="sun-time sunset">18:45</span>
+          </div>
+        </div>
+      </div>
+      <section class="hourly-forecast">
+        <h2>Погода по часам</h2>
+        <div class="hourly-scroll">
+          <div class="hourly-item">
+            <p class="hour">Сегодня</p>
+            <p class="hour">12:00</p>
+            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Погода" />
+            <p class="temp">20°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Сегодня</p>
+            <p class="hour">15:00</p>
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Погода" />
+            <p class="temp">19°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Сегодня</p>
+            <p class="hour">18:00</p>
+            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Погода" />
+            <p class="temp">18°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Сегодня</p>
+            <p class="hour">21:00</p>
+            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Погода" />
+            <p class="temp">17°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">00:00</p>
+            <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Погода" />
+            <p class="temp">16°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">03:00</p>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Погода" />
+            <p class="temp">15°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">06:00</p>
+            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Погода" />
+            <p class="temp">15°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">09:00</p>
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Погода" />
+            <p class="temp">19°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">12:00</p>
+            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Погода" />
+            <p class="temp">18°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">15:00</p>
+            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Погода" />
+            <p class="temp">17°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">18:00</p>
+            <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Погода" />
+            <p class="temp">16°C</p>
+          </div>
+          <div class="hourly-item">
+            <p class="hour">Завтра</p>
+            <p class="hour">21:00</p>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Погода" />
+            <p class="temp">15°C</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="forecast">
+        <h2>Прогноз на 5 дней</h2>
+        <div class="forecast-list">
+          <div class="forecast-item">
+            <p class="day">Завтра,</p>
+            <p class="day">9 сент</p>
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Погода" />
+            <div class="temp">
+              <p class="temp-day">21°C</p>
+              <p class="temp-night">14°C</p>
+            </div>
+          </div>
+          <div class="forecast-item">
+            <p class="day">Вт,</p>
+            <p class="day">10 сент</p>
+            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Погода" />
+            <div class="temp">
+              <p class="temp-day">22°C</p>
+              <p class="temp-night">16°C</p>
+            </div>
+          </div>
+          <div class="forecast-item">
+            <p class="day">Ср,</p>
+            <p class="day">11 сент</p>
+            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Погода" />
+            <div class="temp">
+              <p class="temp-day">18°C</p>
+              <p class="temp-night">11°C</p>
+            </div>
+          </div>
+          <div class="forecast-item">
+            <p class="day">Чт,</p>
+            <p class="day">12 сент</p>
+            <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="Погода" />
+            <div class="temp">
+              <p class="temp-day">15°C</p>
+              <p class="temp-night">12°C</p>
+            </div>
+          </div>
+          <div class="forecast-item">
+            <p class="day">Пт,</p>
+            <p class="day">13 сент</p>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Погода" />
+            <div class="temp">
+              <p class="temp-day">18°C</p>
+              <p class="temp-night">13°C</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button id="toTop">
+      <img src="public/icons/icon-toTop.png" alt="" />
+    </button>
+    <footer>
+      <a href="https://www.youtube.com/@user-web-garage" target="_blank">
+        © <span id="currentYear"></span> Прогноз погоды. Все права защищены.
+      </a>
+    </footer>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>

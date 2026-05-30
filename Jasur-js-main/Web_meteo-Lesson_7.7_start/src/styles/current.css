@@ -1,0 +1,227 @@
+/* Текущая погода */
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  background-color: var(--bg-block);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0 0 0 0.1);
+  color: var(--light-text-color);
+  transition: background-color 1s ease;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+@media (width < 400px) {
+  .weather-info {
+    flex-direction: column;
+  }
+}
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-details .city {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.weather-details .temperature {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.weather-details .feels {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: var(--text-feels);
+}
+
+.weather-details .description {
+  font-size: 1.2rem;
+}
+
+/* Дополнительные параметры погоды */
+.weather-stats {
+  display: grid;
+  gap: 15px;
+  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (width > 425px) {
+  .weather-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 768px) {
+  .weather-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 8px;
+  min-height: 135px;
+  box-shadow: 0 0 3px 3px rgb(0 191 255 / 80%);
+  font-size: 0.8rem;
+  transition: background-color 1s ease;
+}
+
+.stat-item:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.stat-item .humidity {
+  display: flex;
+  flex-direction: column;
+  color: #3b6680;
+  width: 100%;
+}
+
+.stat-item .humidity-points {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stat-item .scale {
+  border: 1px solid #3b6680;
+  border-radius: 6px;
+  height: 8px;
+  width: 100%;
+}
+
+.stat-item .parameter {
+  border-radius: 6px;
+  background-color: #3b6680;
+  height: 6px;
+  width: 60%;
+}
+
+.stat-item img {
+  width: 48px;
+  height: 48px;
+}
+
+.stat-item .wind {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.stat-item .direction {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b6680;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #3b6680;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b6680;
+}
+
+/* Стили для блока восхода и заката */
+.sunrise-sunset {
+  min-height: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 0 3px 3px rgb(0 191 255 / 80%);
+  transition: background-color 1s ease;
+}
+
+.sun-info {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.day-parameters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sun-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #3b6680;
+}
+
+.sun-time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b6680;
+}
+
+.sun-graphic {
+  width: 100%;
+  max-width: 160px;
+  margin: 10px 0;
+}
+
+/* Стили для SVG */
+.sun-graphic svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.day-length {
+  font-size: 0.75rem;
+  color: #3b6680;
+  width: 200px;
+}
+
+@media (width > 465px) {
+  .sunrise-sunset {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sun-info {
+    margin-bottom: 0;
+  }
+
+  .sun-graphic {
+    margin: 0 20px;
+  }
+
+  .day-length {
+    font-size: 0.9rem;
+  }
+}

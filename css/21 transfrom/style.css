@@ -105,10 +105,10 @@ p {
 }
 
 .content__rotate:hover {
-	transform: rotate(180deg);
 	/* transform: rotate(-180deg); */
+	transform: rotate(180deg);
 	/* transform: rotateX(180deg); */
-	transform: rotateY(180deg);
+	/* transform: rotateY(180deg); */
 	/* transform: rotate3d(1, 1, 1, 360deg); */
 	/* backface-visibility: hidden; */
 }
@@ -149,19 +149,15 @@ p {
 /* transform-origin */
 .content__transform-origin {
 	background-color: orange;
-	/* transform-origin: 0 0; */
+	/* transform-origin: center center; */
 	/* transform-origin: right bottom; */
 	/* transform-origin: left top; */
 	/* transform-origin: right top; */
 	/* transform-origin: 0 0; */
 	/* transform-origin: 0px 150px; */
-	/* transform-origin: 0px 150px; */
-	/* transform-origin: right 150px; */
-	/* transform-origin: center center; */
+	/* transform-origin: 150px 0; */
+	/* transform-origin: 150px 150px; */
 	/* transform-origin: 50% 50%; */
-	/* transform-origin: 0 150px; */
-	/* transform-origin: 150px 0px; */
-	/* transform: rotate(0deg); */
 }
 
 .content__transform-origin:hover {
@@ -176,6 +172,7 @@ p {
 	perspective: 200px;
 	/* perspective-origin: center center; */
 	/* perspective-origin: left bottom; */
+	/* perspective-origin: right top; */
 }
 
 .content__3D .content__wrapper3d div {
@@ -249,7 +246,7 @@ p {
 .content__transform-style-wrapper {
 	width: 150px;
 	height: 150px;
-	background-color: rgba(252, 252, 252, 0.511);
+	background-color: rgba(252, 252, 252, 0.455);
 	perspective: 200px;
 	transform-style: preserve-3d;
 }

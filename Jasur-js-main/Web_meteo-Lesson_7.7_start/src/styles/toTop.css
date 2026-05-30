@@ -1,0 +1,19 @@
+/* stylelint-disable-next-line selector-id-pattern */
+#toTop {
+  position: fixed;
+  right: 30px;
+  bottom: 34px;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  background-color: var(--bg-block);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: background-color 1s ease;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+#toTop img {
+  width: 100%;
+}

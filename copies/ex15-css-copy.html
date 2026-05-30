@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex15-css-copy</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ratione!</p>
+    </header>
+    <nav>
+        <a style="float: left;" href="#">Link</a>
+        <a style="float: left;" href="#">Link</a>
+        <a style="float: right;" href="#">Link</a>
+        <a style="float: right;" href="#">Link</a>
+        <a style="float: right;" href="#">Link</a>
+    </nav>
+
+    <main>
+        <section class="left">
+            <div class="content">
+                <h1>Title heading</h1>
+                <p>option Title descr, Dec 2 2024</p>
+                <div class="img"></div>
+                <p>Some text ...</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit nihil dolores! Porro ullam
+                    ipsam libero! Iure cupiditate quas esse laudantium dicta vero! Praesentium, quaerat maiores non
+                    incidunt atque doloribus.
+                </p>
+            </div>
+            <div class="content">
+                <h1>Title heading</h1>
+                <p>option Title descr, Dec 2 2024</p>
+                <div class="img"></div>
+                <p>Some text ...</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse impedit nihil dolores! Porro ullam
+                    ipsam libero! Iure cupiditate quas esse laudantium dicta vero! Praesentium, quaerat maiores non
+                    incidunt atque doloribus.
+                </p>
+            </div>
+        </section>
+        <section class="right">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <div class="image">Image</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi recusandae reiciendis fugit
+                    quos beatae, culpa deleniti hic. Recusandae repellat sit repudiandae quos fuga? Porro praesentium
+                    perferendis nemo nobis aliquid.
+                </p>
+            </div>
+            <div class="popular-post">
+                <h1>Popular Post</h1>
+                <div class="image">Image</div>
+                <div class="image">Image</div>
+                <div class="image">Image</div>
+            </div>
+            <div class="follow-me">
+                <h1>Follow Me</h1>
+                <p>Some text ...</p>
+            </div>
+        </section>
+        <footer>
+            Footer
+        </footer>
+    </main>
+
+
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+        text-decoration: none;
+        font-family: cursive;
+    }
+
+    header {
+        background-color: #eee;
+        padding: 50px;
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    nav {
+        overflow: auto;
+        background-color: #333;
+        width: 100%;
+    }
+
+    nav a {
+        color: snow;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    nav a:hover {
+        background-color: rgba(58, 39, 232, 0.665);
+    }
+
+
+    main .left {
+        width: 70%;
+        float: left;
+        min-height: 500px;
+        padding: 10px;
+    }
+
+    main .right {
+        width: 30%;
+        float: right;
+        min-height: 500px;
+        padding: 10px;
+    }
+
+    main .left .content {
+        background-color: gray;
+        padding: 15px;
+    }
+
+    main .left .content .img {
+        background-color: #555;
+        height: 200px;
+    }
+
+    main .left *,
+    main .right * {
+        margin: 10px;
+    }
+
+    main .right .about-me {
+        background-color: gray;
+        padding: 15px;
+    }
+
+    main .right .image {
+        background-color: #555;
+        height: 100px;
+    }
+
+    main .right .popular-post {
+        background-color: gray;
+        padding: 15px;
+    }
+
+    main .right .follow-me {
+        background-color: gray;
+        padding: 15px;
+    }
+
+    main footer {
+        float: left;
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+        background-color: #777;
+        font-size: 2.5em;
+    }
+</style>
+
+</html>

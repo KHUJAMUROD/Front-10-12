@@ -9,8 +9,9 @@
 
 <body>
 
-    <!-- 
-    <main>
+
+    <!-- <main>
+        <h1>HEADING</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam itaque autem reprehenderit eum,
         voluptate commodi eius, asperiores repudiandae iusto recusandae! Nisi veritatis sapiente totam pariatur nihil
         eveniet aliquam aperiam?
@@ -32,26 +33,36 @@
     </div> -->
 
 
-    <!-- <div class="boxs">
+    <div class="boxs">
         <div style="background-color: #777;">Box-1</div>
     </div>
+
     <div class="boxs">
         <div style="background-color: #555;">Box-2</div>
     </div>
+
     <div class="boxs">
         <div style="background-color: #333;">Box-3</div>
-    </div> -->
-    <p>
+    </div>
+
+
+
+
+    <!-- <p>
         <span>before</span> paragraph text <span>after</span>
     </p>
-    
-    <br>
+     -->
+    <!-- <br>
     <br>
     <p class="test">
-       paragraph text
+        paragraph
     </p>
+    <p>
+        <span>before</span> paragraph <span>after</span>
+    </p> -->
+
+</body>
 <style>
-    
     * {
         box-sizing: border-box;
         padding: 0;
@@ -60,11 +71,13 @@
 
 
     .test::before {
-        content: 'before ';
+        /* content: 'before '; */
+        content: '🎃';
     }
 
     .test::after {
-        content: ' after';
+        /* content: ' after'; */
+        content: '😴';
     }
 
     main {
@@ -77,27 +90,32 @@
         /* overflow: scroll; */
         /* overflow: auto; */
         /* overflow-x: hidden; */
-        /* overflow-y: auto; */
+        overflow-y: auto;
     }
 
+    main h1 {
+        /* width: 300px; */
+        /* background-color: dodgerblue; */
+    }
 
     .block1 {
         border: 3px solid green;
         margin: 20px;
         padding: 10px;
         /* overflow: auto; */
-        height: 150px;
+        /* height: 150px; */
+        /* line-height: 50px; */
     }
 
     .block1 img {
-        float: right;
+        float: left;
     }
 
-    .block1::after {
-        /* content: ''; */
-        /* display: table; */
-        /* clear: both; */
-    }
+    /* .block1::after {
+            content: '';
+            display: table;
+            clear: both;
+        } */
 
 
     .boxs {

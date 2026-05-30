@@ -1,0 +1,39 @@
+:root {
+  --background-color: #a7e2ff;
+  --bg-block: #4089ad;
+  --bg-block-hover: #0e7cb3;
+  --light-text-color: #f9f9f9;
+  --dark-text-color: #3b6680;
+  --bg-input: #e6e6e6;
+  --input-border: #4089ad;
+  --input-text: #010101;
+  --bg-btn: #37a2e9;
+  --bg-btn-hover: #2980b9;
+  --text-feels: #bbb;
+  --scroll-color: #f9f9f9;
+  --bg-footer: #225c7a;
+  --indicate: #e6e6e6;
+  --bg-indicate: #64b5f6;
+  --left-position: 5px;
+  --rotate-angle: 0deg;
+  --background-image: url("../public/img/clouds.jpg");
+}
+
+:root[data-theme="dark"] {
+  --background-color: #100e1c;
+  --bg-block: #062839;
+  --bg-block-hover: #0c638f;
+  --light-text-color: #8d8d8d;
+  --bg-input: #062839;
+  --input-border: #1b87cf;
+  --input-text: #8d8d8d;
+  --bg-btn: #0c4a69;
+  --bg-btn-hover: #09364d;
+  --text-feels: #5d5d5d;
+  --scroll-color: #3b6680;
+  --bg-footer: #011c2a;
+  --bg-indicate: #ec6e4d;
+  --left-position: 35px;
+  --rotate-angle: 360deg;
+  --background-image: url("../public/img/space.jpg");
+}

@@ -8,142 +8,115 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- <body style="background-color: black; color: snow;"> -->
+
 <body>
 
-    <!-- <h1 class="testclass">heading 1</h1>
+    <h1 class="testclass">heading 1</h1>
     <h1 id="testid1">heading 2</h1>
+    <h1 style="color: dodgerblue;">heading 3</h1>
+    <h1 title="since 1976">heading 4</h1>
 
 
-    <p class="testclass">paragraph 1</p>
-    <p id="testid1">paragraph 2</p>
-
-    <button type="submit">
-        submit
-    </button>
-    <input type="submit">
-
-    <main>
-        <p>Lorem ipsum dolor sit amet. 1</p>
+    <main id="first-main">
+        <p style="color: darkred;">Lorem ipsum dolor sit amet.</p>
         <div>
-            <p>Lorem ipsum dolor sit amet. 2</p>
-            <footer>
-                <p>Lorem ipsum dolor sit amet. 3</p>
-            </footer>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <aside>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </aside>
         </div>
     </main>
-    <br>
-    <!-- <div class="block-b">
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-    </div>
-    <div class="block-c">
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-        <button type="submit">button</button>
-    </div> -->
 
+
+    <button id="test-id2-b" class="btn-class">button</button>
+    <input id="test-id2-b" class="btn-class" type="button" value="input">
+
+    <p title="test-title-similar">Lorem, ipsum dolor.</p>
+    <h6 title="test-title-similar">Lorem, ipsum dolor.</h6>
+
+
+
+    <span>span span span</span>
+    <br>
+    <br>
+    <em>Lorem, ipsum dolor.</em>
+    <br>
+    <button>button</button>
+    <button>button</button>
+    <button>button</button>
+    <button>button</button>
 </body>
 <style>
-    input[type='reset'],
-    button.testclass,
+    body {
+        /* background-color: black; */
+        /* color: snow; */
+    }
+
     main>p {
-        color: red;
-        background-color: green;
-    }
-
-
-    h1#testid1 {
-        color: blue;
-    }
-
-    p#testid1 {
-        color: aqua;
-    }
-
-    button {
-        color: red;
-    }
-
-    button[type='submit'] {
+        font-size: 30px;
         color: green;
-        background-color: #333;
     }
 
-    input[type='submit'] {
-        color: magenta;
+
+    em+br+button {
+        color: green;
         background-color: black;
     }
 
-    main div footer p {
-        /* color: red; */
+    em~button {
+        color: green;
+        background-color: black;
     }
 
-    main p {
-        /* color: red; */
-    }
-
-    main>p {
-        /* color: red; */
-    }
-
-    main+br+.block-b button {
-        /* background-color: #333; */
-        /* color: green; */
-    }
-
-    main~.block-c button {
+    em,
+    span {
+        color: gold;
         background-color: #333;
-        color: snow;
+    }
+
+    p[title="test-title-similar"] {
+        color: red;
+    }
+
+    h6[title="test-title-similar"] {
+        color: blue;
+    }
+
+    button#test-id2-b {
+        background-color: black;
     }
 
 
-
-    button[type="submit"],
-    input[type="submit"] {
-        /* background-color: darkgreen; */
-        /* color: snow; */
-    }
-
-    .block1,
-    .block2,
-    .block3,
-    body {}
-
-
-    button[type="submit"] {
-        /* background-color: #333; */
-        /* color: snow; */
-    }
-
-    input[type="submit"] {
-        /* background-color: darkgreen; */
-        /* color: snow; */
-    }
-
-    main p {
-        /* color: blue; */
+    input#test-id2-b {
+        background-color: darkblue;
     }
 
 
-    main div footer p {
-        /* color: red; */
+    button.btn-class {
+        color: red;
     }
 
+    input.btn-class {
+        color: green;
+    }
 
-    main>p {
+    .testclass {
         color: red;
     }
 
 
+    #testid1 {
+        background-color: gray;
+    }
 
-    main p {
-        /* color: red; */
+    [title="since 1976"] {
+        color: green;
+    }
+
+
+    #first-main div aside p {
+        color: blue;
     }
 </style>
 

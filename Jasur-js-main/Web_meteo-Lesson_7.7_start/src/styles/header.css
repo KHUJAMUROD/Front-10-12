@@ -1,0 +1,144 @@
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+  row-gap: 15px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--dark-text-color);
+}
+
+/* Переключение темы */
+.switch-theme {
+  display: flex;
+  justify-content: center;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+#themeSwitch {
+  position: absolute;
+  visibility: hidden;
+}
+
+label {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  border: 2px solid var(--bg-indicate);
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.switch-block {
+  position: absolute;
+  left: var(--left-position);
+  transform: rotate(var(--rotate-angle));
+  transition: all 0.5s ease;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  transition: background-color 1s ease;
+  color: var(--indicate);
+  background-color: var(--bg-indicate);
+  cursor: pointer;
+}
+
+.search-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.city-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid var(--input-border);
+  border-radius: 5px;
+  background-color: var(--bg-input);
+  color: var(--input-text);
+  outline: none;
+  transition:
+    background-color 1s ease,
+    border 1s ease;
+}
+
+.city-input:focus,
+.city-input:hover {
+  background-color: var(--bg-input);
+  color: var(--input-text);
+  transition:
+    background-color 1s ease,
+    color 1s ease;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--bg-btn);
+  color: var(--light-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 1s ease,
+    color 1s ease;
+}
+
+.search-button:hover {
+  background-color: var(--bg-btn-hover);
+  transition: background-color 1s ease;
+}
+
+/* Всплывающее меню */
+.recent-cities {
+  position: absolute;
+  top: 45px;
+  text-align: left;
+  display: none;
+  background-color: var(--background-color);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  color: var(--light-text-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 1000;
+  transition:
+    background-color 1s ease,
+    color 1s ease,
+    border 1s ease;
+}
+
+.recent-cities li {
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: var(--bg-block);
+  transition: background-color 1s ease;
+}
+
+.recent-cities li:hover {
+  background-color: var(--bg-block-hover);
+  transition: background-color 1s ease;
+}

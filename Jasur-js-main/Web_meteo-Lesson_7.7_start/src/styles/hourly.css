@@ -1,0 +1,67 @@
+/* Стили для блока почасового прогноза */
+.hourly-forecast {
+  padding: 15px;
+  background-color: var(--bg-block);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+}
+
+.hourly-forecast h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--light-text-color);
+}
+
+.hourly-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 10px 15px;
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  text-align: center;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 80px;
+  box-shadow: 0 0 3px 3px rgb(0 191 255 / 80%);
+  transition: background-color 1s ease;
+}
+
+.hourly-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.hourly-item .hour {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.hourly-item .temp {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b6680;
+  margin: 5px 0;
+}
+
+/* Скрыть стандартный скроллбар */
+.hourly-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hourly-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  transition: background-color 1s ease;
+}
+
+.hourly-scroll::-webkit-scrollbar-track {
+  background-color: var(--scroll-color);
+  border-radius: 4px;
+  transition: background-color 1s ease;
+}

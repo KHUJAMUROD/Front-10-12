@@ -4,57 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 7</title>
+    <title>ex7-css-copy</title>
 </head>
 
 <body>
 
-    <table>
-        <tr class="tr1">
-            <td colspan="3">
-                <img src="/img/pepsi-logo.png" alt="" width="100px" height="100px">
-            </td>
-        </tr>
-        <tr class="tr2">
-            <td>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae? Facere
-                eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo necessitatibus quasi
-                ipsa voluptas optio labore.
-            </td>
-            <td>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae? Facere
-                eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo necessitatibus quasi
-                ipsa voluptas optio labore.
-            </td>
-            <td>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae? Facere
-                eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo necessitatibus quasi
-                ipsa voluptas optio labore.
-            </td>
-        </tr>
-        <tr class="tr3">
-            <td>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae? Facere
-                eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo necessitatibus quasi
-                ipsa voluptas optio labore.
-            </td>
-            <td>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae? Facere
-                eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo necessitatibus quasi
-                ipsa voluptas optio labore.
-            </td>
-            <td>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae? Facere
-                eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo necessitatibus quasi
-                ipsa voluptas optio labore.
-            </td>
-        </tr>
-        <tr class="tr4">
-            <td colspan="3">
-                <img src="/img/pepsi-logo.png" alt="" width="100px" height="100px">
-            </td>
-        </tr>
-    </table>
+    <main>
+        <div class="img-block-1">
+            <img src="/img/4.jpg" alt="" width="100px" height="100px">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae?
+                    Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo
+                    necessitatibus quasi ipsa voluptas optio labore.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae?
+                    Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo
+                    necessitatibus quasi ipsa voluptas optio labore.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae?
+                    Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo
+                    necessitatibus quasi ipsa voluptas optio labore.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae?
+                    Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo
+                    necessitatibus quasi ipsa voluptas optio labore.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae?
+                    Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo
+                    necessitatibus quasi ipsa voluptas optio labore.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa vitae?
+                    Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio nemo
+                    necessitatibus quasi ipsa voluptas optio labore.
+                </td>
+            </tr>
+        </table>
+        <div class="img-block-2">
+            <img src="/img/4.jpg" alt="" width="120px" height="120px">
+        </div>
+    </main>
 
 </body>
 
@@ -63,57 +61,53 @@
         transition: 1s;
     }
 
-    .tr4 {
+    .img-block-2 {
         text-align: right;
-        background-color: gray;
     }
 
-    .tr1 {
-        background-color: gray;
+    main:hover .img-block-1,
+    main:hover .img-block-2 {
+        background-color: black;
     }
 
-    .tr1 td,
-    .tr4 td {
-        padding: 20px;
-    }
-
-    .tr1 td img,
-    .tr4 td img {
+    main:hover .img-block-1 img {
         border-radius: 50%;
+        border: 15px dotted red;
+        width: 150px;
+        height: 150px;
+        margin: 35px 0;
+        margin: 0 0 0 89%;
     }
 
-    .tr2 td,.tr3 td {
+    main:hover .img-block-2 img {
+        border-radius: 50%;
+        border: 15px dotted red;
+        width: 150px;
+        height: 150px;
+        margin: 35px 0;
+        margin: 0 89% 0 0;
+    }
+
+    main:hover table td {
+        text-decoration: underline dotted 10px rgb(255, 0, 200);
+        line-height: 30px;
+        word-spacing: 10px;
+        padding: 20px;
+        background-color: rgb(8, 8, 67);
+    }
+
+
+    main {
+        background-color: gray;
+    }
+
+    table {
+        background-color: snow;
+    }
+
+    table td {
         background-color: black;
         color: snow;
-    }
-
-
-
-    table:hover .tr1 td img,
-    table:hover .tr4 td img {
-        margin: 0 0 0 92%;
-        border: 10px dotted green;
-        width: 125px;
-        height: 125px;
-    }
-
-    table:hover .tr4 td img {
-        margin: 0 92% 0 0;
-    }
-
-    table:hover .tr1 td,
-    table:hover .tr4 td {
-        background-color: black;
-    }
-
-    table:hover .tr2 td,
-    table:hover .tr3 td {
-        padding: 20px;
-        line-height: 30px;
-        background-color: darkgreen;
-        border: 5px solid red;
-        text-decoration: underline dotted yellow 10px;
-        color: black ;
     }
 </style>
 

@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Иван Иванов",
+      "age": 28,
+      "email": "ivan.ivanov@example.com",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Мария Смирнова",
+      "age": 34,
+      "email": "maria.smirnova@example.com",
+      "active": false
+    },
+    {
+      "id": 3,
+      "name": "Алексей Кузнецов",
+      "age": 22,
+      "email": "aleksey.kuznetsov@example.com",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Елена Петрова",
+      "age": 27,
+      "email": "elena.petrova@example.com",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Дмитрий Волков",
+      "age": 31,
+      "email": "dmitry.volkov@example.com",
+      "active": false
+    }
+  ]
+}

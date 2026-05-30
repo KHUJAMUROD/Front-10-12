@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>iPhone Expressive Calculator</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            user-select: none;
+        }
+
+        .calculator {
+            width: 320px;
+            background-color: #000;
+            padding: 20px;
+        }
+
+        .screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 180px;
+            padding: 0 10px 20px;
+            overflow: hidden;
+        }
+
+        #history {
+            color: #666;
+            font-size: 20px;
+            min-height: 24px;
+            margin-bottom: 5px;
+            transition: 0.2s;
+        }
+
+        /* Область ввода, где всё добавляется справа */
+        .input-line {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            color: white;
+            font-size: 60px;
+            /* Чуть меньше, чтобы влезало выражение */
+            font-weight: 300;
+            white-space: nowrap;
+        }
+
+        #expression {
+            display: inline-block;
+            transition: font-size 0.1s ease;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .btn {
+            height: 72px;
+            width: 72px;
+            border-radius: 50%;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: filter 0.1s;
+        }
+
+        .btn:active {
+            filter: brightness(1.5);
+        }
+
+        .dark {
+            background-color: #333;
+            color: white;
+        }
+
+        .orange {
+            background-color: #ff9f0a;
+            color: white;
+        }
+
+        .gray {
+            background-color: #a5a5a5;
+            color: black;
+        }
+
+        /* Оранжевая кнопка становится белой при активации */
+        .btn.orange.active {
+            background-color: white;
+            color: #ff9f0a;
+        }
+
+        .zero {
+            grid-column: 2 span;
+            width: 156px;
+            border-radius: 40px;
+            justify-content: flex-start;
+            padding-left: 28px;
+        }
+
+        .solve {
+            grid-column: 4 span;
+            width: 320px;
+            border-radius: 40px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="screen" onclick="backspace()">
+            <div id="history"></div>
+            <div class="input-line">
+                <div id="expression">0</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn" onclick="backspace()">⌫</button>
+            <button class="btn gray" id="clear-btn" onclick="clearAll()">AC</button>
+            <button class="btn gray" onclick="toggleSign()">+/-</button>
+            <button class="btn gray" onclick="appendOperator('%')">%</button>
+            <button class="btn dark" onclick="appendNum('9')">9</button>
+
+            <button class="btn dark" onclick="appendNum('7')">7</button>
+            <button class="btn dark" onclick="appendNum('8')">8</button>
+            <button class="btn orange" onclick="appendOperator('/')">÷</button>
+            <button class="btn dark" onclick="appendNum('6')">6</button>
+
+            <button class="btn dark" onclick="appendNum('4')">4</button>
+            <button class="btn dark" onclick="appendNum('5')">5</button>
+            <button class="btn orange" onclick="appendOperator('*')">×</button>
+            <button class="btn dark" onclick="appendNum('3')">3</button>
+
+
+            <button class="btn dark" onclick="appendNum('1')">1</button>
+            <button class="btn dark" onclick="appendNum('2')">2</button>
+            <button class="btn orange" onclick="appendOperator('-')">−</button>
+            <button class="btn dark" onclick="appendNum('.')">,</button>
+
+
+
+            <button class="btn dark zero" onclick="appendNum('0')">0</button>
+            <button class="btn orange" onclick="appendOperator('+')">+</button>
+
+            <button class="btn orange solve" onclick="solve()">=</button>
+
+        </div>
+    </div>
+
+    <script>
+        let exprStr = '0';
+        let lastSolved = false;
+
+        const exprDisplay = document.getElementById('expression');
+        const historyDisplay = document.getElementById('history');
+        const clearBtn = document.getElementById('clear-btn');
+
+        function updateDisplay() {
+            let visual = exprStr
+                .replace(/\*/g, ' × ')
+                .replace(/\//g, ' ÷ ')
+                .replace(/-/g, ' − ')
+                .replace(/\+/g, ' + ')
+                .replace(/\./g, ',');
+
+            exprDisplay.innerText = visual;
+
+            // Авто-размер шрифта
+            if (visual.length > 12) {
+                exprDisplay.style.fontSize = '25px';
+            } else if (visual.length > 8) {
+                exprDisplay.style.fontSize = '35px';
+            } else {
+                exprDisplay.style.fontSize = '60px';
+            }
+        }
+
+        function appendNum(num) {
+            // Если вводится точка, проверяем, нет ли её уже в текущем числе
+            if (num === '.') {
+                const parts = exprStr.split(/[\+\-\*\/]/);
+                const lastPart = parts[parts.length - 1];
+                if (lastPart.includes('.')) return;
+            }
+
+            if (exprStr === '0' && num !== '.' || lastSolved) {
+                exprStr = num;
+                lastSolved = false;
+            } else {
+                exprStr += num;
+            }
+            clearBtn.innerText = 'C';
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            lastSolved = false;
+            const lastChar = exprStr.slice(-1);
+
+            // Нельзя начинать выражение с умножения или деления
+            if (exprStr === '0' && (op === '*' || op === '/')) return;
+
+            if (['+', '-', '*', '/'].includes(lastChar)) {
+                exprStr = exprStr.slice(0, -1) + op;
+            } else {
+                exprStr += op;
+            }
+            clearBtn.innerText = 'C';
+            updateDisplay();
+        }
+
+        function solve() {
+            if (lastSolved) return;
+            try {
+                let checkStr = exprStr;
+                // Убираем оператор в конце, если пользователь забыл число (напр. "5+5+")
+                if (['+', '-', '*', '/'].includes(checkStr.slice(-1))) {
+                    checkStr = checkStr.slice(0, -1);
+                }
+
+                historyDisplay.innerText = exprDisplay.innerText + ' =';
+
+                // Вычисление
+                let result = new Function('return ' + checkStr)();
+
+                if (!isFinite(result)) {
+                    exprStr = 'Деление на 0';
+                } else {
+                    // Округляем до 8 знаков, чтобы избежать 0.1 + 0.2 = 0.3000000004
+                    result = parseFloat(result.toFixed(8));
+                    exprStr = result.toString();
+                }
+
+                lastSolved = true;
+                updateDisplay();
+            } catch (e) {
+                exprStr = 'Ошибка';
+                updateDisplay();
+                setTimeout(clearAll, 1500);
+            }
+        }
+
+        function clearAll() {
+            exprStr = '0';
+            historyDisplay.innerText = '';
+            clearBtn.innerText = 'AC';
+            lastSolved = false;
+            updateDisplay();
+        }
+
+        function backspace() {
+            if (lastSolved) {
+                historyDisplay.innerText = '';
+                lastSolved = false;
+                return;
+            }
+
+            if (exprStr.length > 1) {
+                exprStr = exprStr.slice(0, -1);
+            } else {
+                exprStr = '0';
+                clearBtn.innerText = 'AC';
+            }
+            updateDisplay();
+        }
+
+        function toggleSign() {
+            if (exprStr === '0') return;
+
+            // Разбиваем строку на части, чтобы найти последнее число
+            const operators = ['+', '-', '*', '/'];
+            let lastOpIndex = -1;
+
+            for (let op of operators) {
+                let index = exprStr.lastIndexOf(op);
+                if (index > lastOpIndex) lastOpIndex = index;
+            }
+
+            if (lastOpIndex === -1) {
+                // Если операторов нет, меняем знак всего числа
+                exprStr = exprStr.startsWith('-') ? exprStr.slice(1) : '-' + exprStr;
+            } else if (lastOpIndex === 0 && exprStr.startsWith('-')) {
+                // Если это просто отрицательное число в начале
+                exprStr = exprStr.slice(1);
+            } else {
+                // Если это сложное выражение, работаем с последним числом
+                let prefix = exprStr.slice(0, lastOpIndex + 1);
+                let lastPart = exprStr.slice(lastOpIndex + 1);
+
+                if (lastPart === '') return; // Если после оператора ничего нет
+
+                // Если перед числом стоит минус, и это не единственный минус
+                // (упрощенная логика для простых выражений)
+                if (lastPart.startsWith('(-')) {
+                    // Реализация для скобок (сложно) или оставить как есть
+                } else {
+                    // Для базового калькулятора просто инвертируем всё выражение в скобках
+                    // Но чаще всего в калькуляторах ± меняет всё текущее вводимое число
+                    exprStr = `(${exprStr})`;
+                    // Для простоты оставим вашу логику, но с проверкой:
+                    if (lastSolved) {
+                        exprStr = exprStr.startsWith('-') ? exprStr.slice(1) : '-' + exprStr;
+                    }
+                }
+            }
+            updateDisplay();
+        }
+
+        // Слушатель клавиатуры
+        document.addEventListener('keydown', (e) => {
+            if (e.key >= '0' && e.key <= '9' || e.key === '.') appendNum(e.key);
+            if (['+', '-', '*', '/'].includes(e.key)) appendOperator(e.key);
+            if (e.key === 'Enter' || e.key === '=') solve();
+            if (e.key === 'Backspace') backspace();
+            if (e.key === 'Escape') clearAll();
+        });
+
+    </script>
+
+</body>
+
+</html>
