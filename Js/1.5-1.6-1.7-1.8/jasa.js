@@ -27,7 +27,6 @@
 // console.log( "" == false); // true
 // console.log( "" === false); // false
 // console.log( "1" == 1); // true
-// console.log( "abcd" == 1); // false
 // console.log( "1" === 1); // false
 // console.log( "1" != 1); // false
 // console.log( "1" !== 1); // true
@@ -164,6 +163,12 @@
 //     alert("не правильно")
 // }
 
+// let a = 10
+// a + 5
+// a += 5
+// console.log(a);
+
+
 
 // ||=логическое присваивание или
 // a ||= b
@@ -204,7 +209,7 @@
 
 // ! НЕ
 // result != value;
-// console.log(!true); //false
+// console.log(!123); //false
 // console.log(!0); // true
 // console.log(!"0"); // false
 // console.log(!!'какая-то строка'); // true
@@ -216,7 +221,7 @@
 // console.log(!!'some info');
 
 
-// console.log(Boolean(123));
+// console.log(Boolean('какая-то строка'));
 // console.log(Boolean(null));
 // console.log(Boolean('some info'));
 
@@ -250,7 +255,7 @@
 
 
 // let age = +prompt("введите ваш возраст")
-// console.log(age, typeof (age));
+// // console.log(age, typeof (age));
 
 // if (age >= 18) {
 //     let hasLicense = prompt(
@@ -269,7 +274,7 @@
 // console.log(isNaN('asd')); // true
 
 
-// let age = +prompt("введите ва возраст")
+// let age = +prompt("введите ваш возраст")
 // if (isNaN(age)) {
 //     alert("вы вели не числою пожалуйста, введите числовое значения.");
 // } else if (age >= 16) {
@@ -288,6 +293,8 @@
 //         break;
 //     }
 // }
+
+
 // if (age >= 16) {
 //     alert('доступ разрешен')
 // } else {

@@ -1,8 +1,6 @@
 // const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // let printPage = 0;
 
-
-
 // while (printPage < pages.length) {
 //     if (pages[printPage] % 2 === 1) {
 //         printPage++
@@ -11,6 +9,8 @@
 //     console.log(`печатается страница ${pages[printPage]}`);
 //     printPage++;
 // }
+
+// console.log('Xasan'.length);
 
 // console.log(40%25); // 15
 // console.log(10%25); // 10
@@ -28,6 +28,8 @@
 //     printPage++;
 // }
 
+
+
 // const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // let printPage = 0;
 
@@ -41,6 +43,7 @@
 // }
 
 
+
 // while (true) {
 //     const msg = prompt("введите ваши собщение");
 //     console.log(msg);
@@ -48,6 +51,7 @@
 //         break;
 //     }
 // }
+
 
 // const numbers = [1, 2, 0, 3, 4, 0, 5, 6];
 
@@ -65,12 +69,25 @@
 // console.log(`произведения чисел не равных 0: ${result}`);
 
 // while (true) {
-//     let msg = prompt("введите собщения");
-//     if (msg === "next") continue;
+//     let msg = prompt("Введите сообщение  (next) 1:");
 
+//     // Внешний if: проверяет первое сообщение
+//     if (msg === "next") { 
+//         console.log("Первый шаг пройден. Ожидаем команду stop...");
+//         // Внутренний if: запрашивает второе сообщение внутри первого
+//         let secondMsg = prompt("Введите второе сообщение (stop) 2:");
+        
+//         if (secondMsg === "stop") {
+//             console.log("Второй шаг пройден. Выходим из цикла.");
+//             break; // Прерывает весь цикл while
+//         }
+//         continue; // Если второе слово не "stop", возвращаемся к началу цикла
+//     }
 //     console.log(msg);
-//     if (msg === "stop") break;
+//     // if (msg === "stop") break;
 // }
+
+
 
 // <------ 1,14 урок ------>
 
@@ -102,9 +119,9 @@
 // let a = prompt("введите первое число");
 // let b = prompt("введите второе число");
 // function multiply(a, b) {
-    // let mult = a * b
-    // return console.log(`проиведения двух чисел равняется ${mult}`);
-    //  return  a * b;
+// let mult = a * b
+// return console.log(`проиведения двух чисел равняется ${mult}`);
+//  return  a * b;
 // }
 
 // multiply(a, b);

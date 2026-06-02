@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex7-copy-css</title>
+</head>
+
+<body>
+
+    <table>
+        <tr class="tr1">
+            <td colspan="3">
+                <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            </td>
+        </tr>
+        <tr class="tr2">
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa
+                vitae? Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio
+                nemo
+                necessitatibus quasi ipsa voluptas optio labore.
+            </td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa
+                vitae? Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio
+                nemo
+                necessitatibus quasi ipsa voluptas optio labore.
+            </td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa
+                vitae? Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio
+                nemo
+                necessitatibus quasi ipsa voluptas optio labore.
+            </td>
+        </tr>
+        <tr class="tr3">
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa
+                vitae? Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio
+                nemo
+                necessitatibus quasi ipsa voluptas optio labore.
+            </td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa
+                vitae? Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio
+                nemo
+                necessitatibus quasi ipsa voluptas optio labore.
+            </td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum minus ipsa
+                vitae? Facere eaque sapiente tempora molestias accusantium esse numquam, quos distinctio
+                nemo
+                necessitatibus quasi ipsa voluptas optio labore.
+            </td>
+        </tr>
+        <tr class="tr4">
+            <td style="text-align: right;" colspan="3">
+                <img src="/img/3.jpg" alt="" width="100px" height="100px">
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    .tr1 td {
+        background-color: gray;
+    }
+
+    .tr2 td,
+    .tr3 td {
+        background-color: black;
+        color: snow;
+    }
+
+    .tr4 td {
+        background-color: gray;
+    }
+
+    table:hover .tr1 td img {
+        margin-left: 90%;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        border: 15px dotted red;
+    }
+
+    table:hover .tr4 td img {
+        margin-right: 90%;
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        border: 15px dotted red;
+    }
+
+    table:hover .tr2 td,
+    table:hover .tr3 td {
+        padding: 20px;
+        line-height: 30px;
+        word-spacing: 10px;
+        background-color: rgb(0, 0, 58);
+        text-decoration: dotted underline 10px red;
+    }
+
+
+    table:hover .tr1 td,
+    table:hover .tr4 td {
+        background-color: black;
+    }
+</style>
+
+</html>

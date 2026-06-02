@@ -7,17 +7,15 @@
 // let regexpFlag2 = /^[а-яА-Я]*$/gmi;
 
 
-// let str = 'my name Jasur. my full \n name is Jasur Khamrakulov';
-// console.log(str.replace(/jasur/igm, "JUSTIN#"));
+
+// let str = 'my name is Jasur. my full name is Jasur Khamrakulov';
+// console.log(str.replace(/jasur/i, "JUSTIN#"));
 
 //  let str = 'my name Jasur. my full name is Jasur Khamrakulov';
-//  console.log(str.replace(/Jasur/i, "JUSTIN#"));
+//  console.log(str.match(/Jasur/g));
 
-//  let str = 'my name Jasur. my full name is Jasur Khamrakulov';
-//  console.log(str.match(/jasur/g));
-
-//  let str = 'My name Jasur. my full name is Jasur Khamrakulov';
-//  console.log(/jasur/gi.exec(str));
+// let str = 'My name Jasur. my full name is Jasur Khamrakulov';
+// console.log(/jasur/gi.exec(str));
 
 
 // let regexp = /^[а-яА-Я]*$/;
@@ -58,6 +56,7 @@
 // console.log(regexp.test('пирон'));
 // console.log(regexp.test('Пирон'));
 
+
 // let regexp = /[abc]/;
 // console.log(regexp.test('button'));
 // console.log(regexp.test('word'));
@@ -83,12 +82,12 @@
 
 
 
-
 // let regexp = /[0-9]{6}/;
 // console.log(regexp.test("987985"));
 // console.log(regexp.test("98798"));
 // console.log(regexp.test("987asd234"));
 // console.log(regexp.test("983217asd"));
+
 
 // let regexp = /\d{6}/;
 // console.log(regexp.test("987985"));
@@ -165,12 +164,11 @@
 
 // console.log(sumArray([1, 2, 3, 4, 5]));
 
+
 // function noReturn() {
 //     console.log("эта функция ничего не возвращает");
 // }
 // let result = noReturn();
 // console.log(result);
-
-
 
 
